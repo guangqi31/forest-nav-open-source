@@ -1,0 +1,16 @@
+{
+  "channels": 32,
+  "horizontal_resolution_deg": 1.0,
+  "vertical_fov_deg": [
+    -85.0,
+    15.0
+  ],
+  "range_min_m": 0.2,
+  "range_max_m": 20.0,
+  "frequency_hz": 10.0,
+  "offset_torso_m": [
+    0.0,
+    0.0,
+    0.65
+  ]
+}

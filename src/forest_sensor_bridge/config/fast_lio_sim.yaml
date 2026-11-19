@@ -1,0 +1,55 @@
+# 以本机固定版本上游 jt32.yaml 为基准。使用 Hesai 兼容消息格式，并非宣称仿真雷达为 JT32。
+# 时间单位为秒；已知仿真安装外参由 sensors.yaml 覆盖，关闭在线外参估计。
+/**:
+  ros__parameters:
+    feature_extract_enable: false
+    point_filter_num: 1
+    max_iteration: 3
+    filter_size_surf: 0.5
+    filter_size_map: 0.5
+    cube_side_length: 1000.0
+    runtime_pos_log_enable: false
+    common:
+      lid_topic: /lidar/points
+      imu_topic: /imu/data_raw
+      time_sync_en: false
+      time_offset_lidar_to_imu: 0.0
+      imu_gyr_unit: rad
+    preprocess:
+      lidar_type: 3
+      scan_line: 32
+      timestamp_unit: 0
+      blind: 0.15
+    mapping:
+      acc_cov: 0.1
+      gyr_cov: 0.1
+      b_acc_cov: 0.0001
+      b_gyr_cov: 0.0001
+      fov_degree: 360.0
+      det_range: 45.0
+      extrinsic_est_en: false
+      extrinsic_T:
+      - 0.0
+      - 0.0
+      - 0.25
+      extrinsic_R:
+      - 1.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+    publish:
+      path_en: true
+      scan_publish_en: true
+      dense_publish_en: true
+      scan_bodyframe_pub_en: true
+    pcd_save:
+      pcd_save_en: false
+      interval: -1
+      leaf_size: 0.0
+    trajectory_save:
+      tum_en: false

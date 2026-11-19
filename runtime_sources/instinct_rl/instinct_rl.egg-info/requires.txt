@@ -1,0 +1,9 @@
+torch==2.11.0
+torchvision==0.26.0
+numpy>=2
+tensorboardX
+tensorboard
+tabulate
+GitPython
+onnx<1.22,>=1.18
+onnxscript>=0.5

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>forest_g1_velocity_bridge</name><version>0.1.0</version>
+  <description>CMU TwistStamped速度到G1策略观测的直接适配。</description>
+  <maintainer email="ubuntu@example.invalid">forest_nav</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

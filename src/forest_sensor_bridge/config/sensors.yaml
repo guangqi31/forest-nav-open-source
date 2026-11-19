@@ -1,0 +1,23 @@
+# 两个进程共用这一份安装配置；位置单位为米，四元数顺序为 wxyz。
+# body_prim_path 由仿真入口传入，不在这里绑定某个旧场景或旧机器人实例。
+# 默认是本阶段新增的仿真安装方案，不代表真机已经标定。
+frames:
+  lidar: lidar_link
+  imu: imu_link
+lidar:
+  config: HESAI_XT32_SD10
+  rate_hz: 10.0
+  scan_lines: 32
+  # torso胸部最高约0.312m，头部最高约0.487m；实际雷达坐标置于头顶上方。
+  position: [0.0, 0.0, 0.65]
+  orientation_wxyz: [1.0, 0.0, 0.0, 0.0]
+  raw_topic: /isaac/lidar/points_raw
+  output_topic: /lidar/points
+imu:
+  rate_hz: 200.0
+  position: [0.0, 0.0, 0.0]
+  orientation_wxyz: [1.0, 0.0, 0.0, 0.0]
+  topic: /imu/data_raw
+# 一个 ROS 域只应有一个仿真时钟发布者；如果宿主已经发布，设为 false。
+publish_clock: true
+clock_topic: /clock

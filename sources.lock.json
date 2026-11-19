@@ -1,0 +1,240 @@
+{
+  "stage": 2,
+  "created_at": "2026-11-18T04:32:12.092282+08:00",
+  "build_source_root": "src",
+  "reference_root": "references",
+  "repositories": [
+    {
+      "name": "cmu_autonomy",
+      "path": "src/cmu_autonomy",
+      "role": "运行源码",
+      "url": "https://github.com/HongbiaoZ/autonomous_exploration_development_environment.git",
+      "requested_branch": "humble",
+      "commit": "158e67b31b644ed1e8b06eb1d7f70e183cc62591",
+      "tree": "d9eec7d3e8d64d5ed33c312bd47e9b54b37f006b",
+      "commit_time": "2026-02-18T17:49:48-05:00",
+      "detached_head": true,
+      "tracked_files": 97,
+      "working_tree_clean": true
+    },
+    {
+      "name": "far_planner",
+      "path": "src/far_planner",
+      "role": "运行源码",
+      "url": "https://github.com/MichaelFYang/far_planner.git",
+      "requested_branch": "humble-jazzy",
+      "commit": "3776b83bd4c4e41e4296bdc9579e4f7e510b8162",
+      "tree": "2b2180d42582329580aaf11982a14f7262375c58",
+      "commit_time": "2026-10-27T19:11:12+01:00",
+      "detached_head": true,
+      "tracked_files": 80,
+      "working_tree_clean": true
+    },
+    {
+      "name": "autonomy_stack_go2",
+      "path": "references/autonomy_stack_go2",
+      "role": "参考，不参与默认构建",
+      "url": "https://github.com/jizhang-cmu/autonomy_stack_go2.git",
+      "requested_branch": "foxy-humble",
+      "commit": "43d5f54b389b251713f0097893c30fa76c870d54",
+      "tree": "586702168152ac7249f26ca842ef5cbb24ce6b83",
+      "commit_time": "2026-02-18T18:10:57-05:00",
+      "detached_head": true,
+      "tracked_files": 435,
+      "working_tree_clean": true
+    },
+    {
+      "name": "fast_lio",
+      "path": "src/fast_lio",
+      "role": "桥接①接收端，原样开源源码，从本机仓库复用，无网络下载",
+      "url": "https://github.com/HesaiTechnology-Spatial-Perception/FAST_LIO_Hesai.git",
+      "requested_branch": "ROS2",
+      "commit": "2783882405484c0c852eaffc3b07b26d1fff2556",
+      "detached_head": true,
+      "working_tree_clean": true
+    }
+  ],
+  "packages": [
+    {
+      "name": "loam_interface",
+      "path": "src/cmu_autonomy/src/loam_interface"
+    },
+    {
+      "name": "local_planner",
+      "path": "src/cmu_autonomy/src/local_planner"
+    },
+    {
+      "name": "sensor_scan_generation",
+      "path": "src/cmu_autonomy/src/sensor_scan_generation"
+    },
+    {
+      "name": "terrain_analysis",
+      "path": "src/cmu_autonomy/src/terrain_analysis"
+    },
+    {
+      "name": "terrain_analysis_ext",
+      "path": "src/cmu_autonomy/src/terrain_analysis_ext"
+    },
+    {
+      "name": "vehicle_simulator",
+      "path": "src/cmu_autonomy/src/vehicle_simulator"
+    },
+    {
+      "name": "velodyne_description",
+      "path": "src/cmu_autonomy/src/velodyne_simulator/velodyne_description"
+    },
+    {
+      "name": "velodyne_gazebo_plugins",
+      "path": "src/cmu_autonomy/src/velodyne_simulator/velodyne_gazebo_plugins"
+    },
+    {
+      "name": "velodyne_simulator",
+      "path": "src/cmu_autonomy/src/velodyne_simulator/velodyne_simulator"
+    },
+    {
+      "name": "visualization_tools",
+      "path": "src/cmu_autonomy/src/visualization_tools"
+    },
+    {
+      "name": "waypoint_example",
+      "path": "src/cmu_autonomy/src/waypoint_example"
+    },
+    {
+      "name": "waypoint_rviz_plugin",
+      "path": "src/cmu_autonomy/src/waypoint_rviz_plugin"
+    },
+    {
+      "name": "boundary_handler",
+      "path": "src/far_planner/src/boundary_handler"
+    },
+    {
+      "name": "far_planner",
+      "path": "src/far_planner/src/far_planner"
+    },
+    {
+      "name": "goalpoint_rviz_plugin",
+      "path": "src/far_planner/src/goalpoint_rviz_plugin"
+    },
+    {
+      "name": "graph_decoder",
+      "path": "src/far_planner/src/graph_decoder"
+    },
+    {
+      "name": "teleop_rviz_plugin",
+      "path": "src/far_planner/src/teleop_rviz_plugin"
+    },
+    {
+      "name": "visibility_graph_msg",
+      "path": "src/far_planner/src/visibility_graph_msg"
+    },
+    {
+      "name": "fast_lio",
+      "path": "src/fast_lio"
+    },
+    {
+      "name": "forest_sensor_bridge",
+      "path": "src/forest_sensor_bridge"
+    },
+    {
+      "name": "forest_g1_velocity_bridge",
+      "path": "src/forest_g1_velocity_bridge"
+    },
+    {
+      "name": "forest_navigation_bringup",
+      "path": "src/forest_navigation_bringup"
+    }
+  ],
+  "checks": {
+    "upstream_worktrees_clean": true,
+    "required_files_present": [
+      "src/cmu_autonomy/src/local_planner/src/localPlanner.cpp",
+      "src/cmu_autonomy/src/local_planner/src/pathFollower.cpp",
+      "src/cmu_autonomy/src/terrain_analysis/src/terrainAnalysis.cpp",
+      "src/cmu_autonomy/src/terrain_analysis_ext/src/terrainAnalysisExt.cpp",
+      "src/cmu_autonomy/src/vehicle_simulator/launch/system_forest.launch",
+      "src/far_planner/src/far_planner/launch/far_planner.launch",
+      "src/cmu_autonomy/src/local_planner/paths/correspondences.txt",
+      "src/cmu_autonomy/src/local_planner/paths/pathList.ply",
+      "src/cmu_autonomy/src/local_planner/paths/paths.ply",
+      "src/cmu_autonomy/src/local_planner/paths/startPaths.ply"
+    ],
+    "colcon_list_succeeded": true,
+    "compiled": true,
+    "simulation_run": false,
+    "navigation_verified": false
+  },
+  "bridge_01": {
+    "status": "g1_complex_scene_real_sensor_fastlio_flow_verified",
+    "upstream_source_changes": false,
+    "packages_built": [
+      "fast_lio",
+      "forest_sensor_bridge"
+    ],
+    "message_conversion_checks_passed": true,
+    "ros_dds_check_passed": true,
+    "launch_startup_checked": true,
+    "isaac_scene_hooked": true,
+    "simulation_run": true,
+    "navigation_verified": false,
+    "submodule": {
+      "path": "src/fast_lio/include/ikd-Tree",
+      "url": "https://github.com/hku-mars/ikd-Tree.git",
+      "commit": "e2e3f4e9d3b95a9e66b1ba83dc98d4a05ed8a3c4"
+    },
+    "temporary_sensor_scene_run": true,
+    "g1_scene_hooked": true,
+    "lidar_delivery_fix": {
+      "raw_frames": 148,
+      "adapted_frames": 148,
+      "fastlio_received_frames": 148,
+      "lidar_hz_sim_time": 10.0,
+      "imu_hz_sim_time": 199.99999694259017,
+      "upstream_qos_changed": false,
+      "report": "reports/桥接01_大点云交付修复.md"
+    },
+    "g1_motion_sensor_run": true,
+    "g1_lidar_mount_position_m": [
+      0.0,
+      0.0,
+      0.65
+    ]
+  },
+  "bridge_03": {
+    "status": "g1_host_hooked_policy_started_ros_subscription_matched",
+    "upstream_source_changes": false,
+    "built": true,
+    "native_ros_subscription_checked": true,
+    "velocity_tensor_mapping_checked": true,
+    "g1_policy_started": true,
+    "g1_host_entry_modified": false,
+    "g1_host_entry_added": "src/forest_g1_velocity_bridge/scripts/play_g1_ros.py",
+    "g1_joint_motion_measured": true
+  },
+  "bridge_02": {
+    "status": "native_loam_interface_and_upper_chain_synthetic_input_verified",
+    "implementation": "upstream_nodes_with_launch_and_parameter_configuration_only",
+    "upstream_source_changes": false,
+    "new_algorithm_nodes": false,
+    "upstream_packages_built": true,
+    "synthetic_pointcloud_pose_check_passed": true,
+    "real_fastlio_input_checked": true,
+    "g1_closed_loop_checked": true,
+    "rviz_gui_checked": false,
+    "navigation_verified": false,
+    "historical_path_remapped": "/lio/path",
+    "report": "reports/桥接02与上层集成.md"
+  },
+  "full_chain_complex": {
+    "tested_at": "2026-11-18T22:47:56.766911+08:00",
+    "scene_asset": "assets/forest_complex/environment.usda",
+    "real_sensor_data": true,
+    "native_chain_drives_g1": true,
+    "far_reported_reached": true,
+    "distance_when_first_report_ended_m": 0.2408905443368661,
+    "goal_hold_passed": false,
+    "robot_fell": true,
+    "final_hold_lio_distance_m": 1.2282848069233554,
+    "navigation_acceptance_passed": false,
+    "report": "reports/复杂林地全流程测试.md"
+  }
+}

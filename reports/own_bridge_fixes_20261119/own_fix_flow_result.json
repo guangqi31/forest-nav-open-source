@@ -1,0 +1,30 @@
+{
+  "cloud": {
+    "count": 36,
+    "wall_seconds": 5.969532554998295,
+    "sim_seconds": 3.5000045359999987,
+    "real_time_factor": 0.5863113240029894,
+    "hz_sim": 9.9999870400168
+  },
+  "lio": {
+    "count": 35,
+    "wall_seconds": 5.799919084995054,
+    "sim_seconds": 3.3999999999999986,
+    "real_time_factor": 0.5862150747578745,
+    "hz_sim": 10.000000000000004
+  },
+  "clock": {
+    "count": 601,
+    "wall_seconds": 5.101667288996396,
+    "sim_seconds": 3.0,
+    "real_time_factor": 0.588043051429597,
+    "hz_sim": 200.0
+  },
+  "imu": {
+    "count": 600,
+    "wall_seconds": 5.096093519008718,
+    "sim_seconds": 2.995000839000003,
+    "real_time_factor": 0.5877052349664462,
+    "hz_sim": 199.9999439733043
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "start_step": 100,
+  "end_step": 1900,
+  "milliseconds_per_policy_step": {
+    "policy": 0.5523640292570539,
+    "scene_write": 0.8755559726220478,
+    "sensor_publish": 3.9062189176426423,
+    "imu_read": 0.05573789978774989,
+    "sensor_callback": 4.060720672981309,
+    "backend": 22.420322851539822,
+    "scene_update": 3.097244526515068,
+    "subscriber": 0.5018167539593479,
+    "observations": 2.709981546132541,
+    "env_step": 34.62144283011892,
+    "render": 2.760259986599623
+  },
+  "calls_per_policy_step": {
+    "policy": 1.0,
+    "scene_write": 4.0,
+    "sensor_publish": 8.0,
+    "imu_read": 4.0,
+    "sensor_callback": 4.0,
+    "backend": 4.0,
+    "scene_update": 4.0,
+    "subscriber": 1.0,
+    "observations": 1.0,
+    "env_step": 1.0,
+    "render": 0.2
+  }
+}

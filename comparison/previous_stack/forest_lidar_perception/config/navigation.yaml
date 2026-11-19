@@ -1,0 +1,189 @@
+# 激光地图使用0.2米栅格；全局和局部使用原有实际身体足迹。
+# 保留足迹清理，避免机器人脚下的雷达盲区被当成致命障碍，造成起点无法规划。
+# 周围未知区域仍禁止通行；较宽的软膨胀代价用于鼓励路线远离障碍。
+planner_server:
+  ros__parameters:
+    use_sim_time: true
+    expected_planner_frequency: 1.0
+    planner_plugins:
+    - GridBased
+    GridBased:
+      plugin: nav2_smac_planner/SmacPlanner2D
+      tolerance: 0.0
+      allow_unknown: false
+      downsample_costmap: false
+      cost_travel_multiplier: 6.0
+      max_iterations: 1000000
+      max_on_approach_iterations: 1000
+      max_planning_time: 3.0
+      use_final_approach_orientation: false
+      smoother:
+        max_iterations: 0
+        w_smooth: 0.0
+        w_data: 0.0
+        do_refinement: false
+global_costmap:
+  global_costmap:
+    ros__parameters:
+      use_sim_time: true
+      global_frame: map
+      robot_base_frame: base_link
+      transform_tolerance: 0.5
+      rolling_window: false
+      resolution: 0.2
+      update_frequency: 5.0
+      publish_frequency: 5.0
+      robot_radius: 0.35
+      footprint_padding: 0.0
+      track_unknown_space: true
+      unknown_cost_value: 255
+      lethal_cost_threshold: 100
+      trinary_costmap: false
+      always_send_full_costmap: true
+      plugins:
+      - static_layer
+      - inflation_layer
+      static_layer:
+        plugin: nav2_costmap_2d::StaticLayer
+        map_topic: /traversability_map
+        map_subscribe_transient_local: true
+        subscribe_to_updates: false
+        footprint_clearing_enabled: true
+      inflation_layer:
+        plugin: nav2_costmap_2d::InflationLayer
+        inflation_radius: 1.4
+        cost_scaling_factor: 2.0
+        inflate_around_unknown: true
+        inflate_unknown: false
+controller_server:
+  ros__parameters:
+    use_sim_time: true
+    controller_frequency: 20.0
+    odom_topic: /odom
+    min_x_velocity_threshold: 0.001
+    min_y_velocity_threshold: 0.001
+    min_theta_velocity_threshold: 0.001
+    failure_tolerance: 0.5
+    publish_zero_velocity: true
+    progress_checker_plugin: progress_checker
+    goal_checker_plugins:
+    - goal_checker
+    controller_plugins:
+    - FollowPath
+    progress_checker:
+      plugin: nav2_controller::PoseProgressChecker
+      required_movement_angle: 0.15
+      required_movement_radius: 0.1
+      movement_time_allowance: 12.0
+    goal_checker:
+      plugin: nav2_controller::SimpleGoalChecker
+      xy_goal_tolerance: 0.25
+      yaw_goal_tolerance: 0.03
+      stateful: true
+    FollowPath:
+      plugin: nav2_rotation_shim_controller::RotationShimController
+      primary_controller: dwb_core::DWBLocalPlanner
+      rotate_to_goal_heading: true
+      closed_loop: false
+      angular_dist_threshold: 0.6
+      forward_sampling_distance: 0.5
+      rotate_to_heading_angular_vel: 0.5
+      max_angular_accel: 0.8
+      simulate_ahead_time: 1.0
+      debug_trajectory_details: false
+      min_vel_x: 0.0
+      # 空旷路段指令上限；DWB保留原有运动学加速度，最终输出端单独控制慢起步。
+      max_vel_x: 1.80
+      min_vel_y: 0.0
+      max_vel_y: 0.0
+      max_vel_theta: 0.5
+      min_speed_xy: 0.12
+      max_speed_xy: 1.80
+      min_speed_theta: 0.18
+      acc_lim_x: 0.8
+      acc_lim_y: 0.0
+      acc_lim_theta: 0.8
+      decel_lim_x: -0.8
+      decel_lim_y: 0.0
+      decel_lim_theta: -0.8
+      vx_samples: 15
+      vy_samples: 1
+      vtheta_samples: 21
+      sim_time: 1.5
+      linear_granularity: 0.05
+      angular_granularity: 0.05
+      transform_tolerance: 0.5
+      xy_goal_tolerance: 0.25
+      trans_stopped_velocity: 0.05
+      short_circuit_trajectory_evaluation: true
+      stateful: true
+      critics:
+      - RotateToGoal
+      - Oscillation
+      - BaseObstacle
+      - ObstacleFootprint
+      - PathAlign
+      - GoalAlign
+      - PathDist
+      - GoalDist
+      # 软代价更早排斥贴障碍轨迹；碰撞判定和足迹本身保持原有保护。
+      BaseObstacle.scale: 0.08
+      ObstacleFootprint.scale: 0.08
+      PathAlign.scale: 16.0
+      PathAlign.forward_point_distance: 0.15
+      GoalAlign.scale: 8.0
+      GoalAlign.forward_point_distance: 0.15
+      PathDist.scale: 32.0
+      GoalDist.scale: 24.0
+      RotateToGoal.scale: 32.0
+      RotateToGoal.slowing_factor: 5.0
+      RotateToGoal.lookahead_time: -1.0
+local_costmap:
+  local_costmap:
+    ros__parameters:
+      use_sim_time: true
+      global_frame: odom
+      robot_base_frame: base_link
+      transform_tolerance: 0.5
+      rolling_window: true
+      resolution: 0.2
+      update_frequency: 10.0
+      publish_frequency: 5.0
+      robot_radius: 0.35
+      footprint_padding: 0.0
+      track_unknown_space: true
+      unknown_cost_value: 255
+      lethal_cost_threshold: 100
+      trinary_costmap: false
+      always_send_full_costmap: true
+      plugins:
+      - static_layer
+      - inflation_layer
+      static_layer:
+        plugin: nav2_costmap_2d::StaticLayer
+        map_topic: /traversability_map_local
+        map_subscribe_transient_local: true
+        subscribe_to_updates: false
+        footprint_clearing_enabled: true
+      inflation_layer:
+        plugin: nav2_costmap_2d::InflationLayer
+        inflation_radius: 1.4
+        cost_scaling_factor: 2.0
+        inflate_around_unknown: true
+        inflate_unknown: false
+      width: 10
+      height: 10
+bt_navigator:
+  ros__parameters:
+    use_sim_time: true
+    global_frame: map
+    robot_base_frame: base_link
+    odom_topic: /odom
+    bt_loop_duration: 10
+    default_server_timeout: 2000
+    plugin_lib_names:
+    - nav2_compute_path_through_poses_action_bt_node
+    - nav2_compute_path_to_pose_action_bt_node
+    - nav2_follow_path_action_bt_node
+    - nav2_rate_controller_bt_node
+    - nav2_pipeline_sequence_bt_node

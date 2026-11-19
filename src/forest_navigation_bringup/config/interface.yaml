@@ -1,0 +1,12 @@
+# camera_init与map定义为同一个本地建图坐标，不能当作Isaac世界坐标。
+# 原生接口只改消息命名，当前不需要坐标轴翻转或位姿数值转换。
+loamInterface:
+  ros__parameters:
+    use_sim_time: true
+    stateEstimationTopic: /Odometry
+    registeredScanTopic: /cloud_registered
+    flipStateEstimation: false
+    flipRegisteredScan: false
+    # 动态TF保留FAST-LIO发布；本包仅用原生静态发布器连接坐标别名。
+    sendTF: false
+    reverseTF: false

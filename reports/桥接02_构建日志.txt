@@ -1,0 +1,82 @@
+Starting >>> visibility_graph_msg
+Starting >>> fast_lio
+Finished <<< fast_lio [0.29s]
+Starting >>> goalpoint_rviz_plugin
+Finished <<< visibility_graph_msg [2.38s]
+Starting >>> loam_interface
+--- stderr: goalpoint_rviz_plugin
+/home/ubuntu/robot_projects/forest_nav_open_source/src/far_planner/src/goalpoint_rviz_plugin/src/goalpoint_tool.cpp: In member function ‘virtual void goalpoint_rviz_plugin::GoalpointTool::onPoseSet(double, double, double)’:
+/home/ubuntu/robot_projects/forest_nav_open_source/src/far_planner/src/goalpoint_rviz_plugin/src/goalpoint_tool.cpp:52:58: warning: unused parameter ‘theta’ [-Wunused-parameter]
+   52 | void GoalpointTool::onPoseSet(double x, double y, double theta)
+      |                                                   ~~~~~~~^~~~~
+---
+Finished <<< goalpoint_rviz_plugin [8.01s]
+Starting >>> local_planner
+Finished <<< loam_interface [12.5s]
+Starting >>> terrain_analysis
+Finished <<< local_planner [21.5s]
+Starting >>> terrain_analysis_ext
+--- stderr: terrain_analysis
+/home/ubuntu/robot_projects/forest_nav_open_source/src/cmu_autonomy/src/terrain_analysis/src/terrainAnalysis.cpp: In function ‘int main(int, char**)’:
+/home/ubuntu/robot_projects/forest_nav_open_source/src/cmu_autonomy/src/terrain_analysis/src/terrainAnalysis.cpp:485:43: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+  485 |                 if (angle4 > minDyObsVFOV && angle4 < maxDyObsVFOV || fabs(pointZ4) < absDyObsRelZThre) {
+      |                     ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+---
+Finished <<< terrain_analysis [16.7s]
+Starting >>> far_planner
+Finished <<< terrain_analysis_ext [17.5s]
+Starting >>> graph_decoder
+--- stderr: far_planner
+CMake Warning (dev) at CMakeLists.txt:24 (find_package):
+  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  CMake variable PCL_ROOT is set to:
+
+    /usr
+
+  For compatibility, CMake is ignoring the variable.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+/home/ubuntu/robot_projects/forest_nav_open_source/src/far_planner/src/far_planner/src/contour_detector.cpp: In member function ‘void ContourDetector::ShowCornerImage(const cv::Mat&, const PointCloudPtr&)’:
+/home/ubuntu/robot_projects/forest_nav_open_source/src/far_planner/src/far_planner/src/contour_detector.cpp:94:54: warning: unused parameter ‘img_mat’ [-Wunused-parameter]
+   94 | void ContourDetector::ShowCornerImage(const cv::Mat& img_mat, const PointCloudPtr& pc) {
+      |                                       ~~~~~~~~~~~~~~~^~~~~~~
+In file included from /home/ubuntu/robot_projects/forest_nav_open_source/src/far_planner/src/far_planner/src/far_planner.cpp:9:
+/home/ubuntu/robot_projects/forest_nav_open_source/src/far_planner/src/far_planner/include/far_planner/far_planner.h: In member function ‘void FARMaster::ResetGraphCallBack(std_msgs::msg::Empty_<std::allocator<void> >::SharedPtr)’:
+/home/ubuntu/robot_projects/forest_nav_open_source/src/far_planner/src/far_planner/include/far_planner/far_planner.h:154:74: warning: unused parameter ‘msg’ [-Wunused-parameter]
+  154 |     inline void ResetGraphCallBack(const std_msgs::msg::Empty::SharedPtr msg) {
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/home/ubuntu/robot_projects/forest_nav_open_source/src/far_planner/src/far_planner/include/far_planner/far_planner.h: In member function ‘void FARMaster::ReadFileCommand(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)’:
+/home/ubuntu/robot_projects/forest_nav_open_source/src/far_planner/src/far_planner/include/far_planner/far_planner.h:193:72: warning: unused parameter ‘msg’ [-Wunused-parameter]
+  193 |     inline void ReadFileCommand(const std_msgs::msg::String::SharedPtr msg) {
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/home/ubuntu/robot_projects/forest_nav_open_source/src/far_planner/src/far_planner/include/far_planner/far_planner.h: In member function ‘void FARMaster::SaveFileCommand(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)’:
+/home/ubuntu/robot_projects/forest_nav_open_source/src/far_planner/src/far_planner/include/far_planner/far_planner.h:200:72: warning: unused parameter ‘msg’ [-Wunused-parameter]
+  200 |     inline void SaveFileCommand(const std_msgs::msg::String::SharedPtr msg) {
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+---
+Finished <<< far_planner [36.2s]
+Starting >>> forest_sensor_bridge
+Finished <<< forest_sensor_bridge [0.18s]
+--- stderr: graph_decoder
+CMake Warning (dev) at CMakeLists.txt:19 (find_package):
+  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  CMake variable PCL_ROOT is set to:
+
+    /usr
+
+  For compatibility, CMake is ignoring the variable.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+---
+Finished <<< graph_decoder [23.3s]
+Starting >>> forest_navigation_bringup
+Finished <<< forest_navigation_bringup [0.16s]
+
+Summary: 11 packages finished [1min 11s]
+  4 packages had stderr output: far_planner goalpoint_rviz_plugin graph_decoder terrain_analysis

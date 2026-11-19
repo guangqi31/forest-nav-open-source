@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>forest_navigation_bringup</name><version>0.1.0</version>
+  <description>原生CMU与FAR的定位点云接口和联合启动配置</description>
+  <maintainer email="maintainer@example.com">Forest navigation project</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
+  <exec_depend>loam_interface</exec_depend>
+  <exec_depend>terrain_analysis</exec_depend>
+  <exec_depend>terrain_analysis_ext</exec_depend>
+  <exec_depend>local_planner</exec_depend>
+  <exec_depend>far_planner</exec_depend>
+  <exec_depend>graph_decoder</exec_depend>
+  <exec_depend>goalpoint_rviz_plugin</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

@@ -1,0 +1,66 @@
+[30.033s] Invoking command in '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_frontier/forest_frontier_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/frontier_bridge -DBUILD_TESTING=OFF -DCMAKE_INSTALL_PREFIX=/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_frontier/forest_frontier_bridge
+[30.085s] -- The C compiler identification is GNU 11.4.0
+[30.126s] -- The CXX compiler identification is GNU 11.4.0
+[30.130s] -- Detecting C compiler ABI info
+[30.188s] -- Detecting C compiler ABI info - done
+[30.191s] -- Check for working C compiler: /usr/bin/cc - skipped
+[30.191s] -- Detecting C compile features
+[30.192s] -- Detecting C compile features - done
+[30.193s] -- Detecting CXX compiler ABI info
+[30.259s] -- Detecting CXX compiler ABI info - done
+[30.265s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[30.265s] -- Detecting CXX compile features
+[30.265s] -- Detecting CXX compile features - done
+[30.268s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[30.364s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[30.524s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[30.547s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[30.549s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[30.553s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[30.559s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[30.566s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[30.586s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[30.588s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[30.649s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[30.663s] -- Found FastRTPS: /opt/ros/humble/include  
+[30.684s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[30.687s] -- Looking for pthread.h
+[30.746s] -- Looking for pthread.h - found
+[30.747s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[30.813s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[30.814s] -- Found Threads: TRUE  
+[30.837s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[30.850s] -- Found std_srvs: 4.9.1 (/opt/ros/humble/share/std_srvs/cmake)
+[30.857s] -- Found nav2_costmap_2d: 1.1.20 (/opt/ros/humble/share/nav2_costmap_2d/cmake)
+[30.950s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[30.950s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[31.044s] -- Configuring done
+[31.061s] -- Generating done
+[31.064s] -- Build files have been written to: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_frontier/forest_frontier_bridge
+[31.070s] Invoked command in '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_frontier/forest_frontier_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/frontier_bridge -DBUILD_TESTING=OFF -DCMAKE_INSTALL_PREFIX=/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_frontier/forest_frontier_bridge
+[31.072s] Invoking command in '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_frontier/forest_frontier_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_frontier/forest_frontier_bridge -- -j24 -l24
+[31.119s] [ 33%] Building CXX object CMakeFiles/frontier_bridge.dir/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/third_party/m-explore-ros2/explore/src/frontier_search.cpp.o
+[31.120s] [ 66%] Building CXX object CMakeFiles/frontier_bridge.dir/main.cpp.o
+[36.099s] [100%] Linking CXX executable frontier_bridge
+[36.434s] [100%] Built target frontier_bridge
+[60.056s] Invoked command in '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_frontier/forest_frontier_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_frontier/forest_frontier_bridge -- -j24 -l24
+[60.062s] Invoking command in '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_frontier/forest_frontier_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_frontier/forest_frontier_bridge
+[60.068s] -- Install configuration: ""
+[60.068s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_frontier/forest_frontier_bridge/lib/forest_frontier_bridge/frontier_bridge
+[60.070s] -- Set runtime path of "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_frontier/forest_frontier_bridge/lib/forest_frontier_bridge/frontier_bridge" to ""
+[60.070s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_frontier/forest_frontier_bridge/share/ament_index/resource_index/package_run_dependencies/forest_frontier_bridge
+[60.070s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_frontier/forest_frontier_bridge/share/ament_index/resource_index/parent_prefix_path/forest_frontier_bridge
+[60.070s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_frontier/forest_frontier_bridge/share/forest_frontier_bridge/environment/ament_prefix_path.sh
+[60.070s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_frontier/forest_frontier_bridge/share/forest_frontier_bridge/environment/ament_prefix_path.dsv
+[60.070s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_frontier/forest_frontier_bridge/share/forest_frontier_bridge/environment/path.sh
+[60.070s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_frontier/forest_frontier_bridge/share/forest_frontier_bridge/environment/path.dsv
+[60.070s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_frontier/forest_frontier_bridge/share/forest_frontier_bridge/local_setup.bash
+[60.070s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_frontier/forest_frontier_bridge/share/forest_frontier_bridge/local_setup.sh
+[60.070s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_frontier/forest_frontier_bridge/share/forest_frontier_bridge/local_setup.zsh
+[60.070s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_frontier/forest_frontier_bridge/share/forest_frontier_bridge/local_setup.dsv
+[60.070s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_frontier/forest_frontier_bridge/share/forest_frontier_bridge/package.dsv
+[60.070s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_frontier/forest_frontier_bridge/share/ament_index/resource_index/packages/forest_frontier_bridge
+[60.070s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_frontier/forest_frontier_bridge/share/forest_frontier_bridge/cmake/forest_frontier_bridgeConfig.cmake
+[60.070s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_frontier/forest_frontier_bridge/share/forest_frontier_bridge/cmake/forest_frontier_bridgeConfig-version.cmake
+[60.070s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_frontier/forest_frontier_bridge/share/forest_frontier_bridge/package.xml
+[90.063s] Invoked command in '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_frontier/forest_frontier_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_frontier/forest_frontier_bridge

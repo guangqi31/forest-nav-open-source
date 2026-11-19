@@ -1,0 +1,69 @@
+{
+  "counts": {
+    "state": 43679,
+    "scan": 160,
+    "terrain": 160,
+    "terrain_ext": 160,
+    "path": 160,
+    "cmd": 800,
+    "waypoint": 27
+  },
+  "first_samples": {
+    "state": {
+      "type": "Odometry",
+      "frame": "map",
+      "child": "sensor",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "scan": {
+      "type": "PointCloud2",
+      "frame": "map",
+      "points": 6681
+    },
+    "terrain": {
+      "type": "PointCloud2",
+      "frame": "map",
+      "points": 1292
+    },
+    "terrain_ext": {
+      "type": "PointCloud2",
+      "frame": "map",
+      "points": 4992
+    },
+    "path": {
+      "type": "Path",
+      "frame": "vehicle"
+    },
+    "cmd": {
+      "type": "TwistStamped",
+      "frame": "vehicle"
+    },
+    "waypoint": {
+      "type": "PointStamped",
+      "frame": "map"
+    }
+  },
+  "max_abs_cmd": [
+    2.024998664855957,
+    0.0
+  ],
+  "max_path_poses": 101,
+  "goal_sent": true,
+  "map_vehicle_tf": {
+    "translation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}

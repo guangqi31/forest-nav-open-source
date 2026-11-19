@@ -1,0 +1,9 @@
+{
+  "frequency_hz": 200.0,
+  "offset_torso_m": [0.0, 0.0, 0.0],
+  "rotation_xyzw": [0.0, 0.0, 0.0, 1.0],
+  "history_sec": 3.0,
+  "orientation_available": false,
+  "angular_velocity_covariance": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+  "linear_acceleration_covariance": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+}

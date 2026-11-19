@@ -1,0 +1,45 @@
+[0.043s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', '--log-base', 'log_lio', 'build', '--base-paths', 'third_party/fast_lio', '--packages-select', 'fast_lio', '--build-base', 'build_lio', '--install-base', 'install_lio', '--executor', 'sequential', '--cmake-args', '-DBUILD_TESTING=OFF', '-DPython3_EXECUTABLE=/usr/bin/python3']
+[0.043s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base='log_lio', log_level=None, verb_name='build', build_base='/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_lio', install_base='/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='sequential', parallel_workers=24, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['third_party/fast_lio'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['fast_lio'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DBUILD_TESTING=OFF', '-DPython3_EXECUTABLE=/usr/bin/python3'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x799621933e80>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x799621933880>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x799621933880>>)
+[0.104s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.104s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.104s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.104s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.104s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.104s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/third_party/fast_lio'
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(third_party/fast_lio) by extensions ['ignore', 'ignore_ament_install']
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(third_party/fast_lio) by extension 'ignore'
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(third_party/fast_lio) by extension 'ignore_ament_install'
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(third_party/fast_lio) by extensions ['colcon_pkg']
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(third_party/fast_lio) by extension 'colcon_pkg'
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(third_party/fast_lio) by extensions ['colcon_meta']
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(third_party/fast_lio) by extension 'colcon_meta'
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(third_party/fast_lio) by extensions ['ros']
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(third_party/fast_lio) by extension 'ros'
+[0.110s] DEBUG:colcon.colcon_core.package_identification:Package 'third_party/fast_lio' with type 'ros.ament_cmake' and name 'fast_lio'
+[0.110s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.119s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.119s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.120s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 377 installed packages in /opt/ros/humble
+[0.125s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.142s] Level 5:colcon.colcon_core.verb:set package 'fast_lio' build argument 'cmake_args' from command line to '['-DBUILD_TESTING=OFF', '-DPython3_EXECUTABLE=/usr/bin/python3']'
+[0.142s] Level 5:colcon.colcon_core.verb:set package 'fast_lio' build argument 'cmake_target' from command line to 'None'
+[0.142s] Level 5:colcon.colcon_core.verb:set package 'fast_lio' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.142s] Level 5:colcon.colcon_core.verb:set package 'fast_lio' build argument 'cmake_clean_cache' from command line to 'False'
+[0.142s] Level 5:colcon.colcon_core.verb:set package 'fast_lio' build argument 'cmake_clean_first' from command line to 'False'
+[0.142s] Level 5:colcon.colcon_core.verb:set package 'fast_lio' build argument 'cmake_force_configure' from command line to 'False'
+[0.142s] Level 5:colcon.colcon_core.verb:set package 'fast_lio' build argument 'ament_cmake_args' from command line to 'None'
+[0.142s] Level 5:colcon.colcon_core.verb:set package 'fast_lio' build argument 'catkin_cmake_args' from command line to 'None'
+[0.142s] Level 5:colcon.colcon_core.verb:set package 'fast_lio' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.142s] DEBUG:colcon.colcon_core.verb:Building package 'fast_lio' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_lio/fast_lio', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DBUILD_TESTING=OFF', '-DPython3_EXECUTABLE=/usr/bin/python3'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio', 'merge_install': False, 'path': '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/third_party/fast_lio', 'symlink_install': False, 'test_result_base': None}
+[0.142s] INFO:colcon.colcon_core.executor:Executing jobs using 'sequential' executor
+[0.143s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'fast_lio'
+[0.143s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/third_party/fast_lio' with build type 'ament_cmake'
+[0.143s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/third_party/fast_lio'
+[0.144s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.144s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.144s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[154.538s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'fast_lio' was interrupted
+[154.539s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'fast_lio' again
+[154.540s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_lio/fast_lio': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/third_party/fast_lio -DBUILD_TESTING=OFF -DPython3_EXECUTABLE=/usr/bin/python3 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio
+[157.368s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_lio/fast_lio' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/third_party/fast_lio -DBUILD_TESTING=OFF -DPython3_EXECUTABLE=/usr/bin/python3 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio
+[157.370s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_lio/fast_lio': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_lio/fast_lio -- -j24 -l24

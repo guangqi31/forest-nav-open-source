@@ -1,0 +1,52 @@
+[
+  {
+    "path": "/home/ubuntu/robot_projects/forest_nav_open_source/references/autonomy_stack_go2/img/imu_calibration.gif",
+    "bytes": 15196641,
+    "reason": "非运行必需的媒体或压缩存档"
+  },
+  {
+    "path": "/home/ubuntu/robot_projects/forest_nav_open_source/references/autonomy_stack_go2/img/collision_avoidance.gif",
+    "bytes": 21391194,
+    "reason": "非运行必需的媒体或压缩存档"
+  },
+  {
+    "path": "/home/ubuntu/robot_projects/forest_nav_open_source/references/autonomy_stack_go2/img/stand_up.gif",
+    "bytes": 2909095,
+    "reason": "非运行必需的媒体或压缩存档"
+  },
+  {
+    "path": "/home/ubuntu/robot_projects/forest_nav_open_source/src/fast_lio/doc/real_experiment2.gif",
+    "bytes": 52347648,
+    "reason": "非运行必需的媒体或压缩存档"
+  },
+  {
+    "path": "/home/ubuntu/robot_projects/forest_nav_open_source/src/fast_lio/doc/ulhkwh_fastlio.gif",
+    "bytes": 35802922,
+    "reason": "非运行必需的媒体或压缩存档"
+  },
+  {
+    "path": "/home/ubuntu/robot_projects/forest_nav_open_source/src/far_planner/img/matterport.gif",
+    "bytes": 16931314,
+    "reason": "非运行必需的媒体或压缩存档"
+  },
+  {
+    "path": "/home/ubuntu/robot_projects/forest_nav_open_source/src/far_planner/img/indoor.gif",
+    "bytes": 9422603,
+    "reason": "非运行必需的媒体或压缩存档"
+  },
+  {
+    "path": "/home/ubuntu/robot_projects/forest_nav_open_source/src/far_planner/src/CMakeLists.txt",
+    "bytes": 50,
+    "reason": "链接到仓库外部或构建环境，不打包链接目标"
+  },
+  {
+    "path": "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/third_party/fast_lio/doc/real_experiment2.gif",
+    "bytes": 52347648,
+    "reason": "非运行必需的媒体或压缩存档"
+  },
+  {
+    "path": "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/third_party/fast_lio/doc/ulhkwh_fastlio.gif",
+    "bytes": 35802922,
+    "reason": "非运行必需的媒体或压缩存档"
+  }
+]

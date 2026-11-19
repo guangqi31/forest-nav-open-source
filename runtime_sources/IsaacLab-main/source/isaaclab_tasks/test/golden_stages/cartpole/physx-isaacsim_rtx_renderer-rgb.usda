@@ -1,0 +1,1212 @@
+#usda 1.0
+(
+    doc = """"""
+    endTimeCode = 1000000
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    startTimeCode = 0
+    timeCodesPerSecond = 60
+    upAxis = "Z"
+)
+
+over "Flattened_Prototype_1"
+{
+    def Cube "mesh_0" (
+        apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        float3[] extent = [(-0.015, -4, -0.015), (0.015, 4, 0.015)]
+        rel material:binding = </Flattened_Prototype_1/Looks/material> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        double size = 1
+        quatd xformOp:orient = (1, 0, 0, 0)
+        double3 xformOp:scale = (0.029999999329447746, 8, 0.06)
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def Scope "Looks"
+    {
+        def Material "material"
+        {
+            token outputs:mdl:displacement.connect = </Flattened_Prototype_1/Looks/material/Shader.outputs:out>
+            token outputs:mdl:surface.connect = </Flattened_Prototype_1/Looks/material/Shader.outputs:out>
+            token outputs:mdl:volume.connect = </Flattened_Prototype_1/Looks/material/Shader.outputs:out>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                uniform asset info:mdl:sourceAsset = @OmniPBR.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "OmniPBR"
+                color3f inputs:diffuse_color_constant = (1, 0.99999, 0.99999) (
+                    customData = {
+                        float3 default = (0.2, 0.2, 0.2)
+                    }
+                    displayGroup = "Albedo"
+                    displayName = "Albedo Color"
+                    doc = """"""
+                    hidden = false
+                    renderType = "color"
+                )
+                color3f inputs:diffuse_tint = (0.91999996, 0.59, 0.19999999) (
+                    customData = {
+                        float3 default = (1, 1, 1)
+                    }
+                    displayGroup = "Albedo"
+                    displayName = "Color Tint"
+                    doc = """"""
+                    hidden = false
+                    renderType = "color"
+                )
+                token outputs:out (
+                    renderType = "material"
+                )
+            }
+        }
+    }
+}
+
+over "Flattened_Prototype_2"
+{
+    def Cube "mesh_0" (
+        apiSchemas = ["PhysicsCollisionAPI"]
+    )
+    {
+        float3[] extent = [(-0.02, -0.03, -0.5), (0.02, 0.03, 0.5)]
+        uniform token purpose = "guide"
+        double size = 1
+        quatd xformOp:orient = (1, 0, 0, 0)
+        double3 xformOp:scale = (0.03999999910593033, 0.05999999865889549, 1)
+        double3 xformOp:translate = (0, 0, 0.4699999988079071)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+}
+
+over "Flattened_Prototype_3"
+{
+    def Cube "mesh_0" (
+        apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        float3[] extent = [(-0.02, -0.03, -0.5), (0.02, 0.03, 0.5)]
+        rel material:binding = </Flattened_Prototype_3/Looks/material> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        double size = 1
+        quatd xformOp:orient = (1, 0, 0, 0)
+        double3 xformOp:scale = (0.03999999910593033, 0.05999999865889549, 1)
+        double3 xformOp:translate = (0, 0, 0.4699999988079071)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def Scope "Looks"
+    {
+        def Material "material"
+        {
+            token outputs:mdl:displacement.connect = </Flattened_Prototype_3/Looks/material/Shader.outputs:out>
+            token outputs:mdl:surface.connect = </Flattened_Prototype_3/Looks/material/Shader.outputs:out>
+            token outputs:mdl:volume.connect = </Flattened_Prototype_3/Looks/material/Shader.outputs:out>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                uniform asset info:mdl:sourceAsset = @OmniPBR.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "OmniPBR"
+                color3f inputs:diffuse_color_constant = (0.5232067, 0.52320147, 0.52320147) (
+                    customData = {
+                        float3 default = (0.2, 0.2, 0.2)
+                    }
+                    displayGroup = "Albedo"
+                    displayName = "Albedo Color"
+                    doc = """"""
+                    hidden = false
+                    renderType = "color"
+                )
+                color3f inputs:diffuse_tint = (0.12, 0.14, 0.29999998) (
+                    customData = {
+                        float3 default = (1, 1, 1)
+                    }
+                    displayGroup = "Albedo"
+                    displayName = "Color Tint"
+                    doc = """"""
+                    hidden = false
+                    renderType = "color"
+                )
+                token outputs:out (
+                    renderType = "material"
+                )
+            }
+        }
+    }
+}
+
+over "Flattened_Prototype_4"
+{
+    def Cube "mesh_0" (
+        apiSchemas = ["PhysicsCollisionAPI"]
+    )
+    {
+        float3[] extent = [(-0.015, -4, -0.015), (0.015, 4, 0.015)]
+        uniform token purpose = "guide"
+        double size = 1
+        quatd xformOp:orient = (1, 0, 0, 0)
+        double3 xformOp:scale = (0.029999999329447746, 8, 0.029999999329447746)
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+}
+
+over "Flattened_Prototype_5"
+{
+    def Cube "mesh_0" (
+        apiSchemas = ["PhysicsCollisionAPI"]
+    )
+    {
+        float3[] extent = [(-0.1, -0.125, -0.1), (0.1, 0.125, 0.1)]
+        uniform token purpose = "guide"
+        double size = 1
+        quatd xformOp:orient = (1, 0, 0, 0)
+        double3 xformOp:scale = (0.20000000298023224, 0.25, 0.20000000298023224)
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+}
+
+over "Flattened_Prototype_6"
+{
+    def Cube "mesh_0" (
+        apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        float3[] extent = [(-0.1, -0.125, -0.1), (0.1, 0.125, 0.1)]
+        rel material:binding = </Flattened_Prototype_6/Looks/material> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        double size = 1
+        quatd xformOp:orient = (1, 0, 0, 0)
+        double3 xformOp:scale = (0.20000000298023224, 0.25, 0.20000000298023224)
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def Scope "Looks"
+    {
+        def Material "material"
+        {
+            token outputs:mdl:displacement.connect = </Flattened_Prototype_6/Looks/material/Shader.outputs:out>
+            token outputs:mdl:surface.connect = </Flattened_Prototype_6/Looks/material/Shader.outputs:out>
+            token outputs:mdl:volume.connect = </Flattened_Prototype_6/Looks/material/Shader.outputs:out>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                uniform asset info:mdl:sourceAsset = @OmniPBR.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "OmniPBR"
+                color3f inputs:diffuse_color_constant = (0.47679323, 0.47678846, 0.47678846) (
+                    customData = {
+                        float3 default = (0.2, 0.2, 0.2)
+                    }
+                    displayGroup = "Albedo"
+                    displayName = "Albedo Color"
+                    doc = """"""
+                    hidden = false
+                    renderType = "color"
+                )
+                color3f inputs:diffuse_tint = (0.35037118, 0.5060563, 0.6919831) (
+                    customData = {
+                        float3 default = (1, 1, 1)
+                    }
+                    displayGroup = "Albedo"
+                    displayName = "Color Tint"
+                    doc = """"""
+                    hidden = false
+                    renderType = "color"
+                )
+                token outputs:out (
+                    renderType = "material"
+                )
+            }
+        }
+    }
+}
+
+def "Render" (
+    hide_in_stage_window = true
+    no_delete = true
+)
+{
+    def "OmniverseKit"
+    {
+        def "HydraTextures" (
+            hide_in_stage_window = true
+            no_delete = true
+        )
+        {
+            def RenderProduct "omni_kit_widget_viewport_ViewportTexture_0" (
+                apiSchemas = ["OmniRtxSettingsCommonAdvancedAPI_1", "OmniRtxSettingsRtAdvancedAPI_1", "OmniRtxSettingsPtAdvancedAPI_1", "OmniRtxPostColorGradingAPI_1", "OmniRtxPostChromaticAberrationAPI_1", "OmniRtxPostBloomPhysicalAPI_1", "OmniRtxPostMatteObjectAPI_1", "OmniRtxPostCompositingAPI_1", "OmniRtxPostDofAPI_1", "OmniRtxPostMotionBlurAPI_1", "OmniRtxPostTvNoiseAPI_1", "OmniRtxPostTonemapIrayReinhardAPI_1", "OmniRtxPostDebugSettingsAPI_1", "OmniRtxDebugSettingsAPI_1"]
+                hide_in_stage_window = true
+                no_delete = true
+            )
+            {
+                rel camera = </OmniverseKit_Persp>
+                token omni:rtx:ambientOcclusion:denoiserMode = "none"
+                token omni:rtx:background:source:texture:textureMode = "repeatMirrored"
+                token omni:rtx:background:source:type = "domeLight"
+                bool omni:rtx:debug:view:pixelDebug:enableFixedTextPos = 1
+                token omni:rtx:directLighting:sampledLighting:denoisingTechnique = "None"
+                bool omni:rtx:dlss:frameGeneration = 0
+                float3 omni:rtx:domeLight:rotationAxis = (0, 0, 1)
+                bool omni:rtx:indirectDiffuse:denoiser:enabled = 0
+                bool omni:rtx:material:db:syncLoads = 1
+                token omni:rtx:post:dlss:execMode = "performance"
+                bool omni:rtx:post:registeredCompositing:invertColorCorrection = 1
+                bool omni:rtx:post:registeredCompositing:invertToneMap = 1
+                bool omni:rtx:pt:adaptiveSampling:filterError = 0
+                uint omni:rtx:pt:adaptiveSampling:fixedSppIterations = 2
+                int omni:rtx:pt:clampSpp = 64
+                uint omni:rtx:pt:limits:maxBounces = 3
+                uint omni:rtx:pt:limits:maxGlossyBounces = 3
+                uint omni:rtx:pt:maxSamplesPerLaunch = 1000000
+                uint omni:rtx:pt:mgpu:maxPixelsPerRegionExponent = 12
+                int omni:rtx:pt:samplesPerIteration = 64
+                uint omni:rtx:pt:samplesPerPixel = 64
+                bool omni:rtx:reflections:denoiser:enabled = 0
+                token omni:rtx:rendermode = "RealTimePathTracing"
+                color3f omni:rtx:rt:ambientLight:color = (0.1, 0.1, 0.1)
+                float omni:rtx:rt:ambientLight:intensity = 1
+                bool omni:rtx:rt:ambientocclusion:enabled = 0
+                bool omni:rtx:rt:cached:enabled = 0
+                bool omni:rtx:rt:demoire = 0
+                uint omni:rtx:rt:directLighting:samples = 1
+                bool omni:rtx:rt:ecoMode:enabled = 0
+                bool omni:rtx:rt:indirectdiffuse:enabled = 0
+                bool omni:rtx:rt:lightcache:spatialCache:dontResolveConflicts = 1
+                bool omni:rtx:rt:reflections:enabled = 0
+                bool omni:rtx:rt:refractions:enabled = 0
+                int omni:rtx:rt:sss:samples = 1
+                uint omni:rtx:rtpt:maxVolumeBounces = 15
+                float omni:rtx:rtpt:modulatingRoughnessThreshold = 0.08
+                bool omni:rtx:scene:hydra:materialSyncLoads = 1
+                uint omni:rtx:viewTile:limit = 1000000
+                rel orderedVars = </Render/Vars/LdrColor>
+                custom bool overrideClipRange = 0
+                uniform int2 resolution = (1280, 720)
+            }
+
+            def RenderProduct "Replicator" (
+                apiSchemas = ["OmniRtxSettingsCommonAdvancedAPI_1", "OmniRtxSettingsRtAdvancedAPI_1", "OmniRtxSettingsPtAdvancedAPI_1", "OmniRtxPostColorGradingAPI_1", "OmniRtxPostChromaticAberrationAPI_1", "OmniRtxPostBloomPhysicalAPI_1", "OmniRtxPostMatteObjectAPI_1", "OmniRtxPostCompositingAPI_1", "OmniRtxPostDofAPI_1", "OmniRtxPostMotionBlurAPI_1", "OmniRtxPostTvNoiseAPI_1", "OmniRtxPostTonemapIrayReinhardAPI_1", "OmniRtxPostDebugSettingsAPI_1", "OmniRtxDebugSettingsAPI_1"]
+                hide_in_stage_window = true
+                no_delete = true
+            )
+            {
+                rel camera = </World/envs/env_0/Camera>
+                token omni:rtx:ambientOcclusion:denoiserMode = "none"
+                token omni:rtx:background:source:texture:textureMode = "repeatMirrored"
+                token omni:rtx:background:source:type = "domeLight"
+                bool omni:rtx:debug:view:pixelDebug:enableFixedTextPos = 1
+                token omni:rtx:directLighting:sampledLighting:denoisingTechnique = "None"
+                bool omni:rtx:dlss:frameGeneration = 0
+                float3 omni:rtx:domeLight:rotationAxis = (0, 0, 1)
+                bool omni:rtx:indirectDiffuse:denoiser:enabled = 0
+                bool omni:rtx:material:db:syncLoads = 1
+                token omni:rtx:post:dlss:execMode = "performance"
+                bool omni:rtx:post:registeredCompositing:invertColorCorrection = 1
+                bool omni:rtx:post:registeredCompositing:invertToneMap = 1
+                bool omni:rtx:pt:adaptiveSampling:filterError = 0
+                uint omni:rtx:pt:adaptiveSampling:fixedSppIterations = 2
+                int omni:rtx:pt:clampSpp = 64
+                uint omni:rtx:pt:limits:maxBounces = 3
+                uint omni:rtx:pt:limits:maxGlossyBounces = 3
+                uint omni:rtx:pt:maxSamplesPerLaunch = 1000000
+                uint omni:rtx:pt:mgpu:maxPixelsPerRegionExponent = 12
+                int omni:rtx:pt:samplesPerIteration = 64
+                uint omni:rtx:pt:samplesPerPixel = 64
+                bool omni:rtx:reflections:denoiser:enabled = 0
+                token omni:rtx:rendermode = "RealTimePathTracing"
+                color3f omni:rtx:rt:ambientLight:color = (0.1, 0.1, 0.1)
+                float omni:rtx:rt:ambientLight:intensity = 1
+                bool omni:rtx:rt:ambientocclusion:enabled = 0
+                bool omni:rtx:rt:cached:enabled = 0
+                bool omni:rtx:rt:demoire = 0
+                uint omni:rtx:rt:directLighting:samples = 1
+                bool omni:rtx:rt:ecoMode:enabled = 0
+                bool omni:rtx:rt:indirectdiffuse:enabled = 0
+                bool omni:rtx:rt:lightcache:spatialCache:dontResolveConflicts = 1
+                bool omni:rtx:rt:reflections:enabled = 0
+                bool omni:rtx:rt:refractions:enabled = 0
+                int omni:rtx:rt:sss:samples = 1
+                uint omni:rtx:rtpt:maxVolumeBounces = 15
+                float omni:rtx:rtpt:modulatingRoughnessThreshold = 0.08
+                bool omni:rtx:scene:hydra:materialSyncLoads = 1
+                uint omni:rtx:viewTile:limit = 1000000
+                rel orderedVars = </Render/Vars/LdrColor>
+                custom bool overrideClipRange = 0
+                uniform int2 resolution = (200, 200)
+            }
+        }
+    }
+
+    def RenderSettings "OmniverseGlobalRenderSettings" (
+        apiSchemas = ["OmniRtxSettingsGlobalRtAdvancedAPI_1", "OmniRtxSettingsGlobalPtAdvancedAPI_1"]
+        no_delete = true
+    )
+    {
+        rel products = [
+            </Render/OmniverseKit/HydraTextures/omni_kit_widget_viewport_ViewportTexture_0>,
+            </Render/OmniverseKit/HydraTextures/Replicator>,
+        ]
+    }
+
+    def "Vars"
+    {
+        def RenderVar "LdrColor" (
+            hide_in_stage_window = true
+            no_delete = true
+        )
+        {
+            uniform string sourceName = "LdrColor"
+            uniform token sourceType = "raw"
+        }
+    }
+}
+
+over "OmniverseKit_Persp"
+{
+    float exposure:fStop = 5
+    float exposure:responsivity = 1.1026709
+    float exposure:time = 0.02
+}
+
+def PhysicsScene "physicsScene" (
+    apiSchemas = ["PhysxSceneAPI", "MaterialBindingAPI"]
+)
+{
+    rel material:binding:physics = </physicsScene/defaultMaterial> (
+        bindMaterialAs = "strongerThanDescendants"
+    )
+    vector3f physics:gravityDirection = (0, 0, -1)
+    float physics:gravityMagnitude = 9.81
+    float physxScene:bounceThreshold = 0.5
+    uniform token physxScene:broadphaseType = "GPU"
+    bool physxScene:enableCCD = 0
+    bool physxScene:enableEnhancedDeterminism = 0
+    bool physxScene:enableExternalForcesEveryIteration = 0
+    bool physxScene:enableGPUDynamics = 1
+    bool physxScene:enableSceneQuerySupport = 0
+    bool physxScene:enableStabilization = 0
+    custom int physxScene:envIdInBoundsBitCount = 4
+    float physxScene:frictionCorrelationDistance = 0.025
+    float physxScene:frictionOffsetThreshold = 0.04
+    uint physxScene:gpuCollisionStackSize = 67108864
+    uint physxScene:gpuFoundLostAggregatePairsCapacity = 33554432
+    uint physxScene:gpuFoundLostPairsCapacity = 2097152
+    uint physxScene:gpuHeapCapacity = 67108864
+    uint physxScene:gpuMaxNumPartitions = 8
+    uint physxScene:gpuMaxParticleContacts = 1048576
+    uint physxScene:gpuMaxRigidContactCount = 8388608
+    uint physxScene:gpuMaxRigidPatchCount = 163840
+    int physxScene:gpuMaxSoftBodyContacts = 1048576
+    uint64 physxScene:gpuTempBufferCapacity = 16777216
+    uint physxScene:gpuTotalAggregatePairsCapacity = 2097152
+    bool physxScene:invertCollisionGroupFilter = 1
+    uniform uint physxScene:maxPositionIterationCount = 255
+    uniform uint physxScene:maxVelocityIterationCount = 255
+    uniform uint physxScene:minPositionIterationCount = 1
+    uniform uint physxScene:minVelocityIterationCount = 0
+    bool physxScene:solveArticulationContactLast = 0
+    uniform token physxScene:solverType = "TGS"
+    uint physxScene:timeStepsPerSecond = 120
+
+    def Material "defaultMaterial" (
+        apiSchemas = ["PhysicsMaterialAPI"]
+    )
+    {
+        float physics:dynamicFriction = 0.5
+        float physics:restitution = 0
+        float physics:staticFriction = 0.5
+    }
+}
+
+def "World"
+{
+    def "envs"
+    {
+        def Xform "env_0"
+        {
+            double3 xformOp:translate = (10, -10, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Xform "Robot" (
+                apiSchemas = ["PhysicsArticulationRootAPI", "PhysxArticulationAPI"]
+            )
+            {
+                bool physxArticulation:enabledSelfCollisions = 0
+                float physxArticulation:sleepThreshold = 0.005
+                int physxArticulation:solverPositionIterationCount = 4
+                int physxArticulation:solverVelocityIterationCount = 0
+                float physxArticulation:stabilizationThreshold = 0.001
+                quatd xformOp:orient = (1, 0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 2)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                def Xform "slider" (
+                    apiSchemas = ["PhysxRigidBodyAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                    bool physics:rigidBodyEnabled = 1
+                    bool physxRigidBody:enableGyroscopicForces = 1
+                    float physxRigidBody:maxAngularVelocity = 1000
+                    float physxRigidBody:maxDepenetrationVelocity = 100
+                    float physxRigidBody:maxLinearVelocity = 1000
+                    quatd xformOp:orient = (1, 0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                    def "visuals" (
+                        instanceable = true
+                        add references = </Flattened_Prototype_1>
+                    )
+                    {
+                    }
+
+                    def "collisions" (
+                        instanceable = true
+                        add references = </Flattened_Prototype_4>
+                    )
+                    {
+                    }
+
+                    def PhysicsPrismaticJoint "slider_to_cart" (
+                        apiSchemas = ["PhysxJointAPI", "PhysicsJointStateAPI:linear", "PhysicsDriveAPI:linear"]
+                    )
+                    {
+                        float drive:linear:physics:damping = 0
+                        float drive:linear:physics:maxForce = 1000
+                        float drive:linear:physics:stiffness = 0
+                        uniform token drive:linear:physics:type = "force"
+                        uniform token physics:axis = "X"
+                        rel physics:body0 = </World/envs/env_0/Robot/slider>
+                        rel physics:body1 = </World/envs/env_0/Robot/cart>
+                        float physics:breakForce = 3.4028235e38
+                        float physics:breakTorque = 3.4028235e38
+                        point3f physics:localPos0 = (0, 0, 0)
+                        point3f physics:localPos1 = (0, 0, 0)
+                        quatf physics:localRot0 = (0.70710677, 0, 0, 0.70710677)
+                        quatf physics:localRot1 = (0.70710677, 0, 0, 0.70710677)
+                        float physics:lowerLimit = -4
+                        float physics:upperLimit = 4
+                        float physxJoint:jointFriction = 0
+                        float physxJoint:maxJointVelocity = 100
+                    }
+                }
+
+                def PhysicsFixedJoint "root_joint"
+                {
+                    rel physics:body1 = </World/envs/env_0/Robot/slider>
+                }
+
+                def Xform "cart" (
+                    apiSchemas = ["PhysxRigidBodyAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                    float physics:mass = 1
+                    bool physics:rigidBodyEnabled = 1
+                    bool physxRigidBody:enableGyroscopicForces = 1
+                    float physxRigidBody:maxAngularVelocity = 1000
+                    float physxRigidBody:maxDepenetrationVelocity = 100
+                    float physxRigidBody:maxLinearVelocity = 1000
+                    quatd xformOp:orient = (1, 0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                    def "visuals" (
+                        instanceable = true
+                        add references = </Flattened_Prototype_6>
+                    )
+                    {
+                    }
+
+                    def "collisions" (
+                        instanceable = true
+                        add references = </Flattened_Prototype_5>
+                    )
+                    {
+                    }
+
+                    def PhysicsRevoluteJoint "cart_to_pole" (
+                        apiSchemas = ["PhysxJointAPI", "PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular"]
+                    )
+                    {
+                        float drive:angular:physics:damping = 0
+                        float drive:angular:physics:maxForce = 1000
+                        float drive:angular:physics:stiffness = 0
+                        uniform token drive:angular:physics:type = "force"
+                        uniform token physics:axis = "X"
+                        rel physics:body0 = </World/envs/env_0/Robot/cart>
+                        rel physics:body1 = </World/envs/env_0/Robot/pole>
+                        float physics:breakForce = 3.4028235e38
+                        float physics:breakTorque = 3.4028235e38
+                        point3f physics:localPos0 = (0.12, 0, 0)
+                        point3f physics:localPos1 = (0, 0, 0)
+                        quatf physics:localRot0 = (1, 0, 0, 0)
+                        quatf physics:localRot1 = (1, 0, 0, 0)
+                        float physxJoint:jointFriction = 0
+                        float physxJoint:maxJointVelocity = 458.36624
+                    }
+                }
+
+                def Xform "pole" (
+                    apiSchemas = ["PhysxRigidBodyAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                    point3f physics:centerOfMass = (0, 0, 0.47)
+                    float physics:mass = 1
+                    bool physics:rigidBodyEnabled = 1
+                    bool physxRigidBody:enableGyroscopicForces = 1
+                    float physxRigidBody:maxAngularVelocity = 1000
+                    float physxRigidBody:maxDepenetrationVelocity = 100
+                    float physxRigidBody:maxLinearVelocity = 1000
+                    quatd xformOp:orient = (1, 0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0.11999999731779099, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                    def "visuals" (
+                        instanceable = true
+                        add references = </Flattened_Prototype_3>
+                    )
+                    {
+                    }
+
+                    def "collisions" (
+                        instanceable = true
+                        add references = </Flattened_Prototype_2>
+                    )
+                    {
+                    }
+                }
+            }
+
+            def Camera "Camera" (
+                apiSchemas = ["OmniRtxCameraAutoExposureAPI_1", "OmniRtxCameraExposureAPI_1"]
+            )
+            {
+                custom token cameraProjectionType = "pinhole"
+                float2 clippingRange = (0.1, 20)
+                float exposure:fStop = 5
+                float exposure:responsivity = 1.1026709
+                float exposure:time = 0.02
+                float focalLength = 24
+                float focusDistance = 400
+                float fStop = 0
+                float horizontalAperture = 20.955
+                float horizontalApertureOffset = 0
+                bool omni:kit:cameraLock = 1
+                float verticalAperture = 20.955
+                float verticalApertureOffset = 0
+                quatd xformOp:orient = (-0.4999999701976773, -0.5000000099341071, 0.5000000099341072, 0.5000000099341073)
+                double3 xformOp:scale = (0.9999999999999999, 1, 1)
+                double3 xformOp:translate = (-5, 0, 2)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+        }
+
+        def Xform "env_1"
+        {
+            double3 xformOp:translate = (10, 10, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Xform "Robot" (
+                apiSchemas = ["PhysicsArticulationRootAPI", "PhysxArticulationAPI"]
+            )
+            {
+                bool physxArticulation:enabledSelfCollisions = 0
+                float physxArticulation:sleepThreshold = 0.005
+                int physxArticulation:solverPositionIterationCount = 4
+                int physxArticulation:solverVelocityIterationCount = 0
+                float physxArticulation:stabilizationThreshold = 0.001
+                quatd xformOp:orient = (1, 0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 2)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                def Xform "slider" (
+                    apiSchemas = ["PhysxRigidBodyAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                    bool physics:rigidBodyEnabled = 1
+                    bool physxRigidBody:enableGyroscopicForces = 1
+                    float physxRigidBody:maxAngularVelocity = 1000
+                    float physxRigidBody:maxDepenetrationVelocity = 100
+                    float physxRigidBody:maxLinearVelocity = 1000
+                    quatd xformOp:orient = (1, 0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                    def "visuals" (
+                        instanceable = true
+                        add references = </Flattened_Prototype_1>
+                    )
+                    {
+                    }
+
+                    def "collisions" (
+                        instanceable = true
+                        add references = </Flattened_Prototype_4>
+                    )
+                    {
+                    }
+
+                    def PhysicsPrismaticJoint "slider_to_cart" (
+                        apiSchemas = ["PhysxJointAPI", "PhysicsJointStateAPI:linear", "PhysicsDriveAPI:linear"]
+                    )
+                    {
+                        float drive:linear:physics:damping = 0
+                        float drive:linear:physics:maxForce = 1000
+                        float drive:linear:physics:stiffness = 0
+                        uniform token drive:linear:physics:type = "force"
+                        uniform token physics:axis = "X"
+                        rel physics:body0 = </World/envs/env_1/Robot/slider>
+                        rel physics:body1 = </World/envs/env_1/Robot/cart>
+                        float physics:breakForce = 3.4028235e38
+                        float physics:breakTorque = 3.4028235e38
+                        point3f physics:localPos0 = (0, 0, 0)
+                        point3f physics:localPos1 = (0, 0, 0)
+                        quatf physics:localRot0 = (0.70710677, 0, 0, 0.70710677)
+                        quatf physics:localRot1 = (0.70710677, 0, 0, 0.70710677)
+                        float physics:lowerLimit = -4
+                        float physics:upperLimit = 4
+                        float physxJoint:jointFriction = 0
+                        float physxJoint:maxJointVelocity = 100
+                    }
+                }
+
+                def PhysicsFixedJoint "root_joint"
+                {
+                    rel physics:body1 = </World/envs/env_1/Robot/slider>
+                }
+
+                def Xform "cart" (
+                    apiSchemas = ["PhysxRigidBodyAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                    float physics:mass = 1
+                    bool physics:rigidBodyEnabled = 1
+                    bool physxRigidBody:enableGyroscopicForces = 1
+                    float physxRigidBody:maxAngularVelocity = 1000
+                    float physxRigidBody:maxDepenetrationVelocity = 100
+                    float physxRigidBody:maxLinearVelocity = 1000
+                    quatd xformOp:orient = (1, 0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                    def "visuals" (
+                        instanceable = true
+                        add references = </Flattened_Prototype_6>
+                    )
+                    {
+                    }
+
+                    def "collisions" (
+                        instanceable = true
+                        add references = </Flattened_Prototype_5>
+                    )
+                    {
+                    }
+
+                    def PhysicsRevoluteJoint "cart_to_pole" (
+                        apiSchemas = ["PhysxJointAPI", "PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular"]
+                    )
+                    {
+                        float drive:angular:physics:damping = 0
+                        float drive:angular:physics:maxForce = 1000
+                        float drive:angular:physics:stiffness = 0
+                        uniform token drive:angular:physics:type = "force"
+                        uniform token physics:axis = "X"
+                        rel physics:body0 = </World/envs/env_1/Robot/cart>
+                        rel physics:body1 = </World/envs/env_1/Robot/pole>
+                        float physics:breakForce = 3.4028235e38
+                        float physics:breakTorque = 3.4028235e38
+                        point3f physics:localPos0 = (0.12, 0, 0)
+                        point3f physics:localPos1 = (0, 0, 0)
+                        quatf physics:localRot0 = (1, 0, 0, 0)
+                        quatf physics:localRot1 = (1, 0, 0, 0)
+                        float physxJoint:jointFriction = 0
+                        float physxJoint:maxJointVelocity = 458.36624
+                    }
+                }
+
+                def Xform "pole" (
+                    apiSchemas = ["PhysxRigidBodyAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                    point3f physics:centerOfMass = (0, 0, 0.47)
+                    float physics:mass = 1
+                    bool physics:rigidBodyEnabled = 1
+                    bool physxRigidBody:enableGyroscopicForces = 1
+                    float physxRigidBody:maxAngularVelocity = 1000
+                    float physxRigidBody:maxDepenetrationVelocity = 100
+                    float physxRigidBody:maxLinearVelocity = 1000
+                    quatd xformOp:orient = (1, 0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0.11999999731779099, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                    def "visuals" (
+                        instanceable = true
+                        add references = </Flattened_Prototype_3>
+                    )
+                    {
+                    }
+
+                    def "collisions" (
+                        instanceable = true
+                        add references = </Flattened_Prototype_2>
+                    )
+                    {
+                    }
+                }
+            }
+
+            def Camera "Camera" (
+                apiSchemas = ["OmniRtxCameraAutoExposureAPI_1", "OmniRtxCameraExposureAPI_1"]
+            )
+            {
+                custom token cameraProjectionType = "pinhole"
+                float2 clippingRange = (0.1, 20)
+                float focalLength = 24
+                float focusDistance = 400
+                float fStop = 0
+                float horizontalAperture = 20.955
+                float horizontalApertureOffset = 0
+                bool omni:kit:cameraLock = 1
+                float verticalAperture = 20.955
+                float verticalApertureOffset = 0
+                quatd xformOp:orient = (-0.4999999701976773, -0.5000000099341071, 0.5000000099341072, 0.5000000099341073)
+                double3 xformOp:scale = (0.9999999999999999, 1, 1)
+                double3 xformOp:translate = (-5, 0, 2)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+        }
+
+        def Xform "env_2"
+        {
+            double3 xformOp:translate = (-10, -10, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Xform "Robot" (
+                apiSchemas = ["PhysicsArticulationRootAPI", "PhysxArticulationAPI"]
+            )
+            {
+                bool physxArticulation:enabledSelfCollisions = 0
+                float physxArticulation:sleepThreshold = 0.005
+                int physxArticulation:solverPositionIterationCount = 4
+                int physxArticulation:solverVelocityIterationCount = 0
+                float physxArticulation:stabilizationThreshold = 0.001
+                quatd xformOp:orient = (1, 0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 2)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                def Xform "slider" (
+                    apiSchemas = ["PhysxRigidBodyAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                    bool physics:rigidBodyEnabled = 1
+                    bool physxRigidBody:enableGyroscopicForces = 1
+                    float physxRigidBody:maxAngularVelocity = 1000
+                    float physxRigidBody:maxDepenetrationVelocity = 100
+                    float physxRigidBody:maxLinearVelocity = 1000
+                    quatd xformOp:orient = (1, 0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                    def "visuals" (
+                        instanceable = true
+                        add references = </Flattened_Prototype_1>
+                    )
+                    {
+                    }
+
+                    def "collisions" (
+                        instanceable = true
+                        add references = </Flattened_Prototype_4>
+                    )
+                    {
+                    }
+
+                    def PhysicsPrismaticJoint "slider_to_cart" (
+                        apiSchemas = ["PhysxJointAPI", "PhysicsJointStateAPI:linear", "PhysicsDriveAPI:linear"]
+                    )
+                    {
+                        float drive:linear:physics:damping = 0
+                        float drive:linear:physics:maxForce = 1000
+                        float drive:linear:physics:stiffness = 0
+                        uniform token drive:linear:physics:type = "force"
+                        uniform token physics:axis = "X"
+                        rel physics:body0 = </World/envs/env_2/Robot/slider>
+                        rel physics:body1 = </World/envs/env_2/Robot/cart>
+                        float physics:breakForce = 3.4028235e38
+                        float physics:breakTorque = 3.4028235e38
+                        point3f physics:localPos0 = (0, 0, 0)
+                        point3f physics:localPos1 = (0, 0, 0)
+                        quatf physics:localRot0 = (0.70710677, 0, 0, 0.70710677)
+                        quatf physics:localRot1 = (0.70710677, 0, 0, 0.70710677)
+                        float physics:lowerLimit = -4
+                        float physics:upperLimit = 4
+                        float physxJoint:jointFriction = 0
+                        float physxJoint:maxJointVelocity = 100
+                    }
+                }
+
+                def PhysicsFixedJoint "root_joint"
+                {
+                    rel physics:body1 = </World/envs/env_2/Robot/slider>
+                }
+
+                def Xform "cart" (
+                    apiSchemas = ["PhysxRigidBodyAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                    float physics:mass = 1
+                    bool physics:rigidBodyEnabled = 1
+                    bool physxRigidBody:enableGyroscopicForces = 1
+                    float physxRigidBody:maxAngularVelocity = 1000
+                    float physxRigidBody:maxDepenetrationVelocity = 100
+                    float physxRigidBody:maxLinearVelocity = 1000
+                    quatd xformOp:orient = (1, 0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                    def "visuals" (
+                        instanceable = true
+                        add references = </Flattened_Prototype_6>
+                    )
+                    {
+                    }
+
+                    def "collisions" (
+                        instanceable = true
+                        add references = </Flattened_Prototype_5>
+                    )
+                    {
+                    }
+
+                    def PhysicsRevoluteJoint "cart_to_pole" (
+                        apiSchemas = ["PhysxJointAPI", "PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular"]
+                    )
+                    {
+                        float drive:angular:physics:damping = 0
+                        float drive:angular:physics:maxForce = 1000
+                        float drive:angular:physics:stiffness = 0
+                        uniform token drive:angular:physics:type = "force"
+                        uniform token physics:axis = "X"
+                        rel physics:body0 = </World/envs/env_2/Robot/cart>
+                        rel physics:body1 = </World/envs/env_2/Robot/pole>
+                        float physics:breakForce = 3.4028235e38
+                        float physics:breakTorque = 3.4028235e38
+                        point3f physics:localPos0 = (0.12, 0, 0)
+                        point3f physics:localPos1 = (0, 0, 0)
+                        quatf physics:localRot0 = (1, 0, 0, 0)
+                        quatf physics:localRot1 = (1, 0, 0, 0)
+                        float physxJoint:jointFriction = 0
+                        float physxJoint:maxJointVelocity = 458.36624
+                    }
+                }
+
+                def Xform "pole" (
+                    apiSchemas = ["PhysxRigidBodyAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                    point3f physics:centerOfMass = (0, 0, 0.47)
+                    float physics:mass = 1
+                    bool physics:rigidBodyEnabled = 1
+                    bool physxRigidBody:enableGyroscopicForces = 1
+                    float physxRigidBody:maxAngularVelocity = 1000
+                    float physxRigidBody:maxDepenetrationVelocity = 100
+                    float physxRigidBody:maxLinearVelocity = 1000
+                    quatd xformOp:orient = (1, 0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0.11999999731779099, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                    def "visuals" (
+                        instanceable = true
+                        add references = </Flattened_Prototype_3>
+                    )
+                    {
+                    }
+
+                    def "collisions" (
+                        instanceable = true
+                        add references = </Flattened_Prototype_2>
+                    )
+                    {
+                    }
+                }
+            }
+
+            def Camera "Camera" (
+                apiSchemas = ["OmniRtxCameraAutoExposureAPI_1", "OmniRtxCameraExposureAPI_1"]
+            )
+            {
+                custom token cameraProjectionType = "pinhole"
+                float2 clippingRange = (0.1, 20)
+                float focalLength = 24
+                float focusDistance = 400
+                float fStop = 0
+                float horizontalAperture = 20.955
+                float horizontalApertureOffset = 0
+                bool omni:kit:cameraLock = 1
+                float verticalAperture = 20.955
+                float verticalApertureOffset = 0
+                quatd xformOp:orient = (-0.4999999701976773, -0.5000000099341071, 0.5000000099341072, 0.5000000099341073)
+                double3 xformOp:scale = (0.9999999999999999, 1, 1)
+                double3 xformOp:translate = (-5, 0, 2)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+        }
+
+        def Xform "env_3"
+        {
+            double3 xformOp:translate = (-10, 10, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Xform "Robot" (
+                apiSchemas = ["PhysicsArticulationRootAPI", "PhysxArticulationAPI"]
+            )
+            {
+                bool physxArticulation:enabledSelfCollisions = 0
+                float physxArticulation:sleepThreshold = 0.005
+                int physxArticulation:solverPositionIterationCount = 4
+                int physxArticulation:solverVelocityIterationCount = 0
+                float physxArticulation:stabilizationThreshold = 0.001
+                quatd xformOp:orient = (1, 0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 2)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                def Xform "slider" (
+                    apiSchemas = ["PhysxRigidBodyAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                    bool physics:rigidBodyEnabled = 1
+                    bool physxRigidBody:enableGyroscopicForces = 1
+                    float physxRigidBody:maxAngularVelocity = 1000
+                    float physxRigidBody:maxDepenetrationVelocity = 100
+                    float physxRigidBody:maxLinearVelocity = 1000
+                    quatd xformOp:orient = (1, 0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                    def "visuals" (
+                        instanceable = true
+                        add references = </Flattened_Prototype_1>
+                    )
+                    {
+                    }
+
+                    def "collisions" (
+                        instanceable = true
+                        add references = </Flattened_Prototype_4>
+                    )
+                    {
+                    }
+
+                    def PhysicsPrismaticJoint "slider_to_cart" (
+                        apiSchemas = ["PhysxJointAPI", "PhysicsJointStateAPI:linear", "PhysicsDriveAPI:linear"]
+                    )
+                    {
+                        float drive:linear:physics:damping = 0
+                        float drive:linear:physics:maxForce = 1000
+                        float drive:linear:physics:stiffness = 0
+                        uniform token drive:linear:physics:type = "force"
+                        uniform token physics:axis = "X"
+                        rel physics:body0 = </World/envs/env_3/Robot/slider>
+                        rel physics:body1 = </World/envs/env_3/Robot/cart>
+                        float physics:breakForce = 3.4028235e38
+                        float physics:breakTorque = 3.4028235e38
+                        point3f physics:localPos0 = (0, 0, 0)
+                        point3f physics:localPos1 = (0, 0, 0)
+                        quatf physics:localRot0 = (0.70710677, 0, 0, 0.70710677)
+                        quatf physics:localRot1 = (0.70710677, 0, 0, 0.70710677)
+                        float physics:lowerLimit = -4
+                        float physics:upperLimit = 4
+                        float physxJoint:jointFriction = 0
+                        float physxJoint:maxJointVelocity = 100
+                    }
+                }
+
+                def PhysicsFixedJoint "root_joint"
+                {
+                    rel physics:body1 = </World/envs/env_3/Robot/slider>
+                }
+
+                def Xform "cart" (
+                    apiSchemas = ["PhysxRigidBodyAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                    float physics:mass = 1
+                    bool physics:rigidBodyEnabled = 1
+                    bool physxRigidBody:enableGyroscopicForces = 1
+                    float physxRigidBody:maxAngularVelocity = 1000
+                    float physxRigidBody:maxDepenetrationVelocity = 100
+                    float physxRigidBody:maxLinearVelocity = 1000
+                    quatd xformOp:orient = (1, 0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                    def "visuals" (
+                        instanceable = true
+                        add references = </Flattened_Prototype_6>
+                    )
+                    {
+                    }
+
+                    def "collisions" (
+                        instanceable = true
+                        add references = </Flattened_Prototype_5>
+                    )
+                    {
+                    }
+
+                    def PhysicsRevoluteJoint "cart_to_pole" (
+                        apiSchemas = ["PhysxJointAPI", "PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular"]
+                    )
+                    {
+                        float drive:angular:physics:damping = 0
+                        float drive:angular:physics:maxForce = 1000
+                        float drive:angular:physics:stiffness = 0
+                        uniform token drive:angular:physics:type = "force"
+                        uniform token physics:axis = "X"
+                        rel physics:body0 = </World/envs/env_3/Robot/cart>
+                        rel physics:body1 = </World/envs/env_3/Robot/pole>
+                        float physics:breakForce = 3.4028235e38
+                        float physics:breakTorque = 3.4028235e38
+                        point3f physics:localPos0 = (0.12, 0, 0)
+                        point3f physics:localPos1 = (0, 0, 0)
+                        quatf physics:localRot0 = (1, 0, 0, 0)
+                        quatf physics:localRot1 = (1, 0, 0, 0)
+                        float physxJoint:jointFriction = 0
+                        float physxJoint:maxJointVelocity = 458.36624
+                    }
+                }
+
+                def Xform "pole" (
+                    apiSchemas = ["PhysxRigidBodyAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                    point3f physics:centerOfMass = (0, 0, 0.47)
+                    float physics:mass = 1
+                    bool physics:rigidBodyEnabled = 1
+                    bool physxRigidBody:enableGyroscopicForces = 1
+                    float physxRigidBody:maxAngularVelocity = 1000
+                    float physxRigidBody:maxDepenetrationVelocity = 100
+                    float physxRigidBody:maxLinearVelocity = 1000
+                    quatd xformOp:orient = (1, 0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0.11999999731779099, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                    def "visuals" (
+                        instanceable = true
+                        add references = </Flattened_Prototype_3>
+                    )
+                    {
+                    }
+
+                    def "collisions" (
+                        instanceable = true
+                        add references = </Flattened_Prototype_2>
+                    )
+                    {
+                    }
+                }
+            }
+
+            def Camera "Camera" (
+                apiSchemas = ["OmniRtxCameraAutoExposureAPI_1", "OmniRtxCameraExposureAPI_1"]
+            )
+            {
+                custom token cameraProjectionType = "pinhole"
+                float2 clippingRange = (0.1, 20)
+                float focalLength = 24
+                float focusDistance = 400
+                float fStop = 0
+                float horizontalAperture = 20.955
+                float horizontalApertureOffset = 0
+                bool omni:kit:cameraLock = 1
+                float verticalAperture = 20.955
+                float verticalApertureOffset = 0
+                quatd xformOp:orient = (-0.4999999701976773, -0.5000000099341071, 0.5000000099341072, 0.5000000099341073)
+                double3 xformOp:scale = (0.9999999999999999, 1, 1)
+                double3 xformOp:translate = (-5, 0, 2)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+        }
+    }
+
+    def Scope "collisions"
+    {
+        def PhysicsCollisionGroup "group0" (
+            apiSchemas = ["CollectionAPI:colliders"]
+        )
+        {
+            uniform token collection:colliders:expansionRule = "expandPrims"
+            rel collection:colliders:includes = </World/envs/env_0>
+            rel physics:filteredGroups = </World/collisions/group0>
+        }
+
+        def PhysicsCollisionGroup "group1" (
+            apiSchemas = ["CollectionAPI:colliders"]
+        )
+        {
+            uniform token collection:colliders:expansionRule = "expandPrims"
+            rel collection:colliders:includes = </World/envs/env_1>
+            rel physics:filteredGroups = </World/collisions/group1>
+        }
+
+        def PhysicsCollisionGroup "group2" (
+            apiSchemas = ["CollectionAPI:colliders"]
+        )
+        {
+            uniform token collection:colliders:expansionRule = "expandPrims"
+            rel collection:colliders:includes = </World/envs/env_2>
+            rel physics:filteredGroups = </World/collisions/group2>
+        }
+
+        def PhysicsCollisionGroup "group3" (
+            apiSchemas = ["CollectionAPI:colliders"]
+        )
+        {
+            uniform token collection:colliders:expansionRule = "expandPrims"
+            rel collection:colliders:includes = </World/envs/env_3>
+            rel physics:filteredGroups = </World/collisions/group3>
+        }
+    }
+
+    def DistantLight "Light"
+    {
+        float inputs:angle = 0.53
+        color3f inputs:color = (1, 1, 1)
+        float inputs:colorTemperature = 6500
+        bool inputs:enableColorTemperature = 0
+        float inputs:exposure = 0
+        float inputs:intensity = 2000
+        bool inputs:normalize = 0
+        quatd xformOp:orient = (0.8535533547401428, -0.14644663035869598, -0.3535534143447876, -0.3535534143447876)
+        double3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+}

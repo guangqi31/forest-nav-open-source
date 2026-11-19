@@ -1,0 +1,27 @@
+{
+  "goal": [
+    -27.0,
+    0.0,
+    0.0
+  ],
+  "size_m": 64.0,
+  "objects": 140,
+  "cost": 0,
+  "patch_max_slope_deg": 0.0,
+  "patch_height_range_m": 0.0,
+  "note": "离线几何仅核查终点平台，禁止送入在线导航；不保证中途可达",
+  "criteria": {
+    "require_initial_outside": true,
+    "max_legs": 12,
+    "max_failures": 6,
+    "mission_timeout_wall_sec": 240,
+    "settle_observation_sim_sec": 8,
+    "position_error_max_m": 0.4,
+    "lio_rmse_max_m": 0.5,
+    "lio_end_error_max_m": 0.75,
+    "parking_drift_max_m": 0.3,
+    "parking_last3s_span_max_m": 0.12,
+    "parking_mean_speed_max_mps": 0.08,
+    "parking_mean_yawrate_max_radps": 0.15
+  }
+}

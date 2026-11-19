@@ -1,0 +1,234 @@
+[0.005s] Invoking command in '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_lio/fast_lio': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_lio/fast_lio -- -j24 -l24
+[0.036s] Consolidate compiler generated dependencies of target fast_lio__rosidl_generator_c
+[0.044s] [  8%] Built target fast_lio__rosidl_generator_c
+[0.045s] [ 11%] Built target fast_lio__rs
+[0.045s] [ 13%] Built target fast_lio__cpp
+[0.049s] Consolidate compiler generated dependencies of target fast_lio__rosidl_typesupport_introspection_c
+[0.049s] Consolidate compiler generated dependencies of target fast_lio__rosidl_typesupport_c
+[0.050s] [ 13%] Built target ament_cmake_python_copy_fast_lio
+[0.052s] Consolidate compiler generated dependencies of target fast_lio__rosidl_typesupport_cpp
+[0.053s] Consolidate compiler generated dependencies of target fast_lio__rosidl_typesupport_introspection_cpp
+[0.053s] Consolidate compiler generated dependencies of target fast_lio__rosidl_typesupport_fastrtps_cpp
+[0.054s] [ 16%] Building CXX object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fast_lio/msg/detail/pose6_d__type_support_c.cpp.o
+[0.056s] [ 25%] Built target fast_lio__rosidl_typesupport_introspection_c
+[0.057s] [ 33%] Built target fast_lio__rosidl_typesupport_c
+[0.059s] [ 41%] Built target fast_lio__rosidl_typesupport_introspection_cpp
+[0.059s] [ 50%] Built target fast_lio__rosidl_typesupport_cpp
+[0.061s] [ 61%] Built target fast_lio__rosidl_typesupport_fastrtps_cpp
+[0.072s] [ 63%] Building CXX object CMakeFiles/fastlio_mapping.dir/src/laserMapping.cpp.o
+[0.072s] [ 66%] Building CXX object CMakeFiles/fastlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o
+[0.072s] [ 69%] Building CXX object CMakeFiles/fastlio_mapping.dir/src/preprocess.cpp.o
+[0.165s] running egg_info
+[0.165s] writing fast_lio.egg-info/PKG-INFO
+[0.165s] writing dependency_links to fast_lio.egg-info/dependency_links.txt
+[0.165s] writing top-level names to fast_lio.egg-info/top_level.txt
+[0.166s] reading manifest file 'fast_lio.egg-info/SOURCES.txt'
+[0.166s] writing manifest file 'fast_lio.egg-info/SOURCES.txt'
+[0.184s] [ 75%] Built target ament_cmake_python_build_fast_lio_egg
+[0.206s] [ 75%] Linking CXX shared library libfast_lio__rosidl_typesupport_fastrtps_c.so
+[0.259s] [ 75%] Built target fast_lio__rosidl_typesupport_fastrtps_c
+[0.273s] [ 75%] Built target fast_lio
+[0.288s] [ 75%] Generating Python code for ROS interfaces
+[0.473s] [ 80%] Built target fast_lio__py
+[0.482s] Consolidate compiler generated dependencies of target fast_lio__rosidl_generator_py
+[0.488s] [ 80%] Building C object CMakeFiles/fast_lio__rosidl_generator_py.dir/rosidl_generator_py/fast_lio/msg/_pose6_d_s.c.o
+[0.570s] [ 97%] Linking C shared library rosidl_generator_py/fast_lio/libfast_lio__rosidl_generator_py.so
+[0.600s] [ 97%] Built target fast_lio__rosidl_generator_py
+[0.610s] Consolidate compiler generated dependencies of target fast_lio__rosidl_typesupport_introspection_c__pyext
+[0.610s] Consolidate compiler generated dependencies of target fast_lio__rosidl_typesupport_fastrtps_c__pyext
+[0.610s] Consolidate compiler generated dependencies of target fast_lio__rosidl_typesupport_c__pyext
+[0.614s] [ 97%] Linking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.616s] [ 97%] Linking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.620s] [ 97%] Linking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.636s] [ 97%] Built target fast_lio__rosidl_typesupport_introspection_c__pyext
+[0.643s] [ 97%] Built target fast_lio__rosidl_typesupport_c__pyext
+[0.644s] [ 97%] Built target fast_lio__rosidl_typesupport_fastrtps_c__pyext
+[2.926s] In file included from /usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22,
+[2.926s]                  from /usr/include/boost/smart_ptr/detail/yield_k.hpp:23,
+[2.926s]                  from /usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14,
+[2.926s]                  from /usr/include/boost/smart_ptr/detail/spinlock.hpp:42,
+[2.926s]                  from /usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25,
+[2.926s]                  from /usr/include/boost/smart_ptr/shared_ptr.hpp:29,
+[2.926s]                  from /usr/include/boost/shared_ptr.hpp:17,
+[2.926s]                  from /usr/include/boost/date_time/microsec_time_clock.hpp:18,
+[2.926s]                  from /usr/include/boost/interprocess/detail/posix_time_types_wrk.hpp:31,
+[2.926s]                  from /usr/include/boost/interprocess/detail/os_thread_functions.hpp:36,
+[2.926s]                  from /usr/include/boost/interprocess/sync/file_lock.hpp:26,
+[2.926s]                  from /usr/include/pcl-1.12/pcl/io/pcd_io.h:46,
+[2.926s]                  from /opt/ros/humble/include/pcl_conversions/pcl_conversions/pcl_conversions.h:73,
+[2.926s]                  from /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/third_party/fast_lio/src/IMU_Processing.hpp:18,
+[2.926s]                  from /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/third_party/fast_lio/src/laserMapping.cpp:55:
+[2.926s] /usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+[2.926s]    36 | BOOST_PRAGMA_MESSAGE(
+[2.926s]       | ^~~~~~~~~~~~~~~~~~~~
+[31.847s] [100%] Linking CXX executable fastlio_mapping
+[32.394s] [100%] Built target fastlio_mapping
+[32.404s] Invoked command in '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_lio/fast_lio' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_lio/fast_lio -- -j24 -l24
+[32.411s] Invoking command in '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_lio/fast_lio': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_lio/fast_lio
+[32.418s] -- Install configuration: "Release"
+[32.418s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/ament_index/resource_index/rosidl_interfaces/fast_lio
+[32.418s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio
+[32.418s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg
+[32.418s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.h
+[32.418s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail
+[32.418s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__functions.h
+[32.418s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__functions.c
+[32.418s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.h
+[32.418s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.h
+[32.418s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_c__visibility_control.h
+[32.418s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/environment/library_path.sh
+[32.419s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/environment/library_path.dsv
+[32.419s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_generator_c.so
+[32.419s] -- Set runtime path of "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_generator_c.so" to ""
+[32.419s] -- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio
+[32.419s] -- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg
+[32.419s] -- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail
+[32.419s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_c.h
+[32.419s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[32.419s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so
+[32.419s] -- Set runtime path of "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so" to ""
+[32.419s] -- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio
+[32.419s] -- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg
+[32.419s] -- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail
+[32.419s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__builder.hpp
+[32.419s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__traits.hpp
+[32.419s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.hpp
+[32.419s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.hpp
+[32.419s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.hpp
+[32.419s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_cpp__visibility_control.hpp
+[32.419s] -- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio
+[32.419s] -- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg
+[32.419s] -- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail
+[32.419s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_cpp.hpp
+[32.419s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/dds_fastrtps
+[32.419s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[32.419s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so
+[32.419s] -- Set runtime path of "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so" to ""
+[32.420s] -- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio
+[32.420s] -- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[32.420s] -- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.c
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_c.h
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so
+[32.420s] -- Set runtime path of "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so" to ""
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so
+[32.420s] -- Set runtime path of "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so" to ""
+[32.420s] -- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio
+[32.420s] -- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg
+[32.420s] -- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_cpp.hpp
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.cpp
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so
+[32.420s] -- Set runtime path of "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so" to ""
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so
+[32.420s] -- Set runtime path of "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so" to ""
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/environment/pythonpath.sh
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/environment/pythonpath.dsv
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/PKG-INFO
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/top_level.txt
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/SOURCES.txt
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/dependency_links.txt
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_fastrtps_c.c
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d_s.c
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/libfast_lio__rosidl_generator_py.so
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_introspection_c.c
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_c.c
+[32.420s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py
+[32.442s] Listing '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio'...
+[32.442s] Compiling '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py'...
+[32.442s] Listing '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg'...
+[32.442s] Compiling '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py'...
+[32.442s] Compiling '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py'...
+[32.444s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[32.444s] -- Set runtime path of "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[32.445s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[32.445s] -- Set runtime path of "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[32.445s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[32.445s] -- Set runtime path of "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[32.445s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_generator_py.so
+[32.445s] -- Set runtime path of "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_generator_py.so" to ""
+[32.445s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/ament_index/resource_index/rust_packages/fast_lio
+[32.445s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/rust
+[32.445s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/rust/Cargo.toml
+[32.445s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/rust/src
+[32.445s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/rust/src/msg
+[32.445s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/rust/src/msg/rmw.rs
+[32.445s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/rust/src/lib.rs
+[32.445s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/rust/src/msg.rs
+[32.445s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/rust/build.rs
+[32.445s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/msg/Pose6D.idl
+[32.445s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/msg/Pose6D.msg
+[32.445s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/fast_lio/fastlio_mapping
+[32.445s] -- Set runtime path of "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/fast_lio/fastlio_mapping" to ""
+[32.445s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/fast_lio/run_fastlio.sh
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/fast_lio/check_input.py
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/fast_lio/check_config.py
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/fast_lio/check_map.py
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/fast_lio/pcap_to_rosbag_ros1.sh
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/fast_lio/pcap_to_rosbag_ros2.sh
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/fast_lio/common.sh
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/config
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/config/jt128.yaml
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/config/jt16.yaml
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/config/jt64p.yaml
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/config/jt32.yaml
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/config/MT60.yaml
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/launch
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/launch/gdb_debug_example.launch
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/launch/mapping_jt32.launch.py
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/launch/mapping_mt60.launch.py
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/launch/mapping.launch.py
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/launch/mapping_jt16.launch.py
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/launch/mapping_jt64p.launch.py
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/launch/mapping_jt128.launch.py
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/rviz
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/rviz/fastlio.rviz
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/ament_index/resource_index/package_run_dependencies/fast_lio
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/ament_index/resource_index/parent_prefix_path/fast_lio
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/environment/ament_prefix_path.sh
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/environment/ament_prefix_path.dsv
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/environment/path.sh
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/environment/path.dsv
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/local_setup.bash
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/local_setup.sh
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/local_setup.zsh
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/local_setup.dsv
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/package.dsv
+[32.446s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/ament_index/resource_index/packages/fast_lio
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport-release.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport-release.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cppExport.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport-release.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport-release.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport-release.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport-release.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport-release.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/rosidl_cmake-extras.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/ament_cmake_export_include_directories-extras.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/ament_cmake_export_libraries-extras.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/ament_cmake_export_targets-extras.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/ament_cmake_export_dependencies-extras.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/fast_lioConfig.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/fast_lioConfig-version.cmake
+[32.447s] -- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/package.xml
+[32.449s] Invoked command in '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_lio/fast_lio' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_lio/fast_lio

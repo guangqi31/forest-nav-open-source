@@ -1,0 +1,12 @@
+{
+  "only_profile_difference": "segment_size: 524288 vs 67108864",
+  "profiles_equal_except_segment_size": true,
+  "same_window_seconds": [
+    1.1,
+    14.9
+  ],
+  "best_effort_small_segment_received": 12,
+  "best_effort_large_segment_received": 139,
+  "large_segment_rate_hz": 10.0,
+  "production_modified": false
+}

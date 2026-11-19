@@ -1,0 +1,171 @@
+{
+  "counts": {
+    "raw": 148,
+    "adapted": 148,
+    "imu": 2997,
+    "clock": 2997,
+    "odom": 145,
+    "registered": 145
+  },
+  "details": {
+    "imu": {
+      "frame": "imu_link",
+      "acceleration": [
+        0.0,
+        0.0,
+        9.806650161743164
+      ],
+      "angular_velocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "orientation_covariance_0": -1.0
+    },
+    "raw": {
+      "fields": [
+        [
+          "x",
+          7
+        ],
+        [
+          "y",
+          7
+        ],
+        [
+          "z",
+          7
+        ],
+        [
+          "intensity",
+          7
+        ],
+        [
+          "timestamp",
+          6
+        ],
+        [
+          "channel_id",
+          6
+        ]
+      ],
+      "points": 63646,
+      "frame": "lidar_link",
+      "ring_min": 0,
+      "ring_max": 31,
+      "span_sec": 0.099996872,
+      "first_point_sec": 0.100000368,
+      "header_sec": 0.2
+    },
+    "adapted": {
+      "fields": [
+        [
+          "x",
+          7
+        ],
+        [
+          "y",
+          7
+        ],
+        [
+          "z",
+          7
+        ],
+        [
+          "intensity",
+          7
+        ],
+        [
+          "ring",
+          4
+        ],
+        [
+          "timestamp",
+          8
+        ]
+      ],
+      "points": 63646,
+      "frame": "lidar_link",
+      "span_sec": 0.09999687200000001,
+      "first_point_sec": 0.100000368,
+      "header_sec": 0.100000368
+    },
+    "odom": {
+      "frame": "camera_init",
+      "child_frame": "body",
+      "position": [
+        0.0015354335099741771,
+        0.0037051066669998244,
+        -0.0015172748518054076
+      ]
+    },
+    "registered": {
+      "fields": [
+        [
+          "x",
+          7
+        ],
+        [
+          "y",
+          7
+        ],
+        [
+          "z",
+          7
+        ],
+        [
+          "intensity",
+          7
+        ],
+        [
+          "normal_x",
+          7
+        ],
+        [
+          "normal_y",
+          7
+        ],
+        [
+          "normal_z",
+          7
+        ],
+        [
+          "curvature",
+          7
+        ]
+      ],
+      "points": 63601,
+      "frame": "camera_init"
+    }
+  },
+  "frequency_by_sim_time": {
+    "raw": 10.0,
+    "adapted": 10.0,
+    "imu": 199.99999694259017,
+    "clock": 200.0,
+    "odom": 10.000000000000002,
+    "registered": 10.000000000000002
+  },
+  "interval_histogram": {
+    "raw": {
+      "0.1": 147
+    },
+    "adapted": {
+      "0.1": 147
+    },
+    "imu": {
+      "0.004999": 168,
+      "0.005": 2828
+    },
+    "clock": {
+      "0.005": 2996
+    },
+    "odom": {
+      "0.1": 144
+    },
+    "registered": {
+      "0.1": 144
+    }
+  },
+  "fastlio_scan_count": 148
+}

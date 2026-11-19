@@ -1,0 +1,63 @@
+{
+  "snapshot_date": "2026-11-19 Asia/Shanghai",
+  "project_source": "/home/ubuntu/robot_projects/forest_nav_open_source",
+  "purpose": "将当前实际工作树提供给其他AI审查；不是导航验收通过版本",
+  "components": [
+    {
+      "source_path": "/home/ubuntu/robot_projects/forest_nav/InstinctLab",
+      "snapshot_path": "runtime_sources/InstinctLab",
+      "origin": "https://github.com/project-instinct/InstinctLab.git",
+      "commit": "19bebb72780a4bcb36bc006a0bed900308e82bbe",
+      "working_tree_status": null,
+      "snapshot_is_working_tree_not_clean_commit": true
+    },
+    {
+      "source_path": "/home/ubuntu/robot_projects/forest_nav/IsaacLab-main",
+      "snapshot_path": "runtime_sources/IsaacLab-main",
+      "origin": "https://github.com/isaac-sim/IsaacLab.git",
+      "commit": "8c9b995cb95c74ec81498ae948ce4c1d4e20ae00",
+      "working_tree_status": null,
+      "snapshot_is_working_tree_not_clean_commit": true
+    },
+    {
+      "source_path": "/home/ubuntu/robot_projects/forest_nav/instinct_rl",
+      "snapshot_path": "runtime_sources/instinct_rl",
+      "origin": "https://github.com/project-instinct/instinct_rl.git",
+      "commit": "574c8d50cdd16618cf8f4e0df553f84759c1d837",
+      "working_tree_status": "",
+      "snapshot_is_working_tree_not_clean_commit": true
+    },
+    {
+      "source_path": "/home/ubuntu/robot_projects/forest_nav_open_source/src/cmu_autonomy",
+      "snapshot_path": "src/cmu_autonomy",
+      "origin": "https://github.com/HongbiaoZ/autonomous_exploration_development_environment.git",
+      "commit": "158e67b31b644ed1e8b06eb1d7f70e183cc62591",
+      "working_tree_status": "",
+      "snapshot_is_working_tree_not_clean_commit": true
+    },
+    {
+      "source_path": "/home/ubuntu/robot_projects/forest_nav_open_source/src/far_planner",
+      "snapshot_path": "src/far_planner",
+      "origin": "https://github.com/MichaelFYang/far_planner.git",
+      "commit": "3776b83bd4c4e41e4296bdc9579e4f7e510b8162",
+      "working_tree_status": "",
+      "snapshot_is_working_tree_not_clean_commit": true
+    },
+    {
+      "source_path": "/home/ubuntu/robot_projects/forest_nav_open_source/references/autonomy_stack_go2",
+      "snapshot_path": "references/autonomy_stack_go2",
+      "origin": "https://github.com/jizhang-cmu/autonomy_stack_go2.git",
+      "commit": "43d5f54b389b251713f0097893c30fa76c870d54",
+      "working_tree_status": "",
+      "snapshot_is_working_tree_not_clean_commit": true
+    },
+    {
+      "source_path": "/home/ubuntu/robot_projects/forest_nav_open_source/src/fast_lio",
+      "snapshot_path": "src/fast_lio",
+      "origin": "https://github.com/HesaiTechnology-Spatial-Perception/FAST_LIO_Hesai.git",
+      "commit": "2783882405484c0c852eaffc3b07b26d1fff2556",
+      "working_tree_status": "",
+      "snapshot_is_working_tree_not_clean_commit": true
+    }
+  ]
+}

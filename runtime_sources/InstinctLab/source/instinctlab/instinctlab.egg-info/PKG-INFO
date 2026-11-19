@@ -1,0 +1,44 @@
+Metadata-Version: 2.4
+Name: instinctlab
+Version: 0.3.0
+Summary: Extension Template for Isaac Lab
+Home-page: https://github.com/isaac-sim/IsaacLabExtensionTemplate.git
+Author: Isaac Lab Project Developers
+Maintainer: Isaac Lab Project Developers
+License: MIT
+Keywords: extension,template,isaaclab
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Isaac Sim :: 6.2.0
+Requires-Python: >=3.12,<3.13
+Requires-Dist: isaaclab==41.0.1
+Requires-Dist: isaaclab-assets==2.1.0
+Requires-Dist: isaaclab-physx==9.0.0
+Requires-Dist: isaaclab-tasks==29.0.1
+Requires-Dist: isaaclab-visualizers==4.0.0
+Requires-Dist: isaaclab-newton==10.0.0
+Requires-Dist: instinct-rl==1.0.3
+Requires-Dist: numpy>=2
+Requires-Dist: torch==2.11.0
+Requires-Dist: torchvision==0.26.0
+Requires-Dist: gymnasium==1.3.0
+Requires-Dist: warp-lang==1.17.0
+Requires-Dist: pytorch_kinematics
+Requires-Dist: joblib
+Requires-Dist: debugpy
+Requires-Dist: snakeviz
+Requires-Dist: trimesh
+Requires-Dist: shapely>=2.0
+Requires-Dist: scikit-learn
+Requires-Dist: opencv-python
+Requires-Dist: onnxruntime<2,>=1.20
+Requires-Dist: pyvista
+Dynamic: author
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: maintainer
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

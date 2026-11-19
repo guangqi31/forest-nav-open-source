@@ -1,0 +1,8 @@
+{
+  "input_samples": 8000,
+  "old_published": 5380,
+  "fixed_published": 8000,
+  "fixed_rate_by_recorded_sim_time": 200.00000839170693,
+  "duplicate_lower_rate_higher_rate_time_reset_checks": "passed",
+  "method": "执行生产发布方法，回放上轮真实原生采样时间；未重启仿真，未测DDS实际接收频率"
+}

@@ -1,0 +1,67 @@
+[
+  {
+    "path": "runtime_sources/IsaacLab-main/source/isaaclab_ov/test/assets/data/articulation_ordering_branching.usda",
+    "original_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:38cb065e378b20e508ca875fc3e0533b516acba206ff6cb4bf25456d1e0d9eb0\nsize 1644\n",
+    "reason": "原工作树仅有占位文本，未下载资源本体；占位信息归档到此JSON"
+  },
+  {
+    "path": "runtime_sources/IsaacLab-main/source/isaaclab_tasks/test/golden_stages/registered_tasks_Isaac-Cartpole-Camera-Direct/default_physics-default_renderer-stage.usda",
+    "original_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:a258c00cb0e8a5b72a4c83f327310f08a847267379b7f3c3f0618f25e99ea34d\nsize 54929\n",
+    "reason": "原工作树仅有占位文本，未下载资源本体；占位信息归档到此JSON"
+  },
+  {
+    "path": "runtime_sources/IsaacLab-main/source/isaaclab_tasks/test/golden_stages/registered_tasks_Isaac-Reorient-Cube-Shadow-Camera-Direct/default_physics-default_renderer-stage.usda",
+    "original_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:4fa0e701d665e6ff0a2d20ec262b3e13d338ca281825e96974ed21b0488ebb74\nsize 4150142\n",
+    "reason": "原工作树仅有占位文本，未下载资源本体；占位信息归档到此JSON"
+  },
+  {
+    "path": "runtime_sources/IsaacLab-main/source/isaaclab_physx/test/assets/data/articulation_ordering_branching.usda",
+    "original_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:261e317fe82147bce87ce8dcccf383b34c58e1476d5565f5d5e7f4c282dde29d\nsize 1748\n",
+    "reason": "原工作树仅有占位文本，未下载资源本体；占位信息归档到此JSON"
+  },
+  {
+    "path": "runtime_sources/IsaacLab-main/source/isaaclab_newton/test/assets/data/articulation_ordering_branching.usda",
+    "original_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:38cb065e378b20e508ca875fc3e0533b516acba206ff6cb4bf25456d1e0d9eb0\nsize 1644\n",
+    "reason": "原工作树仅有占位文本，未下载资源本体；占位信息归档到此JSON"
+  },
+  {
+    "path": "runtime_sources/IsaacLab-main/source/isaaclab_newton/test/assets/data/revolute_pendulum.usda",
+    "original_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:5e011baeb4d866706a8d19e9c4684d3f422dc8c1bb358899ef82d78eeef1603e\nsize 1087\n",
+    "reason": "原工作树仅有占位文本，未下载资源本体；占位信息归档到此JSON"
+  },
+  {
+    "path": "runtime_sources/IsaacLab-main/source/isaaclab_newton/test/assets/data/rigid_body_with_articulation_root.usda",
+    "original_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:74d8aa1f1e23ae04ecb0bab5cd92cb6edcffcfd20980c113f47ca05eb19d1a53\nsize 797\n",
+    "reason": "原工作树仅有占位文本，未下载资源本体；占位信息归档到此JSON"
+  },
+  {
+    "path": "runtime_sources/IsaacLab-main/source/isaaclab_newton/test/assets/data/fixed_cartpole.usda",
+    "original_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:0192a110bc566113bebf4f91260f4e01614877d391bbe216faccdafc6e5adad8\nsize 1374\n",
+    "reason": "原工作树仅有占位文本，未下载资源本体；占位信息归档到此JSON"
+  },
+  {
+    "path": "runtime_sources/IsaacLab-main/source/isaaclab_newton/test/assets/data/fixed_spatial_chain.usda",
+    "original_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:fba7dc964ecf2cbd2a8991eddb30459694b8a31f3a652d10ee3f3e68f3245d41\nsize 5270\n",
+    "reason": "原工作树仅有占位文本，未下载资源本体；占位信息归档到此JSON"
+  },
+  {
+    "path": "runtime_sources/IsaacLab-main/source/isaaclab_newton/test/assets/data/floating_two_leg.usda",
+    "original_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:993f2b5c29cd9082308c395199876ab418ad5886e7332b1ce52243998791bdb7\nsize 4910\n",
+    "reason": "原工作树仅有占位文本，未下载资源本体；占位信息归档到此JSON"
+  },
+  {
+    "path": "runtime_sources/IsaacLab-main/source/isaaclab_newton/test/assets/data/fixed_tendon_hand.usda",
+    "original_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:5b9cf48d11088e1288469e9121ce10e1fa79b3036a0808dad1c3f4ad8c91e061\nsize 4509\n",
+    "reason": "原工作树仅有占位文本，未下载资源本体；占位信息归档到此JSON"
+  },
+  {
+    "path": "runtime_sources/IsaacLab-main/source/isaaclab_newton/test/assets/data/floating_two_link.usda",
+    "original_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:4b5d751ea914f448fbebbaf8a6bd16d3847ef0f03e7b27adde5b61749c67951b\nsize 1429\n",
+    "reason": "原工作树仅有占位文本，未下载资源本体；占位信息归档到此JSON"
+  },
+  {
+    "path": "runtime_sources/IsaacLab-main/docs/source/_static/actuators/delay-clip.webp",
+    "original_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:1027f7a08dc392cda3106fc190820388e7c26a39bd3defb106f9ead39d2ebc7a\nsize 569220\n",
+    "reason": "原工作树仅有占位文本，未下载资源本体；占位信息归档到此JSON"
+  }
+]

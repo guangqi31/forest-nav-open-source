@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 本包的大点云传输配置：共享内存段64MiB；保持UDP默认参数及现有QoS。 -->
+<profiles xmlns="http://www.eprosima.com/XMLSchemas/fastRTPS_Profiles">
+  <transport_descriptors>
+    <transport_descriptor>
+      <transport_id>forest_udp</transport_id><type>UDPv4</type>
+    </transport_descriptor>
+    <transport_descriptor>
+      <transport_id>forest_shm</transport_id><type>SHM</type>
+      <segment_size>67108864</segment_size>
+    </transport_descriptor>
+  </transport_descriptors>
+  <participant profile_name="forest_participant" is_default_profile="true">
+    <rtps>
+      <userTransports>
+        <transport_id>forest_udp</transport_id>
+        <transport_id>forest_shm</transport_id>
+      </userTransports>
+      <useBuiltinTransports>false</useBuiltinTransports>
+    </rtps>
+  </participant>
+</profiles>

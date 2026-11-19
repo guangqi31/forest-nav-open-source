@@ -1,0 +1,32 @@
+{
+  "fast_lio": {
+    "repository": "https://github.com/HesaiTechnology-Spatial-Perception/FAST_LIO_Hesai",
+    "branch": "ROS2",
+    "commit": "2783882405484c0c852eaffc3b07b26d1fff2556",
+    "source_modified": false,
+    "license": "GPL-2.0",
+    "usage": "独立激光惯性定位与点云局部建图；输入原始IMU和瞬时点云；暂不接管Nav2定位"
+  },
+  "cmu": {
+    "repository": "https://github.com/HongbiaoZ/autonomous_exploration_development_environment",
+    "branch": "humble",
+    "commit": "158e67b31b644ed1e8b06eb1d7f70e183cc62591",
+    "packages": [
+      "terrain_analysis",
+      "terrain_analysis_ext"
+    ],
+    "source_modified": false
+  },
+  "explore_lite_frontier": {
+    "repository": "https://github.com/robo-friends/m-explore-ros2",
+    "commit": "326cf8a0b487c34246bb8f3326afbcd69576dc60",
+    "usage": "仅直接编译上游frontier_search.cpp及其头文件；不运行上游目标发送节点",
+    "modified": false
+  },
+  "robot_localization": {
+    "package": "ros-humble-robot-localization",
+    "version": "3.5.4-1jammy.20260915.212411",
+    "source_modified": false,
+    "usage": "融合LIO控制根平面位姿，高频预测到当前时间并输出唯一/odom及odom→base_link；不读取真值"
+  }
+}

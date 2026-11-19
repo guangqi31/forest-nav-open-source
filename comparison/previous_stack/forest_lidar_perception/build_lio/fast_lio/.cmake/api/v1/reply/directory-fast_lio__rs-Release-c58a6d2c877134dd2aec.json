@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "fast_lio__rs",
+		"source" : "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_lio/fast_lio/fast_lio__rs"
+	}
+}

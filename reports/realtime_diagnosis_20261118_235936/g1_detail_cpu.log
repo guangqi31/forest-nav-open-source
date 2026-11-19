@@ -1,0 +1,487 @@
+Skipping automatic ROS environment setup
+[INFO] Loading experiment from directory: /home/ubuntu/Documents/Codex/2026-11-08/s-y/logs/instinct_rl/g1_parkour
+[INFO] No PyTorch checkpoint in /home/ubuntu/instintlab-gpu/work/instinctlab_models/data&model/checkpoints/parkour_onboard_preview_stair; running the ONNX policy without comparison.
+[INFO]: Using device: cpu
+[INFO]: Loading experience file: /home/ubuntu/robot_projects/forest_nav/IsaacLab-main/apps/isaaclab.python.kit
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1795016754.976924  352336 descriptor_database.cc:633] File already exists in database: grpc/health/v1/health.proto
+W0000 00:00:1795016754.976955  352336 message.cc:301] Protobuf GeneratedMessageFactory: File is already registered: grpc/health/v1/health.proto
+Loading user config located at: '/home/ubuntu/isaacsim-6.2.0/kit/data/Kit/IsaacLab/3.0/user.config.json'
+[0.055s] [ext: omni.assets.plugins-0.0.0] startup
+[0.056s] [ext: omni.blobkey-1.1.2] startup
+[0.056s] [ext: omni.kit.async_engine-0.0.5] startup
+[0.193s] [ext: omni.client.lib-1.1.1] startup
+[0.202s] [ext: omni.client-1.3.0] startup
+[0.206s] [ext: omni.protobuf.lib-1.0.1] startup
+[0.207s] [ext: omni.grpc.lib-1.0.1] startup
+[0.210s] [ext: omni.metrics.core-0.0.3] startup
+[0.210s] [ext: omni.datastore-0.0.0] startup
+[0.211s] [ext: omni.gpu_foundation.shadercache.vulkan-1.0.0] startup
+[0.214s] [ext: omni.hsscclient-1.1.4] startup
+[0.215s] [ext: omni.stats-1.0.1] startup
+[0.215s] [ext: omni.ujitso.default-1.0.0] startup
+[0.218s] [ext: omni.gpu_foundation-0.0.0] startup
+[0.514s] [ext: carb.windowing.plugins-1.0.1] startup
+[0.524s] [ext: omni.kit.renderer.init-1.0.1] startup
+2026-11-18T15:45:55Z [0ms] [Error] [omni.platforminfo.plugin] failed to find the package that core 1 belongs to.
+2026-11-18T15:45:55Z [0ms] [Error] [omni.platforminfo.plugin] failed to find the package that core 2 belongs to.
+2026-11-18T15:45:55Z [0ms] [Error] [omni.platforminfo.plugin] failed to find the package that core 3 belongs to.
+2026-11-18T15:45:55Z [0ms] [Error] [omni.platforminfo.plugin] failed to find the package that core 4 belongs to.
+2026-11-18T15:45:55Z [0ms] [Error] [omni.platforminfo.plugin] failed to find the package that core 5 belongs to.
+2026-11-18T15:45:55Z [0ms] [Error] [omni.platforminfo.plugin] failed to find the package that core 6 belongs to.
+2026-11-18T15:45:55Z [0ms] [Error] [omni.platforminfo.plugin] failed to find the package that core 7 belongs to.
+2026-11-18T15:45:55Z [0ms] [Error] [omni.platforminfo.plugin] failed to find the package that core 8 belongs to.
+2026-11-18T15:45:55Z [0ms] [Error] [omni.platforminfo.plugin] failed to find the package that core 9 belongs to.
+2026-11-18T15:45:55Z [0ms] [Error] [omni.platforminfo.plugin] failed to find the package that core 10 belongs to.
+2026-11-18T15:45:55Z [0ms] [Error] [omni.platforminfo.plugin] failed to find the package that core 11 belongs to.
+2026-11-18T15:45:55Z [0ms] [Error] [omni.platforminfo.plugin] failed to find the package that core 12 belongs to.
+2026-11-18T15:45:55Z [0ms] [Error] [omni.platforminfo.plugin] failed to find the package that core 13 belongs to.
+2026-11-18T15:45:55Z [0ms] [Error] [omni.platforminfo.plugin] failed to find the package that core 14 belongs to.
+2026-11-18T15:45:55Z [0ms] [Error] [omni.platforminfo.plugin] failed to find the package that core 15 belongs to.
+2026-11-18T15:45:55Z [0ms] [Error] [omni.platforminfo.plugin] failed to find the package that core 16 belongs to.
+2026-11-18T15:45:55Z [0ms] [Error] [omni.platforminfo.plugin] failed to find the package that core 17 belongs to.
+2026-11-18T15:45:55Z [0ms] [Error] [omni.platforminfo.plugin] failed to find the package that core 18 belongs to.
+2026-11-18T15:45:55Z [0ms] [Error] [omni.platforminfo.plugin] failed to find the package that core 19 belongs to.
+2026-11-18T15:45:55Z [0ms] [Error] [omni.platforminfo.plugin] failed to find the package that core 20 belongs to.
+2026-11-18T15:45:55Z [0ms] [Error] [omni.platforminfo.plugin] failed to find the package that core 21 belongs to.
+2026-11-18T15:45:55Z [0ms] [Error] [omni.platforminfo.plugin] failed to find the package that core 22 belongs to.
+2026-11-18T15:45:55Z [0ms] [Error] [omni.platforminfo.plugin] failed to find the package that core 23 belongs to.
+MESA: warning: Driver does not support the 0x7d67 PCI ID.
+MESA: warning: Driver does not support the 0x7d67 PCI ID.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 595.99.02     | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 5070 Laptop.. | Yes: 0 |     | 8151    MB | 10de      | 0          |
+|     |                                  |        |     |            | 2d58      | 959c5358.. |
+|     |                                  |        |     |            | 2         |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.8.0-149-generic
+| XServer Vendor: The X.Org Foundation, XServer Version: 12101004 (1.21.1.4)
+| Processor: Intel(R) Core(TM) Ultra 9 275HX
+| Cores: 1 | Logical Cores: 1
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 31444 | Free Memory: 23419
+| Total Page/Swap (MB): 2047 | Free Page/Swap: 1942
+|---------------------------------------------------------------------------------------------|
+2026-11-18T15:45:55Z [583ms] [Warning] [omni.rtx] CPU performance profile is set to powersave. This profile sets the CPU to the lowest frequency reducing performance.
+2026-11-18T15:45:55Z [592ms] [Warning] [omni.rtx] PCIe link width current (8) and maximum (16) for device 0 don't match.
+2026-11-18T15:45:55Z [592ms] [Warning] [omni.rtx] IOMMU is enabled.
+[1.255s] [ext: omni.pip.compute-1.9.7] startup
+[1.256s] [ext: omni.isaac.core_archive-5.4.1] startup
+[1.257s] [ext: omni.kit.pipapi-0.0.0] startup
+[1.257s] [ext: omni.kit.telemetry-0.5.2] startup
+[1.285s] [ext: omni.kit.loop-isaac-1.6.2] startup
+[1.287s] [ext: omni.kit.test-2.2.3] startup
+[1.320s] [ext: omni.materialx.libs-1.0.9] startup
+[1.327s] [ext: omni.gpucompute.plugins-0.0.0] startup
+[1.327s] [ext: omni.usd.config-1.0.8] startup
+[1.330s] [ext: omni.usd.libs-1.0.3] startup
+[1.422s] [ext: omni.iray.libs-0.0.1] startup
+[1.426s] [ext: omni.mdl-57.0.6] startup
+[1.450s] [ext: omni.mdl.neuraylib-0.2.23] startup
+[1.452s] [ext: omni.kit.usd.mdl-1.1.12] startup
+[1.547s] [ext: omni.appwindow-1.2.2] startup
+[2.164s] [ext: omni.kit.renderer.core-1.3.2] startup
+[5.659s] [ext: omni.kit.renderer.capture-2.0.2] startup
+[5.660s] [ext: omni.kit.renderer.imgui-2.2.1] startup
+[5.877s] [ext: omni.ui-3.3.10] startup
+[5.885s] [ext: omni.kit.mainwindow-1.0.4] startup
+[5.886s] [ext: carb.audio-0.1.0] startup
+[5.889s] [ext: omni.uiaudio-1.0.0] startup
+[5.889s] [ext: omni.kit.uiapp-0.0.0] startup
+[5.889s] [ext: omni.usd.schema.metrics.assembler-110.1.1] startup
+[5.892s] [ext: isaacsim.robot.schema-7.0.2] startup
+[5.895s] [ext: omni.usd.schema.anim-0.0.1] startup
+[5.912s] [ext: omni.usd.schema.audio-0.0.1] startup
+[5.914s] [ext: omni.usd.schema.geospatial-0.0.1] startup
+[5.916s] [ext: omni.usd.schema.semantics-0.0.0] startup
+[5.918s] [ext: omni.activity.core-1.0.4] startup
+[5.919s] [ext: omni.cubric-0.1.0] startup
+[5.919s] [ext: omni.graph.exec-0.9.6] startup
+[5.920s] [ext: omni.usd_resolver-1.0.0] startup
+[5.922s] [ext: omni.usd.core-1.10.42] startup
+[5.925s] [ext: omni.hydra.scene_delegate-0.3.5] startup
+[5.929s] [ext: usdrt.scenegraph-7.6.3] startup
+[5.950s] [ext: omni.hydra.usdrt_delegate-7.5.2] startup
+[5.955s] [ext: omni.kit.actions.core-1.2.1] startup
+[5.957s] [ext: omni.kit.audiodeviceenum-1.0.2] startup
+[5.958s] [ext: omni.kit.commands-1.6.2] startup
+[5.960s] [ext: omni.kit.exec.core-0.13.6] startup
+[5.961s] [ext: omni.kit.usd_undo-0.1.8] startup
+[5.961s] [ext: omni.kit.window.popup_dialog-2.0.26] startup
+[5.964s] [ext: omni.kit.widget.connection_manager-1.0.4] startup
+[5.969s] [ext: omni.timeline-1.1.2] startup
+[5.970s] [ext: omni.usd-1.19.11] startup
+[6.005s] [ext: omni.kit.asset_converter-6.1.0] startup
+[6.015s] [ext: omni.pip.cloud-1.5.7] startup
+[6.017s] [ext: omni.usd.schema.newton-1.5.0] startup
+[6.017s] [ext: omni.usd.schema.mujoco-1.1.4] startup
+[6.017s] [ext: omni.usd.schema.omni_dome_light-1.0.0] startup
+[6.018s] [ext: omni.usd.schema.omni_lens_distortion-1.0.0] startup
+[6.018s] [ext: omni.usd.schema.omni_projectors-1.0.0] startup
+[6.018s] [ext: omni.usd.schema.omni_sensors-0.0.0] startup
+[6.025s] [ext: omni.usd.schema.omnigraph-1.0.1] startup
+[6.030s] [ext: omni.usd.schema.physical_lighting-0.1.0] startup
+[6.032s] [ext: omni.usd.schema.physx-110.4.4] startup
+[6.057s] [ext: omni.usd.schema.render_settings.rtx-1.0.3] startup
+[6.060s] [ext: omni.usd.schema.usd_particle_field-1.0.0] startup
+[6.061s] [ext: omni.kit.clipboard-1.1.1] startup
+[6.061s] [ext: omni.kit.menu.core-1.3.0] startup
+[6.062s] [ext: omni.kit.usd.layers-2.7.9] startup
+[6.068s] [ext: omni.kit.widget.context_menu-1.5.0] startup
+[6.070s] [ext: omni.kit.context_menu-1.10.0] startup
+[6.071s] [ext: omni.kit.helper.file_utils-0.1.10] startup
+[6.072s] [ext: omni.kit.hotkeys.core-1.6.1] startup
+[6.075s] [ext: omni.kit.menu.utils-2.2.8] startup
+[6.078s] [ext: omni.kit.notification_manager-1.0.17] startup
+[6.079s] [ext: omni.kit.stage_template.core-1.1.23] startup
+[6.080s] [ext: omni.kit.widget.path_field-2.0.14] startup
+[6.080s] [ext: omni.kit.widget.browser_bar-2.0.11] startup
+[6.081s] [ext: omni.kit.widget.filebrowser-2.14.5] startup
+[6.084s] [ext: omni.kit.widget.options_menu-1.1.7] startup
+[6.086s] [ext: omni.kit.widget.filter-1.1.9] startup
+[6.086s] [ext: omni.kit.widget.nucleus_connector-2.4.0] startup
+[6.087s] [ext: omni.kit.widget.options_button-1.0.3] startup
+[6.087s] [ext: omni.kit.widget.prompt-1.0.7] startup
+[6.087s] [ext: omni.kit.widget.searchfield-1.1.8] startup
+[6.088s] [ext: omni.ui.scene-2.1.1] startup
+[6.092s] [ext: omni.kit.window.filepicker-3.0.18] startup
+[6.101s] [ext: omni.kit.window.file_exporter-1.0.38] startup
+[6.102s] [ext: omni.kit.widget.stage-4.7.2] startup
+[6.109s] [ext: omni.kit.window.content_browser_registry-0.0.6] startup
+[6.109s] [ext: omni.kit.window.drop_support-1.0.8] startup
+[6.110s] [ext: omni.kit.window.file_importer-1.1.22] startup
+[6.110s] [ext: omni.kit.window.file-2.0.17] startup
+[6.112s] [ext: omni.kit.window.content_browser-3.1.14] startup
+[6.119s] [ext: omni.kit.widget.layers-1.9.3] startup
+[6.126s] [ext: omni.inspect-1.0.2] startup
+[6.128s] [ext: omni.graph.core-3.1.8] startup
+[6.130s] [ext: isaacsim.core.deprecation_manager-0.4.5] startup
+[6.131s] [ext: isaacsim.core.version-2.2.1] startup
+[6.132s] [ext: omni.graph.tools-1.81.0] startup
+[6.151s] [ext: omni.graph-1.142.6] startup
+[6.184s] [ext: omni.graph.action_core-1.1.9] startup
+[6.186s] [ext: omni.graph.action_nodes_core-2.11.0] startup
+[6.188s] [ext: omni.graph.action_nodes-2.11.0] startup
+[6.229s] [ext: omni.graph.action-2.10.2] startup
+[6.231s] [ext: omni.hydra.engine.stats-1.0.5] startup
+[6.233s] [ext: omni.hydra.rtx.shadercache.vulkan-1.0.0] startup
+[6.234s] [ext: omni.index.libs-392300.2120.0] startup
+[6.234s] [ext: omni.index-1.0.1] startup
+[6.235s] [ext: omni.ujitso.client-0.0.0] startup
+[6.235s] [ext: omni.usd.schema.playback-1.1.0] startup
+[6.236s] [ext: omni.volume-0.5.2] startup
+[6.240s] [ext: omni.hydra.rtx-1.0.5] startup
+2026-11-18T15:46:01Z [5,680ms] [Warning] [omni.log] Source: omni.hydra was already registered.
+[6.268s] [ext: omni.kit.hydra_texture-1.6.2] startup
+[6.272s] [ext: omni.kit.manipulator.viewport-107.0.1] startup
+[6.273s] [ext: omni.kit.material.library-3.1.8] startup
+[6.277s] [ext: omni.kit.raycast.query-1.2.0] startup
+[6.282s] [ext: omni.kit.viewport.legacy_gizmos-1.0.24] startup
+[6.285s] [ext: omni.kit.viewport.registry-104.0.6] startup
+[6.285s] [ext: omni.kit.viewport.scene_camera_model-1.0.7] startup
+[6.290s] [ext: omni.kit.widget.viewport-110.0.1] startup
+[6.293s] [ext: omni.kit.viewport.window-110.0.5] startup
+[6.305s] [ext: omni.kit.viewport.utility-2.1.2] startup
+[6.306s] [extWarning: Possible version incompatibility. Attempting to load carb::ujitso::IFactory with version v0.3 against v0.2.
+: omni.graph.visualization.nodes-2.1.4] startup
+[6.320s] [ext: omni.kit.property.adapter.core-1.1.1] startup
+[6.322s] [ext: omni.kit.property.adapter.usd-1.0.6] startup
+[6.323s] [ext: omni.kit.widget.highlight_label-1.0.3] startup
+[6.342s] [ext: omni.kit.window.property-1.15.2] startup
+[6.350s] [ext: omni.kit.property.usd-4.9.18] startup
+[6.359s] [ext: omni.kit.widget.text_editor-1.1.1] startup
+[6.361s] [ext: omni.kit.window.extensions-1.7.0] startup
+[6.366s] [ext: omni.physics-110.4.4] startup
+[6.368s] [ext: isaacsim.gui.components-1.8.9] startup
+[6.373s] [ext: isaacsim.simulation_app-2.19.0] startup
+[6.373s] [ext: isaacsim.storage.native-1.12.2] startup
+[6.375s] [ext: omni.kit.primitive.mesh-1.1.1] startup
+[6.377s] [ext: omni.kit.stage_templates-2.0.3] startup
+[6.379s] [ext: omni.anim.curve.core-1.6.1] startup
+[6.389s] [ext: omni.convexdecomposition-110.4.4] startup
+[6.392s] [ext: omni.graph.image.core-0.6.1] startup
+[6.392s] [ext: omni.graph.image.nodes-1.3.2] startup
+[6.393s] [ext: omni.graph.nodes_core-2.11.0] startup
+[6.398s] [ext: omni.graph.nodes-2.12.1] startup
+[6.403s] [ext: omni.graph.scriptnode-2.10.2] startup
+[6.412s] [ext: omni.graph.ui_nodes-2.11.2] startup
+[6.442s] [ext: omni.kit.manipulator.camera-110.1.1] startup
+[6.446s] [ext: omni.kit.manipulator.selector-1.1.4] startup
+[6.447s] [ext: omni.kit.widget.searchable_combobox-1.0.7] startup
+[6.448s] [ext: omni.kit.widget.settings-2.0.1] startup
+[6.450s] [ext: omni.kit.window.preferences-1.8.5] startup
+[6.454s] [ext: omni.kit.manipulator.transform-107.0.1] startup
+[6.457s] [ext: omni.kit.widget.toolbar-2.1.0] startup
+[6.462s] [ext: omni.kit.manipulator.tool.snap-1.5.15] startup
+[6.465s] [ext: omni.kit.viewport.manipulator.transform-107.0.4] startup
+[6.467s] [ext: omni.kit.manipulator.prim.core-108.0.2] startup
+[6.472s] [ext: omni.kit.manipulator.prim.usd-107.0.3] startup
+[6.473s] [ext: omni.kit.manipulator.prim-108.0.0] startup
+[6.473s] [ext: omni.kit.manipulator.selection-110.1.0] startup
+[6.474s] [ext: omni.kit.menu.create-2.0.2] startup
+[6.476s] [ext: omni.kit.widget.stage_icons-1.0.8] startup
+[6.477s] [ext: omni.kit.window.stage-2.6.4] startup
+[6.480s] [ext: omni.kit.menu.stage-1.2.7] startup
+[6.481s] [ext: omni.kit.property.audio-1.0.18] startup
+[6.484s] [ext: omni.kit.property.camera-1.0.14] startup
+[6.485s] [ext: omni.kit.property.geometry-2.1.2] startup
+[6.488s] [ext: omni.kit.property.light-1.0.16] startup
+[6.527s] [ext: omni.kit.property.material-1.15.1] startup
+[6.533s] [ext: omni.kit.property.render-1.2.2] startup
+[6.534s] [ext: omni.kit.property.transform-1.6.13] startup
+[6.537s] [ext: omni.kit.property.bundle-1.5.3] startup
+[6.538s] [ext: omni.kit.stagerecorder.core-110.0.14] startup
+[6.542s] [ext: omni.kit.stagerecorder.ui-110.0.2] startup
+[6.544s] [ext: omni.kit.stagerecorder.bundle-110.0.2] startup
+[6.544s] [ext: omni.kit.usd.collect-3.0.7] startup
+[6.547s] [ext: omni.kit.usdz_export-1.1.1] startup
+[6.549s] [ext: omni.kit.tool.asset_importer-6.0.4] startup
+[6.553s] [ext: omni.kit.tool.collect-2.3.0] startup
+[6.556s] [ext: omni.kit.ui.actions-1.0.5] startup
+[6.561s] [ext: omni.kit.viewport.actions-110.1.1] startup
+[6.563s] [ext: omni.kit.viewport.menubar.core-110.0.4] startup
+[6.575s] [ext: omni.kit.viewport.menubar.camera-107.0.16] startup
+[6.579s] [ext: omni.kit.viewport.menubar.display-110.0.0] startup
+[6.580s] [ext: omni.kit.viewport.menubar.lighting-107.3.4] startup
+[6.582s] [ext: omni.kit.viewport.menubar.render-110.1.1] startup
+[6.584s] [ext: omni.kit.viewport.menubar.settings-110.0.2] startup
+[6.587s] [ext: omni.kit.window.console-1.1.12] startup
+[6.590s] [ext: omni.kit.window.script_editor-2.0.17] startup
+[6.593s] [ext: omni.kit.window.status_bar-0.1.11] startup
+[6.596s] [ext: omni.kit.window.toolbar-3.0.3] startup
+[6.598s] [ext: omni.ocio-0.1.1] startup
+[6.599s] [ext: omni.physx.gpu-110.4.4] startup
+[6.599s] [ext: omni.physx.foundation-110.4.4] startup
+[6.600s] [ext: omni.usdphysics-110.4.4] startup
+[6.603s] [ext: omni.physx.cooking-110.4.4] startup
+[6.605s] [ext: omni.physx-110.4.4] startup
+[6.614s] [ext: omni.physics.physx-110.4.4] startup
+[6.616s] [ext: omni.physics.stageupdate-110.4.4] startup
+[6.618s] [ext: omni.physics.tensors-110.4.4] startup
+[6.622s] [ext: omni.physx.fabric-110.4.4] startup
+[6.625s] [ext: omni.physx.tensors-110.4.4] startup
+[6.629s] [ext: omni.rtx.window.settings-0.8.5] startup
+[6.632s] [ext: omni.rtx.settings.core-0.7.2] startup
+[6.635s] [ext: omni.usd.metrics.assembler-110.1.2] startup
+[6.638s] [ext: omni.usd.metrics.assembler.ui-110.1.3] startup
+[6.643s] [ext: omni.kit.menu.common-2.0.2] startup
+[6.644s] [ext: isaaclab.python-3.0.0] startup
+[6.644s] [ext: isaacsim.asset.transformer-6.2.1] startup
+[6.647s] [ext: omni.scene.optimizer.core-110.3.1] startup
+[6.713s] [ext: isaacsim.asset.importer.utils-1.9.1] startup
+[6.716s] [ext: isaacsim.asset.exporter.urdf-2.2.10] startup
+[6.724s] [ext: isaacsim.core.experimental.utils-0.23.3] startup
+[6.725s] [ext: omni.usdex.libs-3.0.0] startup
+[6.738s] [ext: isaacsim.core.simulation_manager-1.17.4] startup
+[6.751s] [ext: isaacsim.test.docstring-1.3.2] startup
+[6.755s] [ext: isaacsim.core.experimental.prims-1.12.1] startup
+[6.770s] [ext: isaacsim.core.experimental.primdata-0.3.6] startup
+[6.774s] [ext: isaacsim.core.experimental.materials-0.11.1] startup
+[6.776s] [ext: isaacsim.core.experimental.objects-0.9.1] startup
+[6.780s] [ext: isaacsim.core.includes-2.9.5] startup
+[6.780s] [ext: isaacsim.core.rendering_manager-0.5.3] startup
+[6.791s] [ext: omni.syntheticdata-0.6.17] startup
+[6.815s] [ext: omni.replicator.nv-1.1.7] startup
+[6.821s] [ext: omni.videoencoding-0.2.1] startup
+[6.822s] [ext: omni.replicator.core-1.13.38] startup
+2026-11-18T15:46:01Z [6,258ms] [Warning] [pxr.Semantics] pxr.Semantics is deprecated - please use Semantics instead
+2026-11-18T15:46:01Z [6,289ms] [Warning] [omni.replicator.core.scripts.extension] No material configuration file, adding configuration to material settings directly.
+[6.979s] [ext: isaacsim.core.nodes-5.10.15] startup
+[7.011s] [ext: omni.kit.widget.zoombar-1.0.7] startup
+[7.012s] [ext: omni.kit.browser.core-2.3.18] startup
+[7.015s] [ext: omni.kit.browser.folder.core-2.0.3] startup
+[7.020s] [ext: isaacsim.examples.browser-0.3.4] startup
+[7.022s] [ext: omni.rtx.spg-0.4.0] startup
+[7.027s] [ext: omni.sensors.net-1.4.0] startup
+[7.029s] [ext: omni.sensors.nv.common-3.4.0] startup
+[7.040s] [ext: omni.sensors.nv.materials-2.4.0] startup
+[7.042s] [ext: omni.sensors.nv.acoustic-3.4.0] startup
+[7.045s] [ext: omni.sensors.nv.camera-1.4.0] startup
+[7.049s] [ext: omni.sensors.nv.ids-2.4.0] startup
+[7.051s] [ext: omni.sensors.nv.lidar-3.4.0] startup
+[7.055s] [ext: omni.sensors.nv.radar-3.4.0] startup
+[7.057s] [ext: isaacsim.sensors.experimental.rtx-2.0.1] startup
+[7.072s] [ext: isaacsim.util.debug_draw-3.2.8] startup
+[7.079s] [ext: isaacsim.sensors.rtx.nodes-0.1.7] startup
+[7.085s] [ext: isaacsim.ros2.core-1.11.2] startup
+[7.105s] Attempting to load system rclpy
+[7.124s] Could not import system rclpy: No module named 'rclpy._rclpy_pybind11'
+The C extension '/opt/ros/humble/lib/python3.10/site-packages/_rclpy_pybind11.cpython-312-x86_64-linux-gnu.so' isn't present on the system. Please refer to 'https://docs.ros.org/en/humble/Guides/Installation-Troubleshooting.html#import-failing-without-library-present-on-the-system' for possible solutions
+[7.124s] Attempting to load internal rclpy for ROS Distro: humble
+[7.126s] Could not import internal rclpy: No module named 'rclpy._rclpy_pybind11'
+The C extension '/opt/ros/humble/lib/python3.10/site-packages/_rclpy_pybind11.cpython-312-x86_64-linux-gnu.so' isn't present on the system. Please refer to 'https://docs.ros.org/en/humble/Guides/Installation-Troubleshooting.html#import-failing-without-library-present-on-the-system' for possible solutions
+[7.126s] To use the internal libraries included with the extension please set the following environment variables to use with FastDDS (default) or CycloneDDS before starting Isaac Sim:
+
+FastDDS (default):
+export ROS_DISTRO=humble
+export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/humble/lib
+
+OR
+
+CycloneDDS:
+export ROS_DISTRO=humble
+export RMW_IMPLEWarning: Possible version incompatibility. Attempting to load omni::fabric::IStageReaderWriter with version v0.16 against v0.14.
+MENTATION=rmw_cyclonedds_cpp
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/humble/lib
+
+
+2026-11-18T15:46:01Z [6,554ms] [Warning] [humble.rclpy] Could not import rclpy
+[7.131s] [ext: isaacsim.sensors.experimental.physics-4.0.0] startup
+[7.141s] [ext: isaacsim.ros2.control-0.1.6] startup
+[7.146s] [ext: isaacsim.sensors.physics.nodes-1.6.2] startup
+[7.155s] [ext: isaacsim.ros2.nodes-1.22.9] startup
+[7.205s] [ext: isaacsim.ros2.examples-1.2.9] startup
+[7.210s] [ext: isaacsim.ros2.ui-1.9.3] startup
+[7.214s] [ext: isaacsim.ros2.bridge-5.1.4] startup
+[7.218s] Simulation App Starting
+2026-11-18T15:46:05Z [9,711ms] [Warning] [rtx.hydra] RenderDelegate : Warning /rtx/hydra/readTransformsFromFabricInRenderDelegate and geometry streaming are enabled together but this can cause issues with dynamic objects not streaming correctly due to problems in the transform update.
+[10.650s] Simulation App Startup Complete
+[10.666s] app ready
+[ISAACLAB] KitLauncher initialization complete
+[G1 SCENE] complex forest: /home/ubuntu/robot_projects/forest_nav_open_source/assets/forest_complex/environment.usda
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 42
+	Physics step-size     : 0.005
+	Rendering step-size   : 0.1
+	Environment step-size : 0.02
+[INFO]: Registered backend 'physx' for factory Articulation.
+[INFO]: Registered backend 'physx' for factory RayCaster.
+[INFO]: Registered backend 'physx' for factory ContactSensor.
+[INFO]: Physics scene prim path: /physicsScene
+[INFO]: Time taken for scene creation Last: 2.433597 s, Mean: 2.433597 s, Std: 0.000000 s, N: 1
+[INFO]: Scene manager: <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 2.5
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : ['/World/ground']
+[INFO]: Configured body_ordering for '/World/envs/env_[^/]+/Robot' resolves to the backend's native order; no reordering will be applied.
+[INFO]: Simulation parameters for joints in /World/envs/env_[^/]+/Robot:
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                      Simulation Joint Information (Prim path: /World/envs/env_[^/]+/Robot)                                                      |
++-------+----------------------------+-----------+---------+----------+-----------------+------------------+------------------+-----------------+-----------------+---------------+
+| Index | Name                       | Stiffness | Damping | Armature | Static Friction | Dynamic Friction | Viscous Friction | Position Limits | Velocity Limits | Effort Limits |
++-------+----------------------------+-----------+---------+----------+-----------------+------------------+------------------+-----------------+-----------------+---------------+
+|   0   | left_shoulder_pitch_joint  |   14.251  |  0.907  |  0.004   |      0.000      |      0.000       |      0.000       | [-3.089, 2.670] |      37.000     |     25.000    |
+|   1   | right_shoulder_pitch_joint |   14.251  |  0.907  |  0.004   |      0.000      |      0.000       |      0.000       | [-3.089, 2.670] |      37.000     |     25.000    |
+|   2   | waist_pitch_joint          |   28.501  |  1.814  |  0.007   |      0.000      |      0.000       |      0.000       | [-0.520, 0.520] |      37.000     |     50.000    |
+|   3   | left_shoulder_roll_joint   |   14.251  |  0.907  |  0.004   |      0.000      |      0.000       |      0.000       | [-1.588, 2.252] |      37.000     |     25.000    |
+|   4   | right_shoulder_roll_joint  |   14.251  |  0.907  |  0.004   |      0.000      |      0.000       |      0.000       | [-2.252, 1.588] |      37.000     |     25.000    |
+|   5   | waist_roll_joint           |   28.501  |  1.814  |  0.007   |      0.000      |      0.000       |      0.000       | [-0.520, 0.520] |      37.000     |     50.000    |
+|   6   | left_shoulder_yaw_joint    |   14.251  |  0.907  |  0.004   |      0.000      |      0.000       |      0.000       | [-2.618, 2.618] |      37.000     |     25.000    |
+|   7   | right_shoulder_yaw_joint   |   14.251  |  0.907  |  0.004   |      0.000      |      0.000       |      0.000       | [-2.618, 2.618] |      37.000     |     25.000    |
+|   8   | waist_yaw_joint            |   40.179  |  2.558  |  0.010   |      0.000      |      0.000       |      0.000       | [-2.618, 2.618] |      32.000     |     88.000    |
+|   9   | left_elbow_joint           |   14.251  |  0.907  |  0.004   |      0.000      |      0.000       |      0.000       | [-1.047, 2.094] |      37.000     |     25.000    |
+|   10  | right_elbow_joint          |   14.251  |  0.907  |  0.004   |      0.000      |      0.000       |      0.000       | [-1.047, 2.094] |      37.000     |     25.000    |
+|   11  | left_hip_pitch_joint       |   40.179  |  2.558  |  0.010   |      0.000      |      0.000       |      0.000       | [-2.531, 2.880] |      32.000     |     88.000    |
+|   12  | right_hip_pitch_joint      |   40.179  |  2.558  |  0.010   |      0.000      |      0.000       |      0.000       | [-2.531, 2.880] |      32.000     |     88.000    |
+|   13  | left_wrist_roll_joint      |   14.251  |  0.907  |  0.004   |      0.000      |      0.000       |      0.000       | [-1.972, 1.972] |      37.000     |     25.000    |
+|   14  | right_wrist_roll_joint     |   14.251  |  0.907  |  0.004   |      0.000      |      0.000       |      0.000       | [-1.972, 1.972] |      37.000     |     25.000    |
+|   15  | left_hip_roll_joint        |   99.098  |  6.309  |  0.025   |      0.000      |      0.000       |      0.000       | [-0.524, 2.967] |      20.000     |    139.000    |
+|   16  | right_hip_roll_joint       |   99.098  |  6.309  |  0.025   |      0.000      |      0.000       |      0.000       | [-2.967, 0.524] |      20.000     |    139.000    |
+|   17  | left_wrist_pitch_joint     |   16.778  |  1.068  |  0.004   |      0.000      |      0.000       |      0.000       | [-1.614, 1.614] |      22.000     |     5.000     |
+|   18  | right_wrist_pitch_joint    |   16.778  |  1.068  |  0.004   |      0.000      |      0.000       |      0.000       | [-1.614, 1.614] |      22.000     |     5.000     |
+|   19  | left_hip_yaw_joint         |   40.179  |  2.558  |  0.010   |      0.000      |      0.000       |      0.000       | [-2.758, 2.758] |      32.000     |     88.000    |
+|   20  | right_hip_yaw_joint        |   40.179  |  2.558  |  0.010   |      0.000      |      0.000       |      0.000       | [-2.758, 2.758] |      32.000     |     88.000    |
+|   21  | left_wrist_yaw_joint       |   16.778  |  1.068  |  0.004   |      0.000      |      0.000       |      0.000       | [-1.614, 1.614] |      22.000     |     5.000     |
+|   22  | right_wrist_yaw_joint      |   16.778  |  1.068  |  0.004   |      0.000      |      0.000       |      0.000       | [-1.614, 1.614] |      22.000     |     5.000     |
+|   23  | left_knee_joint            |   99.098  |  6.309  |  0.025   |      0.000      |      0.000       |      0.000       | [-0.087, 2.880] |      20.000     |    139.000    |
+|   24  | right_knee_joint           |   99.098  |  6.309  |  0.025   |      0.000      |      0.000       |      0.000       | [-0.087, 2.880] |      20.000     |    139.000    |
+|   25  | left_ankle_pitch_joint     |   28.501  |  1.814  |  0.007   |      0.000      |      0.000       |      0.000       | [-0.873, 0.524] |      37.000     |     50.000    |
+|   26  | right_ankle_pitch_joint    |   28.501  |  1.814  |  0.007   |      0.000      |      0.000       |      0.000       | [-0.873, 0.524] |      37.000     |     50.000    |
+|   27  | left_ankle_roll_joint      |   28.501  |  1.814  |  0.007   |      0.000      |      0.000       |      0.000       | [-0.262, 0.262] |      37.000     |     50.000    |
+|   28  | right_ankle_roll_joint     |   28.501  |  1.814  |  0.007   |      0.000      |      0.000       |      0.000       | [-0.262, 0.262] |      37.000     |     50.000    |
++-------+----------------------------+-----------+---------+----------+-----------------+------------------+------------------+-----------------+-----------------+---------------+
+[11.011s] [ext: isaaclab.python-3.0.0] shutdown
+[11.012s] [ext: omni.physx.fabric-110.4.4] shutdown
+2026-11-18T15:46:05Z [10,441ms] [Warning] [carb] Failed to find a plugin with an interface pointer: 0x62bd15c6bbf0. Client: carb.scripting-python.plugin
+2026-11-18T15:46:09Z [13,668ms] [Error] [omni.physx.tensors.plugin] Failed to get a valid attached USD stage id from PhysX simulation
+[INFO]: Read mesh prim: /World/ground/terrain/Ground with 66049 vertices and 393216 faces.
+[INFO]: Read '1' mesh prims under path '/World/ground/terrain/Ground' with 66049 vertices and 131072 faces.
+[INFO]: Read '1' mesh prims under path '/World/ForestPolicyGeometry/Obstacles' with 37724 vertices and 73804 faces.
+[INFO]: Read '7' mesh prims under path '/World/envs/env_0/Robot/torso_link' with 39187 vertices and 78386 faces.
+[INFO]: Read '1' mesh prims under path '/World/envs/env_0/Robot/left_shoulder_pitch_link' with 1770 vertices and 3534 faces.
+[INFO]: Read '1' mesh prims under path '/World/envs/env_0/Robot/left_shoulder_roll_link' with 4004 vertices and 8004 faces.
+[INFO]: Read '2' mesh prims under path '/World/envs/env_0/Robot/left_shoulder_yaw_link' with 4414 vertices and 8822 faces.
+[INFO]: Read '2' mesh prims under path '/World/envs/env_0/Robot/left_elbow_link' with 2822 vertices and 5614 faces.
+[INFO]: Read '1' mesh prims under path '/World/envs/env_0/Robot/left_wrist_roll_link' with 3563 vertices and 7122 faces.
+[INFO]: Read '1' mesh prims under path '/World/envs/env_0/Robot/left_wrist_pitch_link' with 861 vertices and 1718 faces.
+[INFO]: Read '3' mesh prims under path '/World/envs/env_0/Robot/left_wrist_yaw_link' with 27986 vertices and 55960 faces.
+[INFO]: Read '1' mesh prims under path '/World/envs/env_0/Robot/right_shoulder_pitch_link' with 1770 vertices and 3534 faces.
+[INFO]: Read '1' mesh prims under path '/World/envs/env_0/Robot/right_shoulder_roll_link' with 4020 vertices and 8036 faces.
+[INFO]: Read '2' mesh prims under path '/World/envs/env_0/Robot/right_shoulder_yaw_link' with 4422 vertices and 8838 faces.
+[INFO]: Read '2' mesh prims under path '/World/envs/env_0/Robot/right_elbow_link' with 2811 vertices and 5614 faces.
+[INFO]: Read '1' mesh prims under path '/World/envs/env_0/Robot/right_wrist_roll_link' with 3562 vertices and 7120 faces.
+[INFO]: Read '1' mesh prims under path '/World/envs/env_0/Robot/right_wrist_pitch_link' with 797 vertices and 1590 faces.
+[INFO]: Read '3' mesh prims under path '/World/envs/env_0/Robot/right_wrist_yaw_link' with 27275 vertices and 54520 faces.
+[INFO]: Read '1' mesh prims under path '/World/envs/env_0/Robot/waist_yaw_link' with 6046 vertices and 12398 faces.
+[INFO]: Read '1' mesh prims under path '/World/envs/env_0/Robot/waist_roll_link' with 858 vertices and 1716 faces.
+[INFO]: Read '3' mesh prims under path '/World/envs/env_0/Robot/pelvis' with 28837 vertices and 57638 faces.
+[INFO]: Read '1' mesh prims under path '/World/envs/env_0/Robot/left_hip_pitch_link' with 1811 vertices and 3632 faces.
+[INFO]: Read '2' mesh prims under path '/World/envs/env_0/Robot/left_hip_roll_link' with 3847 vertices and 7682 faces.
+[INFO]: Read '1' mesh prims under path '/World/envs/env_0/Robot/left_hip_yaw_link' with 2980 vertices and 5924 faces.
+[INFO]: Read '2' mesh prims under path '/World/envs/env_0/Robot/left_knee_link' with 10480 vertices and 20936 faces.
+[INFO]: Read '1' mesh prims under path '/World/envs/env_0/Robot/left_ankle_pitch_link' with 714 vertices and 1422 faces.
+[INFO]: Read '8' mesh prims under path '/World/envs/env_0/Robot/left_ankle_roll_link' with 19997 vertices and 39946 faces.
+[INFO]: Read '1' mesh prims under path '/World/envs/env_0/Robot/right_hip_pitch_link' with 1807 vertices and 3624 faces.
+[INFO]: Read '2' mesh prims under path '/World/envs/env_0/Robot/right_hip_roll_link' with 3852 vertices and 7692 faces.
+[INFO]: Read '1' mesh prims under path '/World/envs/env_0/Robot/right_hip_yaw_link' with 2980 vertices and 5924 faces.
+[INFO]: Read '2' mesh prims under path '/World/envs/env_0/Robot/right_knee_link' with 10454 vertices and 20884 faces.
+[INFO]: Read '1' mesh prims under path '/World/envs/env_0/Robot/right_ankle_pitch_link' with 714 vertices and 1422 faces.
+[INFO]: Read '8' mesh prims under path '/World/envs/env_0/Robot/right_ankle_roll_link' with 20001 vertices and 39954 faces.
+2026-11-18T15:46:09Z [14,105ms] [Error] [omni.physx.tensors.plugin] Failed to get a valid attached USD stage id from PhysX simulation
+2026-11-18T15:46:09Z [14,106ms] [Error] [omni.physx.tensors.plugin] Failed to get a valid attached USD stage id from PhysX simulation
+2026-11-18T15:46:09Z [14,106ms] [Error] [omni.physx.tensors.plugin] Failed to get a valid attached USD stage id from PhysX simulation
+[INFO]: Time taken for simulation start Last: 0.682189 s, Mean: 0.682189 s, Std: 0.000000 s, N: 1
+[INFO]: SimulationContext cleared
+Traceback (most recent call last):
+  File "/home/ubuntu/robot_projects/forest_nav/IsaacLab-main/source/isaaclab/isaaclab/app/sim_launcher.py", line 499, in launch_simulation
+    yield physics_cfg
+  File "/home/ubuntu/robot_projects/forest_nav/InstinctLab/source/instinctlab/instinctlab/tasks/parkour/scripts/play.py", line 140, in main
+    return _run_play(env_cfg, agent_cfg, log_dir, resume_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/g1_detail_profile.py", line 47, in run_ros_policy
+    env = InstinctRlVecEnvWrapper(gym.make(play.args_cli.task, cfg=env_cfg))
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/isaacsim-6.2.0/kit/python/lib/python3.12/site-packages/gymnasium/envs/registration.py", line 735, in make
+    env = env_creator(**env_spec_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/robot_projects/forest_nav/IsaacLab-main/source/isaaclab/isaaclab/envs/manager_based_rl_env.py", line 82, in __init__
+    super().__init__(cfg=cfg)
+  File "/home/ubuntu/robot_projects/forest_nav/IsaacLab-main/source/isaaclab/isaaclab/envs/manager_based_env.py", line 125, in __init__
+    self._init_sim()
+  File "/home/ubuntu/robot_projects/forest_nav/IsaacLab-main/source/isaaclab/isaaclab/envs/manager_based_env.py", line 197, in _init_sim
+    self.sim.reset()
+  File "/home/ubuntu/robot_projects/forest_nav/IsaacLab-main/source/isaaclab/isaaclab/sim/simulation_context.py", line 566, in reset
+    self.backend_manager.reset(soft)
+  File "/home/ubuntu/robot_projects/forest_nav/IsaacLab-main/source/isaaclab_physx/isaaclab_physx/physics/physx_manager.py", line 481, in reset
+    self.raise_callback_exception_if_any()
+  File "/home/ubuntu/robot_projects/forest_nav/IsaacLab-main/source/isaaclab_physx/isaaclab_physx/physics/physx_manager.py", line 666, in raise_callback_exception_if_any
+    raise exc
+  File "/home/ubuntu/robot_projects/forest_nav/IsaacLab-main/source/isaaclab/isaaclab/physics/physics_manager.py", line 705, in safe_callback_invoke
+    fn(*args)
+  File "/home/ubuntu/robot_projects/forest_nav/IsaacLab-main/source/isaaclab/isaaclab/sensors/sensor_base.py", line 349, in _invoke
+    getattr(obj_ref, callback_name)(event)
+  File "/home/ubuntu/robot_projects/forest_nav/IsaacLab-main/source/isaaclab/isaaclab/sensors/sensor_base.py", line 387, in _initialize_callback
+    self._initialize_impl()
+  File "/home/ubuntu/robot_projects/forest_nav/InstinctLab/source/instinctlab/instinctlab/motion_reference/motion_reference_manager.py", line 530, in _initialize_impl
+    self._initialize_data()
+  File "/home/ubuntu/robot_projects/forest_nav/InstinctLab/source/instinctlab/instinctlab/motion_reference/motion_reference_manager.py", line 630, in _initialize_data
+    self._view = self._create_articulation_view(self.cfg.prim_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/robot_projects/forest_nav/InstinctLab/source/instinctlab/instinctlab/motion_reference/physx.py", line 24, in _create_articulation_view
+    self._physics_sim_view = physx.create_simulation_view(self._backend)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/isaacsim-6.2.0/extscache/omni.physics.tensors-110.4.4+110.4.0.lx64.r.cp312.u7f4/omni/physics/tensors/api.py", line 40, in create_simulation_view
+    raise Exception(f"Failed to create simulation view with backend '{backend}'")
+Exception: Failed to create simulation view with backend 'physx'
+2026-11-18T15:46:09Z [14,292ms] [Warning] [omni.usd] Unexpected reference count of 2 for UsdStage 'anon:0x62bd14d9be80:World0.usd' while being closed in UsdContext (this may indicate it is still resident in memory).
+[15.290s] Simulation App Shutting Down
+There was an error running python

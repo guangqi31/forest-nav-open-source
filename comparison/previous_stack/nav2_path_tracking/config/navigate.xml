@@ -1,0 +1,17 @@
+<!-- 路径与跟踪模式一起更新，避免新控制器短暂跟踪旧观察点的终点朝向。 -->
+<root main_tree_to_execute="MainTree">
+  <BehaviorTree ID="MainTree">
+    <PipelineSequence name="NavigateWithReplanning">
+      <RateController hz="1.0">
+        <Sequence name="PlanAndSelectTrackingMode">
+          <ComputePathToPose goal="{goal}" path="{path}" planner_id="GridBased"/>
+          <ControllerSelector selected_controller="{selected_controller}"
+                              default_controller="FollowPath" topic_name="/navigation/controller_selector"/>
+          <GoalCheckerSelector selected_goal_checker="{selected_goal_checker}"
+                               default_goal_checker="goal_checker" topic_name="/navigation/goal_checker_selector"/>
+        </Sequence>
+      </RateController>
+      <FollowPath path="{path}" controller_id="{selected_controller}" goal_checker_id="{selected_goal_checker}"/>
+    </PipelineSequence>
+  </BehaviorTree>
+</root>

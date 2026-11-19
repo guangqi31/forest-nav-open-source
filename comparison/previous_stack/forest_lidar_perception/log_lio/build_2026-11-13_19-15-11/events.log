@@ -1,0 +1,565 @@
+[0.000000] (-) TimerEvent: {}
+[0.000992] (fast_lio) JobQueued: {'identifier': 'fast_lio', 'dependencies': OrderedDict()}
+[0.001069] (fast_lio) JobStarted: {'identifier': 'fast_lio'}
+[0.004626] (fast_lio) JobProgress: {'identifier': 'fast_lio', 'progress': 'cmake'}
+[0.005016] (fast_lio) JobProgress: {'identifier': 'fast_lio', 'progress': 'build'}
+[0.005382] (fast_lio) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_lio/fast_lio', '--', '-j24', '-l24'], 'cwd': '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_lio/fast_lio', 'env': OrderedDict([('CODEX_TECTONIC_PATH', '/usr/lib/chatgpt/resources/tectonic/tectonic'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CODEX_SAGE_BACKFILL_TRACKER_TAB_REUSE', '1'), ('HTTPS_PROXY', 'http://127.0.0.1:7897'), ('CMAKE_BUILD_PARALLEL_LEVEL', '2'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.1,::1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ubuntu'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'Codex Desktop'), ('CODEX_SHELL', '1'), ('all_proxy', 'socks://127.0.0.1:7897'), ('XDG_SESSION_TYPE', 'x11'), ('LOG_FORMAT', 'json'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('CODEX_CLI_PATH', '/usr/lib/chatgpt/resources/codex'), ('HOME', '/home/ubuntu'), ('CHROME_DESKTOP', 'chatgpt.desktop'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/ubuntu/Documents/Codex/2026-11-08/s-y'), ('DISABLE_AUTO_UPDATE', 'true'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,::1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12'), ('NVM_BIN', '/home/ubuntu/.nvm/versions/node/v22.23.2/bin'), ('NVM_INC', '/home/ubuntu/.nvm/versions/node/v22.23.2/include/node'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/ubuntu/.local/share/applications/codex-switch.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'cat'), ('MANAGERPID', '2596'), ('CODEX_APP_TOOLS_PIPE_PATH', '/tmp/codex-browser-use/c9216def-b941-42c9-95e6-fdcafba894db.sock'), ('DEEPSEEK_API_KEY', 'sk-bb9ffb7f7edb4945a8a47f7236de2f20'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '2959'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', ''), ('_CE_M', ''), ('_CONDA_ROOT', '/home/ubuntu/miniconda3'), ('CODEX_MCP_NODE_PATH', '/usr/lib/chatgpt/resources/cua_node/bin/node'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '22646'), ('NVM_DIR', '/home/ubuntu/.nvm'), ('https_proxy', 'http://127.0.0.1:7897'), ('CODEX_PERMISSION_PROFILE', ':workspace'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('ZSH_TMUX_AUTOSTARTED', 'true'), ('LOGNAME', 'ubuntu'), ('ALL_PROXY', 'socks://127.0.0.1:7897'), ('http_proxy', 'http://127.0.0.1:7897'), ('JOURNAL_STREAM', '8:40309'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'ubuntu'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ubuntu/.local/bin:/home/ubuntu/.codex/tmp/arg0/codex-arg0UjPIwR:/home/ubuntu/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/home/ubuntu/.local/bin:/home/ubuntu/.nvm/versions/node/v22.23.2/bin:/home/ubuntu/.local/bin:/home/ubuntu/miniconda3/condabin:/opt/ros/humble/bin:/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ubuntu/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/usr/lib/chatgpt/resources'), ('SESSION_MANAGER', 'local/gq:@/tmp/.ICE-unix/2936,unix/gq:/tmp/.ICE-unix/2936'), ('CODEX_VERSION', '0.162.0-alpha.2'), ('CODEX_SESSION_ID', '01a1b7ca-1044-7a81-9b4f-edd6e8d87c7a'), ('INVOCATION_ID', '1e05c46e30b74fc883eb0110bf2fb19c'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=fcitx'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', ''), ('BROWSER_USE_ACCESS_VERIFYING_IDENTITY', 'MCowBQYDK2VwAyEA2XBwjZ7O9xHDCMFOPLJ+Azz2kQxbNqU9u+ere2bdfk0='), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ubuntu/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '01a1b7ca-1044-7a81-9b4f-edd6e8d87c7a'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('_CONDA_EXE', '/home/ubuntu/miniconda3/bin/conda'), ('CODEX_TASK_WORKSPACE_VERIFYING_IDENTITY', 'MCowBQYDK2VwAyEA2XBwjZ7O9xHDCMFOPLJ+Azz2kQxbNqU9u+ere2bdfk0='), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_lio/fast_lio'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ubuntu/miniconda3/bin/conda'), ('ZSH_TMUX_AUTOSTART', 'false'), ('CLUTTER_IM_MODULE', 'xim'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/ubuntu/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.037082] (fast_lio) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target fast_lio__rosidl_generator_c\n'}
+[0.044236] (fast_lio) StdoutLine: {'line': b'[  8%] Built target fast_lio__rosidl_generator_c\n'}
+[0.045616] (fast_lio) StdoutLine: {'line': b'[ 11%] Built target fast_lio__rs\n'}
+[0.046203] (fast_lio) StdoutLine: {'line': b'[ 13%] Built target fast_lio__cpp\n'}
+[0.050253] (fast_lio) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target fast_lio__rosidl_typesupport_introspection_c\n'}
+[0.050359] (fast_lio) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target fast_lio__rosidl_typesupport_c\n'}
+[0.050881] (fast_lio) StdoutLine: {'line': b'[ 13%] Built target ament_cmake_python_copy_fast_lio\n'}
+[0.052964] (fast_lio) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target fast_lio__rosidl_typesupport_cpp\n'}
+[0.053926] (fast_lio) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target fast_lio__rosidl_typesupport_introspection_cpp\n'}
+[0.054112] (fast_lio) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target fast_lio__rosidl_typesupport_fastrtps_cpp\n'}
+[0.054625] (fast_lio) StdoutLine: {'line': b'[ 16%] Building CXX object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fast_lio/msg/detail/pose6_d__type_support_c.cpp.o\n'}
+[0.056383] (fast_lio) StdoutLine: {'line': b'[ 25%] Built target fast_lio__rosidl_typesupport_introspection_c\n'}
+[0.058415] (fast_lio) StdoutLine: {'line': b'[ 33%] Built target fast_lio__rosidl_typesupport_c\n'}
+[0.059634] (fast_lio) StdoutLine: {'line': b'[ 41%] Built target fast_lio__rosidl_typesupport_introspection_cpp\n'}
+[0.060069] (fast_lio) StdoutLine: {'line': b'[ 50%] Built target fast_lio__rosidl_typesupport_cpp\n'}
+[0.061693] (fast_lio) StdoutLine: {'line': b'[ 61%] Built target fast_lio__rosidl_typesupport_fastrtps_cpp\n'}
+[0.072923] (fast_lio) StdoutLine: {'line': b'[ 63%] Building CXX object CMakeFiles/fastlio_mapping.dir/src/laserMapping.cpp.o\n'}
+[0.073341] (fast_lio) StdoutLine: {'line': b'[ 66%] Building CXX object CMakeFiles/fastlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o\n'}
+[0.073409] (fast_lio) StdoutLine: {'line': b'[ 69%] Building CXX object CMakeFiles/fastlio_mapping.dir/src/preprocess.cpp.o\n'}
+[0.100009] (-) TimerEvent: {}
+[0.165874] (fast_lio) StdoutLine: {'line': b'running egg_info\n'}
+[0.166099] (fast_lio) StdoutLine: {'line': b'writing fast_lio.egg-info/PKG-INFO\n'}
+[0.166132] (fast_lio) StdoutLine: {'line': b'writing dependency_links to fast_lio.egg-info/dependency_links.txt\n'}
+[0.166157] (fast_lio) StdoutLine: {'line': b'writing top-level names to fast_lio.egg-info/top_level.txt\n'}
+[0.166991] (fast_lio) StdoutLine: {'line': b"reading manifest file 'fast_lio.egg-info/SOURCES.txt'\n"}
+[0.167276] (fast_lio) StdoutLine: {'line': b"writing manifest file 'fast_lio.egg-info/SOURCES.txt'\n"}
+[0.185406] (fast_lio) StdoutLine: {'line': b'[ 75%] Built target ament_cmake_python_build_fast_lio_egg\n'}
+[0.200094] (-) TimerEvent: {}
+[0.207238] (fast_lio) StdoutLine: {'line': b'[ 75%] Linking CXX shared library libfast_lio__rosidl_typesupport_fastrtps_c.so\n'}
+[0.260046] (fast_lio) StdoutLine: {'line': b'[ 75%] Built target fast_lio__rosidl_typesupport_fastrtps_c\n'}
+[0.273732] (fast_lio) StdoutLine: {'line': b'[ 75%] Built target fast_lio\n'}
+[0.288712] (fast_lio) StdoutLine: {'line': b'[ 75%] Generating Python code for ROS interfaces\n'}
+[0.300170] (-) TimerEvent: {}
+[0.400304] (-) TimerEvent: {}
+[0.473651] (fast_lio) StdoutLine: {'line': b'[ 80%] Built target fast_lio__py\n'}
+[0.482736] (fast_lio) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target fast_lio__rosidl_generator_py\n'}
+[0.488868] (fast_lio) StdoutLine: {'line': b'[ 80%] Building C object CMakeFiles/fast_lio__rosidl_generator_py.dir/rosidl_generator_py/fast_lio/msg/_pose6_d_s.c.o\n'}
+[0.500383] (-) TimerEvent: {}
+[0.571416] (fast_lio) StdoutLine: {'line': b'[ 97%] Linking C shared library rosidl_generator_py/fast_lio/libfast_lio__rosidl_generator_py.so\n'}
+[0.601401] (fast_lio) StdoutLine: {'line': b'[ 97%] Built target fast_lio__rosidl_generator_py\n'}
+[0.601501] (-) TimerEvent: {}
+[0.611199] (fast_lio) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target fast_lio__rosidl_typesupport_introspection_c__pyext\n'}
+[0.611292] (fast_lio) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target fast_lio__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.611543] (fast_lio) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target fast_lio__rosidl_typesupport_c__pyext\n'}
+[0.614978] (fast_lio) StdoutLine: {'line': b'[ 97%] Linking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.616606] (fast_lio) StdoutLine: {'line': b'[ 97%] Linking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.621426] (fast_lio) StdoutLine: {'line': b'[ 97%] Linking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.636639] (fast_lio) StdoutLine: {'line': b'[ 97%] Built target fast_lio__rosidl_typesupport_introspection_c__pyext\n'}
+[0.643856] (fast_lio) StdoutLine: {'line': b'[ 97%] Built target fast_lio__rosidl_typesupport_c__pyext\n'}
+[0.644793] (fast_lio) StdoutLine: {'line': b'[ 97%] Built target fast_lio__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.701624] (-) TimerEvent: {}
+[0.801806] (-) TimerEvent: {}
+[0.902944] (-) TimerEvent: {}
+[1.003102] (-) TimerEvent: {}
+[1.103267] (-) TimerEvent: {}
+[1.204965] (-) TimerEvent: {}
+[1.305149] (-) TimerEvent: {}
+[1.405519] (-) TimerEvent: {}
+[1.505866] (-) TimerEvent: {}
+[1.606294] (-) TimerEvent: {}
+[1.706629] (-) TimerEvent: {}
+[1.806953] (-) TimerEvent: {}
+[1.907293] (-) TimerEvent: {}
+[2.007602] (-) TimerEvent: {}
+[2.107972] (-) TimerEvent: {}
+[2.208285] (-) TimerEvent: {}
+[2.308506] (-) TimerEvent: {}
+[2.408832] (-) TimerEvent: {}
+[2.509164] (-) TimerEvent: {}
+[2.609529] (-) TimerEvent: {}
+[2.709875] (-) TimerEvent: {}
+[2.810070] (-) TimerEvent: {}
+[2.910280] (-) TimerEvent: {}
+[2.926529] (fast_lio) StderrLine: {'line': b'In file included from /usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22,\n'}
+[2.926692] (fast_lio) StderrLine: {'line': b'                 from /usr/include/boost/smart_ptr/detail/yield_k.hpp:23,\n'}
+[2.926719] (fast_lio) StderrLine: {'line': b'                 from /usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14,\n'}
+[2.926738] (fast_lio) StderrLine: {'line': b'                 from /usr/include/boost/smart_ptr/detail/spinlock.hpp:42,\n'}
+[2.926754] (fast_lio) StderrLine: {'line': b'                 from /usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25,\n'}
+[2.926770] (fast_lio) StderrLine: {'line': b'                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:29,\n'}
+[2.926787] (fast_lio) StderrLine: {'line': b'                 from /usr/include/boost/shared_ptr.hpp:17,\n'}
+[2.926801] (fast_lio) StderrLine: {'line': b'                 from /usr/include/boost/date_time/microsec_time_clock.hpp:18,\n'}
+[2.926816] (fast_lio) StderrLine: {'line': b'                 from /usr/include/boost/interprocess/detail/posix_time_types_wrk.hpp:31,\n'}
+[2.926831] (fast_lio) StderrLine: {'line': b'                 from /usr/include/boost/interprocess/detail/os_thread_functions.hpp:36,\n'}
+[2.926848] (fast_lio) StderrLine: {'line': b'                 from /usr/include/boost/interprocess/sync/file_lock.hpp:26,\n'}
+[2.926864] (fast_lio) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/io/pcd_io.h:46,\n'}
+[2.926877] (fast_lio) StderrLine: {'line': b'                 from /opt/ros/humble/include/pcl_conversions/pcl_conversions/pcl_conversions.h:73,\n'}
+[2.926891] (fast_lio) StderrLine: {'line': b'                 from /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/third_party/fast_lio/src/IMU_Processing.hpp:18,\n'}
+[2.926911] (fast_lio) StderrLine: {'line': b'                 from /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/third_party/fast_lio/src/laserMapping.cpp:55:\n'}
+[2.926925] (fast_lio) StderrLine: {'line': b'/usr/include/boost/bind.hpp:36:1: note: \xe2\x80\x98#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.\xe2\x80\x99\n'}
+[2.926942] (fast_lio) StderrLine: {'line': b'   36 | BOOST_PRAGMA_MESSAGE(\n'}
+[2.926956] (fast_lio) StderrLine: {'line': b'      | ^~~~~~~~~~~~~~~~~~~~\n'}
+[3.010374] (-) TimerEvent: {}
+[3.110539] (-) TimerEvent: {}
+[3.210981] (-) TimerEvent: {}
+[3.311136] (-) TimerEvent: {}
+[3.411295] (-) TimerEvent: {}
+[3.511462] (-) TimerEvent: {}
+[3.611628] (-) TimerEvent: {}
+[3.711798] (-) TimerEvent: {}
+[3.812040] (-) TimerEvent: {}
+[3.912231] (-) TimerEvent: {}
+[4.012399] (-) TimerEvent: {}
+[4.112563] (-) TimerEvent: {}
+[4.212985] (-) TimerEvent: {}
+[4.313230] (-) TimerEvent: {}
+[4.413604] (-) TimerEvent: {}
+[4.514623] (-) TimerEvent: {}
+[4.614746] (-) TimerEvent: {}
+[4.714915] (-) TimerEvent: {}
+[4.815086] (-) TimerEvent: {}
+[4.915272] (-) TimerEvent: {}
+[5.015457] (-) TimerEvent: {}
+[5.116362] (-) TimerEvent: {}
+[5.216524] (-) TimerEvent: {}
+[5.316681] (-) TimerEvent: {}
+[5.416992] (-) TimerEvent: {}
+[5.517144] (-) TimerEvent: {}
+[5.618072] (-) TimerEvent: {}
+[5.718242] (-) TimerEvent: {}
+[5.818608] (-) TimerEvent: {}
+[5.918785] (-) TimerEvent: {}
+[6.019008] (-) TimerEvent: {}
+[6.119185] (-) TimerEvent: {}
+[6.219451] (-) TimerEvent: {}
+[6.319605] (-) TimerEvent: {}
+[6.419785] (-) TimerEvent: {}
+[6.519953] (-) TimerEvent: {}
+[6.620137] (-) TimerEvent: {}
+[6.720337] (-) TimerEvent: {}
+[6.820515] (-) TimerEvent: {}
+[6.920691] (-) TimerEvent: {}
+[7.020996] (-) TimerEvent: {}
+[7.121159] (-) TimerEvent: {}
+[7.221326] (-) TimerEvent: {}
+[7.321505] (-) TimerEvent: {}
+[7.421685] (-) TimerEvent: {}
+[7.521867] (-) TimerEvent: {}
+[7.622256] (-) TimerEvent: {}
+[7.722523] (-) TimerEvent: {}
+[7.822683] (-) TimerEvent: {}
+[7.922865] (-) TimerEvent: {}
+[8.023010] (-) TimerEvent: {}
+[8.123166] (-) TimerEvent: {}
+[8.223324] (-) TimerEvent: {}
+[8.323540] (-) TimerEvent: {}
+[8.423709] (-) TimerEvent: {}
+[8.523994] (-) TimerEvent: {}
+[8.624157] (-) TimerEvent: {}
+[8.724321] (-) TimerEvent: {}
+[8.824588] (-) TimerEvent: {}
+[8.924867] (-) TimerEvent: {}
+[9.025063] (-) TimerEvent: {}
+[9.125253] (-) TimerEvent: {}
+[9.225418] (-) TimerEvent: {}
+[9.325585] (-) TimerEvent: {}
+[9.425867] (-) TimerEvent: {}
+[9.526074] (-) TimerEvent: {}
+[9.626238] (-) TimerEvent: {}
+[9.726404] (-) TimerEvent: {}
+[9.826773] (-) TimerEvent: {}
+[9.926996] (-) TimerEvent: {}
+[10.027161] (-) TimerEvent: {}
+[10.127321] (-) TimerEvent: {}
+[10.227482] (-) TimerEvent: {}
+[10.328368] (-) TimerEvent: {}
+[10.428523] (-) TimerEvent: {}
+[10.528683] (-) TimerEvent: {}
+[10.628848] (-) TimerEvent: {}
+[10.729012] (-) TimerEvent: {}
+[10.829180] (-) TimerEvent: {}
+[10.929671] (-) TimerEvent: {}
+[11.029833] (-) TimerEvent: {}
+[11.130092] (-) TimerEvent: {}
+[11.230419] (-) TimerEvent: {}
+[11.330716] (-) TimerEvent: {}
+[11.431087] (-) TimerEvent: {}
+[11.531252] (-) TimerEvent: {}
+[11.631418] (-) TimerEvent: {}
+[11.731576] (-) TimerEvent: {}
+[11.831734] (-) TimerEvent: {}
+[11.931885] (-) TimerEvent: {}
+[12.032054] (-) TimerEvent: {}
+[12.132201] (-) TimerEvent: {}
+[12.232361] (-) TimerEvent: {}
+[12.332592] (-) TimerEvent: {}
+[12.432758] (-) TimerEvent: {}
+[12.532926] (-) TimerEvent: {}
+[12.633101] (-) TimerEvent: {}
+[12.733274] (-) TimerEvent: {}
+[12.833476] (-) TimerEvent: {}
+[12.933638] (-) TimerEvent: {}
+[13.033851] (-) TimerEvent: {}
+[13.134020] (-) TimerEvent: {}
+[13.234183] (-) TimerEvent: {}
+[13.334344] (-) TimerEvent: {}
+[13.434509] (-) TimerEvent: {}
+[13.534669] (-) TimerEvent: {}
+[13.634833] (-) TimerEvent: {}
+[13.734975] (-) TimerEvent: {}
+[13.835143] (-) TimerEvent: {}
+[13.935307] (-) TimerEvent: {}
+[14.035474] (-) TimerEvent: {}
+[14.135661] (-) TimerEvent: {}
+[14.236256] (-) TimerEvent: {}
+[14.336427] (-) TimerEvent: {}
+[14.436590] (-) TimerEvent: {}
+[14.536783] (-) TimerEvent: {}
+[14.636954] (-) TimerEvent: {}
+[14.737118] (-) TimerEvent: {}
+[14.837281] (-) TimerEvent: {}
+[14.937438] (-) TimerEvent: {}
+[15.037620] (-) TimerEvent: {}
+[15.137810] (-) TimerEvent: {}
+[15.237942] (-) TimerEvent: {}
+[15.338108] (-) TimerEvent: {}
+[15.438288] (-) TimerEvent: {}
+[15.538491] (-) TimerEvent: {}
+[15.638688] (-) TimerEvent: {}
+[15.738874] (-) TimerEvent: {}
+[15.839038] (-) TimerEvent: {}
+[15.939219] (-) TimerEvent: {}
+[16.039386] (-) TimerEvent: {}
+[16.139556] (-) TimerEvent: {}
+[16.239741] (-) TimerEvent: {}
+[16.339934] (-) TimerEvent: {}
+[16.440117] (-) TimerEvent: {}
+[16.540281] (-) TimerEvent: {}
+[16.640449] (-) TimerEvent: {}
+[16.740641] (-) TimerEvent: {}
+[16.840807] (-) TimerEvent: {}
+[16.940944] (-) TimerEvent: {}
+[17.041133] (-) TimerEvent: {}
+[17.141295] (-) TimerEvent: {}
+[17.241458] (-) TimerEvent: {}
+[17.341640] (-) TimerEvent: {}
+[17.441800] (-) TimerEvent: {}
+[17.542029] (-) TimerEvent: {}
+[17.642196] (-) TimerEvent: {}
+[17.742381] (-) TimerEvent: {}
+[17.842551] (-) TimerEvent: {}
+[17.942887] (-) TimerEvent: {}
+[18.043067] (-) TimerEvent: {}
+[18.143223] (-) TimerEvent: {}
+[18.243377] (-) TimerEvent: {}
+[18.343594] (-) TimerEvent: {}
+[18.443847] (-) TimerEvent: {}
+[18.544009] (-) TimerEvent: {}
+[18.644197] (-) TimerEvent: {}
+[18.744368] (-) TimerEvent: {}
+[18.844535] (-) TimerEvent: {}
+[18.944702] (-) TimerEvent: {}
+[19.044891] (-) TimerEvent: {}
+[19.145083] (-) TimerEvent: {}
+[19.245272] (-) TimerEvent: {}
+[19.345465] (-) TimerEvent: {}
+[19.445667] (-) TimerEvent: {}
+[19.545869] (-) TimerEvent: {}
+[19.646040] (-) TimerEvent: {}
+[19.746228] (-) TimerEvent: {}
+[19.846398] (-) TimerEvent: {}
+[19.946574] (-) TimerEvent: {}
+[20.046743] (-) TimerEvent: {}
+[20.146990] (-) TimerEvent: {}
+[20.247187] (-) TimerEvent: {}
+[20.347377] (-) TimerEvent: {}
+[20.447575] (-) TimerEvent: {}
+[20.547809] (-) TimerEvent: {}
+[20.648135] (-) TimerEvent: {}
+[20.748331] (-) TimerEvent: {}
+[20.848513] (-) TimerEvent: {}
+[20.948689] (-) TimerEvent: {}
+[21.048870] (-) TimerEvent: {}
+[21.149058] (-) TimerEvent: {}
+[21.249224] (-) TimerEvent: {}
+[21.349788] (-) TimerEvent: {}
+[21.449955] (-) TimerEvent: {}
+[21.550129] (-) TimerEvent: {}
+[21.650310] (-) TimerEvent: {}
+[21.750863] (-) TimerEvent: {}
+[21.851036] (-) TimerEvent: {}
+[21.951944] (-) TimerEvent: {}
+[22.052118] (-) TimerEvent: {}
+[22.152299] (-) TimerEvent: {}
+[22.252496] (-) TimerEvent: {}
+[22.352692] (-) TimerEvent: {}
+[22.452865] (-) TimerEvent: {}
+[22.553043] (-) TimerEvent: {}
+[22.653211] (-) TimerEvent: {}
+[22.753382] (-) TimerEvent: {}
+[22.853541] (-) TimerEvent: {}
+[22.953718] (-) TimerEvent: {}
+[23.053908] (-) TimerEvent: {}
+[23.154082] (-) TimerEvent: {}
+[23.254331] (-) TimerEvent: {}
+[23.354517] (-) TimerEvent: {}
+[23.454789] (-) TimerEvent: {}
+[23.554970] (-) TimerEvent: {}
+[23.655133] (-) TimerEvent: {}
+[23.755323] (-) TimerEvent: {}
+[23.855486] (-) TimerEvent: {}
+[23.955678] (-) TimerEvent: {}
+[24.058681] (-) TimerEvent: {}
+[24.158844] (-) TimerEvent: {}
+[24.259038] (-) TimerEvent: {}
+[24.359232] (-) TimerEvent: {}
+[24.459599] (-) TimerEvent: {}
+[24.559762] (-) TimerEvent: {}
+[24.659931] (-) TimerEvent: {}
+[24.760097] (-) TimerEvent: {}
+[24.860262] (-) TimerEvent: {}
+[24.960431] (-) TimerEvent: {}
+[25.060614] (-) TimerEvent: {}
+[25.160791] (-) TimerEvent: {}
+[25.260966] (-) TimerEvent: {}
+[25.361133] (-) TimerEvent: {}
+[25.461304] (-) TimerEvent: {}
+[25.561485] (-) TimerEvent: {}
+[25.663945] (-) TimerEvent: {}
+[25.764087] (-) TimerEvent: {}
+[25.864539] (-) TimerEvent: {}
+[25.964710] (-) TimerEvent: {}
+[26.064883] (-) TimerEvent: {}
+[26.165351] (-) TimerEvent: {}
+[26.265561] (-) TimerEvent: {}
+[26.365744] (-) TimerEvent: {}
+[26.465906] (-) TimerEvent: {}
+[26.567045] (-) TimerEvent: {}
+[26.667727] (-) TimerEvent: {}
+[26.767890] (-) TimerEvent: {}
+[26.868053] (-) TimerEvent: {}
+[26.968211] (-) TimerEvent: {}
+[27.068374] (-) TimerEvent: {}
+[27.168549] (-) TimerEvent: {}
+[27.268728] (-) TimerEvent: {}
+[27.368913] (-) TimerEvent: {}
+[27.471768] (-) TimerEvent: {}
+[27.571945] (-) TimerEvent: {}
+[27.672111] (-) TimerEvent: {}
+[27.772282] (-) TimerEvent: {}
+[27.872453] (-) TimerEvent: {}
+[27.972609] (-) TimerEvent: {}
+[28.072778] (-) TimerEvent: {}
+[28.172962] (-) TimerEvent: {}
+[28.274004] (-) TimerEvent: {}
+[28.374167] (-) TimerEvent: {}
+[28.474328] (-) TimerEvent: {}
+[28.574488] (-) TimerEvent: {}
+[28.674717] (-) TimerEvent: {}
+[28.775003] (-) TimerEvent: {}
+[28.875194] (-) TimerEvent: {}
+[28.975374] (-) TimerEvent: {}
+[29.075538] (-) TimerEvent: {}
+[29.175770] (-) TimerEvent: {}
+[29.275945] (-) TimerEvent: {}
+[29.376135] (-) TimerEvent: {}
+[29.476307] (-) TimerEvent: {}
+[29.576478] (-) TimerEvent: {}
+[29.676737] (-) TimerEvent: {}
+[29.776914] (-) TimerEvent: {}
+[29.877077] (-) TimerEvent: {}
+[29.977255] (-) TimerEvent: {}
+[30.077441] (-) TimerEvent: {}
+[30.177610] (-) TimerEvent: {}
+[30.277765] (-) TimerEvent: {}
+[30.377928] (-) TimerEvent: {}
+[30.478080] (-) TimerEvent: {}
+[30.578267] (-) TimerEvent: {}
+[30.678447] (-) TimerEvent: {}
+[30.778612] (-) TimerEvent: {}
+[30.878783] (-) TimerEvent: {}
+[30.978974] (-) TimerEvent: {}
+[31.079175] (-) TimerEvent: {}
+[31.179364] (-) TimerEvent: {}
+[31.279543] (-) TimerEvent: {}
+[31.379724] (-) TimerEvent: {}
+[31.479916] (-) TimerEvent: {}
+[31.580070] (-) TimerEvent: {}
+[31.680242] (-) TimerEvent: {}
+[31.780418] (-) TimerEvent: {}
+[31.847961] (fast_lio) StdoutLine: {'line': b'[100%] Linking CXX executable fastlio_mapping\n'}
+[31.880525] (-) TimerEvent: {}
+[31.980846] (-) TimerEvent: {}
+[32.081033] (-) TimerEvent: {}
+[32.181218] (-) TimerEvent: {}
+[32.281409] (-) TimerEvent: {}
+[32.381593] (-) TimerEvent: {}
+[32.394500] (fast_lio) StdoutLine: {'line': b'[100%] Built target fastlio_mapping\n'}
+[32.405215] (fast_lio) CommandEnded: {'returncode': 0}
+[32.406385] (fast_lio) JobProgress: {'identifier': 'fast_lio', 'progress': 'install'}
+[32.412207] (fast_lio) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_lio/fast_lio'], 'cwd': '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_lio/fast_lio', 'env': OrderedDict([('CODEX_TECTONIC_PATH', '/usr/lib/chatgpt/resources/tectonic/tectonic'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CODEX_SAGE_BACKFILL_TRACKER_TAB_REUSE', '1'), ('HTTPS_PROXY', 'http://127.0.0.1:7897'), ('CMAKE_BUILD_PARALLEL_LEVEL', '2'), ('CODEX_CI', '1'), ('no_proxy', 'localhost,127.0.0.1,::1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ubuntu'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'Codex Desktop'), ('CODEX_SHELL', '1'), ('all_proxy', 'socks://127.0.0.1:7897'), ('XDG_SESSION_TYPE', 'x11'), ('LOG_FORMAT', 'json'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('CODEX_CLI_PATH', '/usr/lib/chatgpt/resources/codex'), ('HOME', '/home/ubuntu'), ('CHROME_DESKTOP', 'chatgpt.desktop'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/ubuntu/Documents/Codex/2026-11-08/s-y'), ('DISABLE_AUTO_UPDATE', 'true'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,::1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12'), ('NVM_BIN', '/home/ubuntu/.nvm/versions/node/v22.23.2/bin'), ('NVM_INC', '/home/ubuntu/.nvm/versions/node/v22.23.2/include/node'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/ubuntu/.local/share/applications/codex-switch.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'cat'), ('MANAGERPID', '2596'), ('CODEX_APP_TOOLS_PIPE_PATH', '/tmp/codex-browser-use/c9216def-b941-42c9-95e6-fdcafba894db.sock'), ('DEEPSEEK_API_KEY', 'sk-bb9ffb7f7edb4945a8a47f7236de2f20'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '2959'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', ''), ('_CE_M', ''), ('_CONDA_ROOT', '/home/ubuntu/miniconda3'), ('CODEX_MCP_NODE_PATH', '/usr/lib/chatgpt/resources/cua_node/bin/node'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '22646'), ('NVM_DIR', '/home/ubuntu/.nvm'), ('https_proxy', 'http://127.0.0.1:7897'), ('CODEX_PERMISSION_PROFILE', ':workspace'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('ZSH_TMUX_AUTOSTARTED', 'true'), ('LOGNAME', 'ubuntu'), ('ALL_PROXY', 'socks://127.0.0.1:7897'), ('http_proxy', 'http://127.0.0.1:7897'), ('JOURNAL_STREAM', '8:40309'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'ubuntu'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ubuntu/.local/bin:/home/ubuntu/.codex/tmp/arg0/codex-arg0UjPIwR:/home/ubuntu/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/home/ubuntu/.local/bin:/home/ubuntu/.nvm/versions/node/v22.23.2/bin:/home/ubuntu/.local/bin:/home/ubuntu/miniconda3/condabin:/opt/ros/humble/bin:/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ubuntu/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/usr/lib/chatgpt/resources'), ('SESSION_MANAGER', 'local/gq:@/tmp/.ICE-unix/2936,unix/gq:/tmp/.ICE-unix/2936'), ('CODEX_VERSION', '0.162.0-alpha.2'), ('CODEX_SESSION_ID', '01a1b7ca-1044-7a81-9b4f-edd6e8d87c7a'), ('INVOCATION_ID', '1e05c46e30b74fc883eb0110bf2fb19c'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=fcitx'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', ''), ('BROWSER_USE_ACCESS_VERIFYING_IDENTITY', 'MCowBQYDK2VwAyEA2XBwjZ7O9xHDCMFOPLJ+Azz2kQxbNqU9u+ere2bdfk0='), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ubuntu/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '01a1b7ca-1044-7a81-9b4f-edd6e8d87c7a'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('_CONDA_EXE', '/home/ubuntu/miniconda3/bin/conda'), ('CODEX_TASK_WORKSPACE_VERIFYING_IDENTITY', 'MCowBQYDK2VwAyEA2XBwjZ7O9xHDCMFOPLJ+Azz2kQxbNqU9u+ere2bdfk0='), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/build_lio/fast_lio'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ubuntu/miniconda3/bin/conda'), ('ZSH_TMUX_AUTOSTART', 'false'), ('CLUTTER_IM_MODULE', 'xim'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/ubuntu/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[32.418810] (fast_lio) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[32.418875] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/ament_index/resource_index/rosidl_interfaces/fast_lio\n'}
+[32.418995] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio\n'}
+[32.419017] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg\n'}
+[32.419035] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.h\n'}
+[32.419053] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail\n'}
+[32.419069] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__functions.h\n'}
+[32.419089] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__functions.c\n'}
+[32.419104] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.h\n'}
+[32.419120] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.h\n'}
+[32.419135] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_c__visibility_control.h\n'}
+[32.419461] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/environment/library_path.sh\n'}
+[32.419575] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/environment/library_path.dsv\n'}
+[32.419623] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_generator_c.so\n'}
+[32.419639] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_generator_c.so" to ""\n'}
+[32.419654] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio\n'}
+[32.419757] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg\n'}
+[32.419778] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail\n'}
+[32.419841] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_c.h\n'}
+[32.419857] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[32.419871] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so\n'}
+[32.419938] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[32.419954] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio\n'}
+[32.419970] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg\n'}
+[32.420073] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail\n'}
+[32.420116] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__builder.hpp\n'}
+[32.420131] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__traits.hpp\n'}
+[32.420145] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.hpp\n'}
+[32.420159] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.hpp\n'}
+[32.420176] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.hpp\n'}
+[32.420223] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[32.420237] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio\n'}
+[32.420251] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg\n'}
+[32.420268] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail\n'}
+[32.420354] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[32.420370] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/dds_fastrtps\n'}
+[32.420389] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[32.420408] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so\n'}
+[32.420426] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[32.420514] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio\n'}
+[32.420597] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg\n'}
+[32.420669] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[32.420732] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail\n'}
+[32.420749] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.c\n'}
+[32.420818] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_c.h\n'}
+[32.420863] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so\n'}
+[32.420877] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so" to ""\n'}
+[32.420891] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so\n'}
+[32.420908] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so" to ""\n'}
+[32.420922] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio\n'}
+[32.420937] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg\n'}
+[32.420951] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail\n'}
+[32.420965] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[32.420979] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.cpp\n'}
+[32.420993] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so\n'}
+[32.421007] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[32.421020] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so\n'}
+[32.421035] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so" to ""\n'}
+[32.421049] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/environment/pythonpath.sh\n'}
+[32.421063] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/environment/pythonpath.dsv\n'}
+[32.421077] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info\n'}
+[32.421092] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[32.421106] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[32.421121] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[32.421135] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[32.421149] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio\n'}
+[32.421163] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[32.421177] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[32.421191] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[32.421205] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg\n'}
+[32.421219] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d_s.c\n'}
+[32.421233] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py\n'}
+[32.421246] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py\n'}
+[32.421260] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[32.421275] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/libfast_lio__rosidl_generator_py.so\n'}
+[32.421289] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[32.421304] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_c.c\n'}
+[32.421318] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py\n'}
+[32.443006] (fast_lio) StdoutLine: {'line': b"Listing '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio'...\n"}
+[32.443105] (fast_lio) StdoutLine: {'line': b"Compiling '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py'...\n"}
+[32.443128] (fast_lio) StdoutLine: {'line': b"Listing '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg'...\n"}
+[32.443146] (fast_lio) StdoutLine: {'line': b"Compiling '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py'...\n"}
+[32.443163] (fast_lio) StdoutLine: {'line': b"Compiling '/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py'...\n"}
+[32.445292] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[32.445406] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[32.445638] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[32.445661] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[32.445679] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[32.445697] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[32.445715] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_generator_py.so\n'}
+[32.445733] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/libfast_lio__rosidl_generator_py.so" to ""\n'}
+[32.445751] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/ament_index/resource_index/rust_packages/fast_lio\n'}
+[32.445768] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/rust\n'}
+[32.445785] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/rust/Cargo.toml\n'}
+[32.445840] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/rust/src\n'}
+[32.445857] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/rust/src/msg\n'}
+[32.445873] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/rust/src/msg/rmw.rs\n'}
+[32.445890] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/rust/src/lib.rs\n'}
+[32.445911] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/rust/src/msg.rs\n'}
+[32.445948] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/rust/build.rs\n'}
+[32.445963] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/msg/Pose6D.idl\n'}
+[32.445976] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/msg/Pose6D.msg\n'}
+[32.445989] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/fast_lio/fastlio_mapping\n'}
+[32.446507] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/fast_lio/fastlio_mapping" to ""\n'}
+[32.446555] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/fast_lio/run_fastlio.sh\n'}
+[32.446573] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/fast_lio/check_input.py\n'}
+[32.446616] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/fast_lio/check_config.py\n'}
+[32.446632] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/fast_lio/check_map.py\n'}
+[32.446668] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/fast_lio/pcap_to_rosbag_ros1.sh\n'}
+[32.446684] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/fast_lio/pcap_to_rosbag_ros2.sh\n'}
+[32.446717] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/lib/fast_lio/common.sh\n'}
+[32.446765] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/config\n'}
+[32.446811] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/config/jt128.yaml\n'}
+[32.446831] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/config/jt16.yaml\n'}
+[32.446850] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/config/jt64p.yaml\n'}
+[32.446889] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/config/jt32.yaml\n'}
+[32.446928] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/config/MT60.yaml\n'}
+[32.446947] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/launch\n'}
+[32.446966] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/launch/gdb_debug_example.launch\n'}
+[32.447007] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/launch/mapping_jt32.launch.py\n'}
+[32.447026] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/launch/mapping_mt60.launch.py\n'}
+[32.447045] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/launch/mapping.launch.py\n'}
+[32.447063] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/launch/mapping_jt16.launch.py\n'}
+[32.447104] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/launch/mapping_jt64p.launch.py\n'}
+[32.447122] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/launch/mapping_jt128.launch.py\n'}
+[32.447140] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/rviz\n'}
+[32.447158] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/rviz/fastlio.rviz\n'}
+[32.447196] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/ament_index/resource_index/package_run_dependencies/fast_lio\n'}
+[32.447214] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/ament_index/resource_index/parent_prefix_path/fast_lio\n'}
+[32.447249] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/environment/ament_prefix_path.sh\n'}
+[32.447294] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/environment/ament_prefix_path.dsv\n'}
+[32.447326] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/environment/path.sh\n'}
+[32.447344] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/environment/path.dsv\n'}
+[32.447387] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/local_setup.bash\n'}
+[32.447420] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/local_setup.sh\n'}
+[32.447437] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/local_setup.zsh\n'}
+[32.447472] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/local_setup.dsv\n'}
+[32.447518] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/package.dsv\n'}
+[32.447537] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/ament_index/resource_index/packages/fast_lio\n'}
+[32.447569] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport.cmake\n'}
+[32.447609] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport-release.cmake\n'}
+[32.447647] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[32.447683] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport-release.cmake\n'}
+[32.447722] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cppExport.cmake\n'}
+[32.447756] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[32.447790] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport-release.cmake\n'}
+[32.447827] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport.cmake\n'}
+[32.447862] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport-release.cmake\n'}
+[32.447898] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport.cmake\n'}
+[32.447936] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport-release.cmake\n'}
+[32.447972] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[32.448009] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport-release.cmake\n'}
+[32.448044] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport.cmake\n'}
+[32.448077] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport-release.cmake\n'}
+[32.448113] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport.cmake\n'}
+[32.448146] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport-release.cmake\n'}
+[32.448180] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/rosidl_cmake-extras.cmake\n'}
+[32.448213] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[32.448243] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[32.448277] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[32.448311] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[32.448346] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[32.448445] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[32.448479] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/fast_lioConfig.cmake\n'}
+[32.448515] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/cmake/fast_lioConfig-version.cmake\n'}
+[32.448551] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ubuntu/robot_projects/forest_nav/forest_lidar_perception/install_lio/fast_lio/share/fast_lio/package.xml\n'}
+[32.449718] (fast_lio) CommandEnded: {'returncode': 0}
+[32.457537] (fast_lio) JobEnded: {'identifier': 'fast_lio', 'rc': 0}
+[32.457771] (-) EventReactorShutdown: {}

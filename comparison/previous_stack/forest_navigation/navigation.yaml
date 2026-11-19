@@ -1,0 +1,196 @@
+# 林地导航配置：0.45米足迹；速度采样避免低速无效命令；允许纯转向。
+planner_server:
+  ros__parameters:
+    use_sim_time: true
+    expected_planner_frequency: 1.0
+    planner_plugins:
+    - GridBased
+    GridBased:
+      plugin: nav2_smac_planner/SmacPlanner2D
+      tolerance: 0.0
+      allow_unknown: false
+      downsample_costmap: false
+      cost_travel_multiplier: 4.0
+      max_iterations: 1000000
+      max_on_approach_iterations: 1000
+      max_planning_time: 3.0
+      use_final_approach_orientation: false
+      smoother:
+        max_iterations: 0
+        w_smooth: 0.0
+        w_data: 0.0
+        do_refinement: false
+global_costmap:
+  global_costmap:
+    ros__parameters:
+      use_sim_time: true
+      global_frame: map
+      robot_base_frame: base_link
+      transform_tolerance: 0.5
+      rolling_window: false
+      resolution: 0.1
+      update_frequency: 5.0
+      publish_frequency: 5.0
+      robot_radius: 0.45
+      # 为栅格边界和实际轨迹偏差额外留出0.10米；物理核对仍检查0.45米整圆。
+      footprint_padding: 0.1
+      track_unknown_space: true
+      unknown_cost_value: 255
+      lethal_cost_threshold: 100
+      trinary_costmap: false
+      always_send_full_costmap: true
+      plugins:
+      - static_layer
+      - inflation_layer
+      static_layer:
+        plugin: nav2_costmap_2d::StaticLayer
+        map_topic: /traversability_map
+        map_subscribe_transient_local: true
+        subscribe_to_updates: false
+        footprint_clearing_enabled: false
+      inflation_layer:
+        plugin: nav2_costmap_2d::InflationLayer
+        inflation_radius: 0.9
+        cost_scaling_factor: 3.0
+        inflate_around_unknown: true
+        inflate_unknown: false
+controller_server:
+  ros__parameters:
+    use_sim_time: true
+    controller_frequency: 20.0
+    odom_topic: /odom
+    min_x_velocity_threshold: 0.001
+    min_y_velocity_threshold: 0.001
+    min_theta_velocity_threshold: 0.001
+    failure_tolerance: 0.5
+    publish_zero_velocity: true
+    progress_checker_plugin: progress_checker
+    goal_checker_plugins:
+    - goal_checker
+    controller_plugins:
+    - FollowPath
+    progress_checker:
+      # 原地对准朝向也是有效进展，不能仅凭平移距离判定卡住。
+      plugin: nav2_controller::PoseProgressChecker
+      required_movement_angle: 0.15
+      required_movement_radius: 0.1
+      movement_time_allowance: 12.0
+    goal_checker:
+      plugin: nav2_controller::SimpleGoalChecker
+      # 终点必须满足明确的朝向精度；不能放宽容差掩盖低角速度停转。
+      xy_goal_tolerance: 0.25
+      # 内部停止阈值更严格，为策略停转后的姿态回摆预留余量；
+      # 外部验收仍要求到达与停稳后的朝向误差均不超过0.2rad。
+      yaw_goal_tolerance: 0.03
+      stateful: true
+    FollowPath:
+      plugin: nav2_rotation_shim_controller::RotationShimController
+      primary_controller: dwb_core::DWBLocalPlanner
+      # 使用现有 Rotation Shim 原生终点朝向功能，优先于行走轨迹评分。
+      rotate_to_goal_heading: true
+      # G1 步态的瞬时角速度含摆动；由插件自己的上一条命令连续爬升，
+      # 避免每次以近零的实测角速度重置斜坡、始终达不到策略起转阈值。
+      # 外层适配器仍保留0.8rad/s²变化率限制及停止/失联保护。
+      closed_loop: false
+      angular_dist_threshold: 0.6
+      forward_sampling_distance: 0.5
+      rotate_to_heading_angular_vel: 0.5
+      max_angular_accel: 0.8
+      simulate_ahead_time: 1.0
+      debug_trajectory_details: false
+      min_vel_x: 0.0
+      max_vel_x: 0.45
+      min_vel_y: 0.0
+      max_vel_y: 0.0
+      max_vel_theta: 0.5
+      min_speed_xy: 0.12
+      max_speed_xy: 0.45
+      min_speed_theta: 0.18
+      acc_lim_x: 0.8
+      acc_lim_y: 0.0
+      acc_lim_theta: 0.8
+      decel_lim_x: -0.8
+      decel_lim_y: 0.0
+      decel_lim_theta: -0.8
+      vx_samples: 15
+      vy_samples: 1
+      vtheta_samples: 21
+      sim_time: 1.5
+      linear_granularity: 0.05
+      angular_granularity: 0.05
+      transform_tolerance: 0.5
+      xy_goal_tolerance: 0.25
+      trans_stopped_velocity: 0.05
+      short_circuit_trajectory_evaluation: true
+      stateful: true
+      critics:
+      - RotateToGoal
+      - Oscillation
+      - BaseObstacle
+      - ObstacleFootprint
+      - PathAlign
+      - GoalAlign
+      - PathDist
+      - GoalDist
+      BaseObstacle.scale: 0.02
+      ObstacleFootprint.scale: 0.02
+      PathAlign.scale: 16.0
+      PathAlign.forward_point_distance: 0.15
+      GoalAlign.scale: 8.0
+      GoalAlign.forward_point_distance: 0.15
+      PathDist.scale: 32.0
+      GoalDist.scale: 24.0
+      RotateToGoal.scale: 32.0
+      RotateToGoal.slowing_factor: 5.0
+      RotateToGoal.lookahead_time: -1.0
+local_costmap:
+  local_costmap:
+    ros__parameters:
+      use_sim_time: true
+      global_frame: odom
+      robot_base_frame: base_link
+      transform_tolerance: 0.5
+      rolling_window: true
+      resolution: 0.1
+      update_frequency: 10.0
+      publish_frequency: 5.0
+      robot_radius: 0.45
+      # 为栅格边界和实际轨迹偏差额外留出0.10米；物理核对仍检查0.45米整圆。
+      footprint_padding: 0.1
+      track_unknown_space: true
+      unknown_cost_value: 255
+      lethal_cost_threshold: 100
+      trinary_costmap: false
+      always_send_full_costmap: true
+      plugins:
+      - static_layer
+      - inflation_layer
+      static_layer:
+        plugin: nav2_costmap_2d::StaticLayer
+        map_topic: /traversability_map
+        map_subscribe_transient_local: true
+        subscribe_to_updates: false
+        footprint_clearing_enabled: false
+      inflation_layer:
+        plugin: nav2_costmap_2d::InflationLayer
+        inflation_radius: 0.9
+        cost_scaling_factor: 3.0
+        inflate_around_unknown: true
+        inflate_unknown: false
+      width: 6
+      height: 6
+bt_navigator:
+  ros__parameters:
+    use_sim_time: true
+    global_frame: map
+    robot_base_frame: base_link
+    odom_topic: /odom
+    bt_loop_duration: 10
+    # 单位为毫秒：重地形/仿真负载下20ms可能错误中止仍在执行的规划请求。
+    default_server_timeout: 2000
+    plugin_lib_names:
+    - nav2_compute_path_through_poses_action_bt_node
+    - nav2_compute_path_to_pose_action_bt_node
+    - nav2_follow_path_action_bt_node
+    - nav2_rate_controller_bt_node
+    - nav2_pipeline_sequence_bt_node

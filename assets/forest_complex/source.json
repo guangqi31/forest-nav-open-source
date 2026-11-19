@@ -1,0 +1,10 @@
+{
+  "source_project": "/home/ubuntu/robot_projects/forest_nav",
+  "preset": "complex",
+  "files": {
+    "scene_manifest.json": "d4a179cdcf6a7bdb4ab68dc244dd36e4314bf1ba55021557d146fd98bca329dd",
+    "collision_geometry.npz": "374409277223af51960b89945b727624b1fad135689194ca0b9a14daa55d83d3",
+    "environment.usda": "de03646f58806b41aacc8cb9a6442b07a16facce11a449e1f51d6477bcdcbcf8"
+  },
+  "note": "原样复用旧场景资产，不导入旧导航算法"
+}

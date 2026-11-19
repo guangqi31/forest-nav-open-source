@@ -1,0 +1,12 @@
+[INFO] [launch]: All log files can be found below /home/ubuntu/.ros/log/2026-11-18-22-41-58-312289-gq-334425
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [pointcloud_fields.py-1]: process started with pid [334426]
+[INFO] [fastlio_mapping-2]: process started with pid [334428]
+[fastlio_mapping-2] [INFO] [1795012918.481233663] [laser_mapping]: p_pre->lidar_type 3
+[fastlio_mapping-2] [INFO] [1795012918.481300738] [laser_mapping]: config summary: lid_topic=/lidar/points imu_topic=/imu/data_raw lidar_type=3 scan_line=32 timestamp_unit=0 blind=0.15 det_range=45.0 imu_gyr_unit=rad time_offset_lidar_to_imu=0.0000 extrinsic_est_en=0 | pcd_save_en=0 interval=-1 leaf_size=0.00 map_file_path='' tum_en=0
+[fastlio_mapping-2] [INFO] [1795012918.484962586] [laser_mapping]: Node init finished.
+[fastlio_mapping-2] Multi thread started 
+[fastlio_mapping-2] IMU initialization window 0-0 s: 19 samples, mean gyro [-0.00601101 -0.0613603 -0.0691875] rad/s (norm 0.0926722)
+[fastlio_mapping-2] IMU Initial Done
+[fastlio_mapping-2] [INFO] [1795012946.765406837] [laser_mapping]: Scan skipped while IMU initializes (expected at startup).
+[fastlio_mapping-2] [INFO] [1795012947.157868077] [laser_mapping]: Initialize map kdtree: undistorted=50927, downsampled=3078

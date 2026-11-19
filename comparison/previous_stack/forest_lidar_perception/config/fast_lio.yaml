@@ -1,0 +1,52 @@
+# FAST-LIO影子定位：只消费原始传感器，不接管当前Nav2坐标系。
+# 这里选JT32仅为复用其XYZI/ring/timestamp解码器，不表示仿真了一台禾赛设备。
+/**:
+  ros__parameters:
+    use_sim_time: true
+    feature_extract_enable: false
+    point_filter_num: 1
+    max_iteration: 4
+    filter_size_surf: 0.15
+    filter_size_map: 0.15
+    cube_side_length: 100.0
+    runtime_pos_log_enable: false
+    common:
+      lid_topic: /lio/input/points
+      imu_topic: /imu/data_raw
+      time_sync_en: false
+      time_offset_lidar_to_imu: 0.0
+      imu_gyr_unit: rad
+    preprocess:
+      lidar_type: 3
+      scan_line: 32
+      timestamp_unit: 0
+      scan_rate: 5
+      blind: 0.2
+    mapping:
+      # 滤波器噪声是本次理想仿真下的工作参数，不是传感器标定结论。
+      acc_cov: 0.1
+      gyr_cov: 0.01
+      b_acc_cov: 0.0001
+      b_gyr_cov: 0.00001
+      imu_init_delay: 2.0
+      imu_init_duration: 2.0
+      det_range: 20.0
+      fov_degree: 360.0
+      extrinsic_est_en: false
+      # p_imu = R_imu_lidar * p_lidar + t_imu_lidar；启动时用实际安装配置覆盖。
+      extrinsic_T: [0.0, 0.0, 0.65]
+      extrinsic_R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+    publish:
+      path_en: true
+      map_en: true
+      effect_map_en: false
+      scan_publish_en: true
+      # 给CMU提供完整实测回波；0.15m的滤波点云用于定位，不能代替0.05m地形观测。
+      dense_publish_en: true
+      scan_bodyframe_pub_en: false
+    pcd_save:
+      pcd_save_en: true
+      interval: -1
+      leaf_size: 0.15
+    trajectory_save:
+      tum_en: false

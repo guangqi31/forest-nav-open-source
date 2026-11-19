@@ -1,0 +1,16 @@
+{
+  "native_node_compute_count": 149,
+  "native_input_distinct_scan_times": 149,
+  "reliable_subscriber_frames": 148,
+  "reliable_rate_hz": 10.0,
+  "best_effort_same_run_frames": 8,
+  "best_effort_only_previous_run_frames": 46,
+  "original_adapter_in": 65,
+  "original_adapter_published": 65,
+  "original_fastlio_scan_count": 45,
+  "original_callback_median_ms": 72.2054210054921,
+  "temporary_array_callback_median_ms": 1.9559959910111502,
+  "udp_receive_buffer_errors_during_baseline": 0,
+  "production_code_or_configuration_modified": false,
+  "scope": "独立静态原生雷达场景，未运行G1或规划"
+}

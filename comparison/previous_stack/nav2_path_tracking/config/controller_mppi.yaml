@@ -1,0 +1,81 @@
+# Nav2 Humble 1.1.20 原生MPPI；只替换局部控制插件，不更改地图或G1策略。
+plugin: nav2_mppi_controller::MPPIController
+# 20Hz控制周期必须与model_dt一致，以便复用并移位上一轮最优控制序列。
+model_dt: 0.05
+time_steps: 40
+batch_size: 1000
+iteration_count: 1
+# 预测2秒，1.8m/s时前视3.6米；配套10米局部地图与4.5米参考路径读取距离。
+# DiffDrive仅表示输出vx/wz，匹配现有适配器；不是把G1动力学改成轮式机器人。
+motion_model: DiffDrive
+vx_max: 1.8
+vx_min: 0.0
+vy_max: 0.0
+wz_max: 1.0
+# 按1.8m/s目标扩大纵向采样；0.2配合短预测窗会让能量项过度压低巡航速度。
+vx_std: 0.4
+vy_std: 0.0
+wz_std: 0.4
+temperature: 0.3
+gamma: 0.015
+prune_distance: 4.5
+transform_tolerance: 0.5
+retry_attempt_limit: 1
+reset_period: 1.0
+visualize: false
+# Humble的运动模型没有新版ax_max等参数；原适配器的加减速处理仍保留。
+critics: [ConstraintCritic, CostCritic, GoalCritic, GoalAngleCritic, PathAlignCritic, PathFollowCritic, PathAngleCritic, PreferForwardCritic]
+ConstraintCritic:
+  enabled: true
+  cost_power: 1
+  cost_weight: 4.0
+CostCritic:
+  enabled: true
+  cost_power: 1
+  cost_weight: 3.81
+  critical_cost: 300.0
+  collision_cost: 1000000.0
+  # 启动入口将现有圆形生成的16个点显式提供给局部地图，保持原半径/padding。
+  # 与旧DWB一样检查完整足迹，不能只依赖机器人中心的膨胀代价。
+  consider_footprint: true
+  near_goal_distance: 1.0
+  trajectory_point_step: 1
+GoalCritic:
+  enabled: true
+  cost_power: 1
+  cost_weight: 5.0
+  threshold_to_consider: 1.4
+GoalAngleCritic:
+  enabled: true
+  cost_power: 1
+  cost_weight: 3.0
+  threshold_to_consider: 0.5
+PathAlignCritic:
+  enabled: true
+  cost_power: 1
+  cost_weight: 14.0
+  max_path_occupancy_ratio: 0.05
+  trajectory_point_step: 4
+  threshold_to_consider: 0.5
+  # 0.2米栅格下参考前方约0.8米，而非官方示例的20格（4米，超出预测范围）。
+  offset_from_furthest: 4
+  use_path_orientations: false
+PathFollowCritic:
+  enabled: true
+  cost_power: 1
+  cost_weight: 5.0
+  offset_from_furthest: 5
+  threshold_to_consider: 1.4
+PathAngleCritic:
+  enabled: true
+  cost_power: 1
+  cost_weight: 2.0
+  offset_from_furthest: 4
+  threshold_to_consider: 0.5
+  max_angle_to_furthest: 1.0
+  mode: 0
+PreferForwardCritic:
+  enabled: true
+  cost_power: 1
+  cost_weight: 5.0
+  threshold_to_consider: 0.5

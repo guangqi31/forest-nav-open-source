@@ -1,0 +1,30 @@
+<!-- 来源：Nav2 Humble navigate_w_replanning_only_if_path_becomes_invalid.xml。
+     保留官方PipelineSequence、GlobalUpdatedGoal、IsPathValid和1Hz检查。
+     接入已有途中/终点选择器及一次原生重规划恢复；不添加Spin、Wait、BackUp或清图操作。
+     有效路径持续跟踪；目标变化或路径失效才调用Smac。
+     无解仍返回失败，外层未知环境任务管理属于后续阶段。 -->
+<root main_tree_to_execute="MainTree">
+  <BehaviorTree ID="MainTree">
+    <!-- 官方RecoveryNode的一次上下文恢复：控制/规划失败后重算路径，
+         替代官方默认的清图操作；不引入Spin/Wait/BackUp，不改外层任务预算。 -->
+    <RecoveryNode number_of_retries="1" name="ReplanAfterNavigationFailure">
+    <PipelineSequence name="NavigateWithReplanning">
+      <RateController hz="1.0">
+        <Sequence name="PlanAndSelectTrackingMode">
+          <Fallback>
+            <ReactiveSequence>
+              <Inverter><GlobalUpdatedGoal/></Inverter>
+              <IsPathValid path="{path}"/>
+            </ReactiveSequence>
+            <ComputePathToPose goal="{goal}" path="{path}" planner_id="GridBased"/>
+          </Fallback>
+          <ControllerSelector selected_controller="{selected_controller}" default_controller="FollowPath" topic_name="/navigation/controller_selector"/>
+          <GoalCheckerSelector selected_goal_checker="{selected_goal_checker}" default_goal_checker="goal_checker" topic_name="/navigation/goal_checker_selector"/>
+        </Sequence>
+      </RateController>
+      <FollowPath path="{path}" controller_id="{selected_controller}" goal_checker_id="{selected_goal_checker}"/>
+    </PipelineSequence>
+      <ComputePathToPose goal="{goal}" path="{path}" planner_id="GridBased"/>
+    </RecoveryNode>
+  </BehaviorTree>
+</root>

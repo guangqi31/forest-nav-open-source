@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: instinct_rl
+Version: 1.0.3
+Summary: Fast and simple RL algorithms implemented in pytorch
+Author: Ziwen Zhuang
+Author-email: 
+License: Modified MIT License
+Requires-Python: >=3.12,<3.13
+License-File: LICENSE
+Requires-Dist: torch==2.11.0
+Requires-Dist: torchvision==0.26.0
+Requires-Dist: numpy>=2
+Requires-Dist: tensorboardX
+Requires-Dist: tensorboard
+Requires-Dist: tabulate
+Requires-Dist: GitPython
+Requires-Dist: onnx<1.22,>=1.18
+Requires-Dist: onnxscript>=0.5
+Dynamic: author
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

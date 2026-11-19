@@ -1,0 +1,8 @@
+{
+  "wall_seconds": 8.00392685100087,
+  "sim_seconds": 2.6550000000000002,
+  "real_time_factor": 0.33171217696323646,
+  "clock_messages": 532,
+  "cloud_messages": 27,
+  "lidar_hz_sim": 9.999988369244297
+}
